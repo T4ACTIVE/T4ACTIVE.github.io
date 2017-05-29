@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="T4ACTIVE.github.io : HII ACTIVE Task 4: Semantic Meta Model Repository Demo">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=413c838a6a6a2af1bb6a688c40f3ffd0e8ed7259">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+	  $( ".daccordion" ).accordion({
+		collapsible: true,
+		heightStyle: "content"
+	  });
+	} );
+	</script>
+    <title>T4ACTIVE.github.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/EMM_Integrator">View on GitHub</a>
+
+          <h1 id="project_title">HII ACTIVE Task 4 Demo</h1>
+          <h2 id="project_tagline">Semantic Object Models</h2>
+
+		  <section id="downloads">
+			<a class="zip_download_link" href="https://github.com/pages-themes/slate/zipball/master">Download this project as a .zip file</a>
+			<a class="tar_download_link" href="https://github.com/pages-themes/slate/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+       
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+	<div id="main_content_wrap" class="outer">
+	  
+      <section id="main_content" class="inner">    
+
+        <h1 id="Object_name">EMM Integrator Object</h1>
+
+        <h3 id="Object_description">Description</h3>
+           <p>This Object defines the components of an EMM.</p>
+
+	    <h3 id="Object Models">Data Models</h3>
+      </section>
+    </div>
+ 
+	<!-- Top level Accordion starts-->
+	<div class="daccordion">
+  	 <h3>LWM2M</h3>
+  	  <div>
+		<p>Object Version: <b>urn:oma:lwm2m:x:25010:1</b></p>
+
+		  <!-- Nested Accordion 1 starts-->
+		  <div class="daccordion">
+    	   <h3>SHA1 Checksum</h3>
+		     <div><p>917d11c244a7271a054a68b1cf1d47c618ca562f</p></div>
+    	   <h3>Resource Fields</h3>
+            <div>
+			 <ul>
+			  <li>Device</li>
+  				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">20170</td>
+					<td class="tg-031e">R</td>
+					<td class="tg-031e">No</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">Objlink</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Device object for the EMM</td>
+				  </tr>
+				</table>
+			  <li>LogControl</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">20171</td>
+					<td class="tg-031e">R</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">Objlink</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Log control for the sensors</td>
+				  </tr>
+				</table>
+
+			  <li>DeviceBind</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">20172</td>
+					<td class="tg-031e">R</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">Objlink</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Binds the EMM to the device it measures.</td>
+				  </tr>
+				</table>
+			  <li>CurrentSensor</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">27014</td>
+					<td class="tg-031e">R</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">Objlink</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Current sensors for the EMM.</td>
+				  </tr>
+				</table>
+				<li>PowerSensor</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">27015</td>
+					<td class="tg-031e">R</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">Objlink</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Power sensors for the EMM.</td>
+				  </tr>
+				</table>
+				<li>VoltageSensor</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">27013</td>
+					<td class="tg-031e">R</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">Objlink</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Voltage sensors for the EMM.</td>
+				  </tr>
+				</table>
+			 </ul>
+			</div>
+    	   <h3>Example Usage</h3>
+            <div>    
+            Outline how to interact with this object, if needed.
+			</div>
+    	   <h3>XML</h3>
+			<div> 
+			  <pre><xmp class="prettyprint lang-html">
+<?xml version="1.0" encoding="utf-8"?><LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>EMM-Integrator</Name>
+		<Description1><![CDATA[This object integrates all the components that belong to the physical Energy Measurement Module Platform as Object Links.]]></Description1>
+		<ObjectID>25010</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:x:25010:1</ObjectURN>
+		<LWM2MVersion />
+		<ObjectVersion>1.0</ObjectVersion>
+		<MultipleInstances>Multiple</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="20170"><Name>Device</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[The device description of the EMM.]]></Description>
+			</Item>
+			<Item ID="20171"><Name>LogControl</Name>
+				<Operations></Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Sensor log control link.]]></Description>
+			</Item>
+			<Item ID="20172"><Name>DeviceBind</Name>
+				<Operations></Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Binding the EMM to a physical device it measures.]]></Description>
+			</Item>
+			<Item ID="20173"><Name>VoltageSensor</Name>
+				<Operations></Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[The integrated voltage sensor.]]></Description>
+			</Item>
+			<Item ID="20174"><Name>CurrentSensor</Name>
+				<Operations></Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[The integrated current sensor.]]></Description>
+			</Item>
+			<Item ID="20175"><Name>PowerSensor</Name>
+				<Operations></Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[The integrated power sensor.]]></Description>
+			</Item></Resources>
+		<Description2 />
+	</Object>
+</LWM2M>
+</xmp>
+			</pre>
+			</div>
+    	   <h3>JSON</h3>
+			<div>
+			  <pre class="prettyprint">
+			{
+  "LWM2M": {
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "-xsi:noNamespaceSchemaLocation": "http://openmobilealliance.org/tech/profiles/LWM2M.xsd",
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "EMM-Integrator",
+      "Description1": "This object integrates all the components that belong to the physical Energy Measurement Module Platform as Object 
+Links.",
+      "ObjectID": "25010",
+      "ObjectURN": "urn:oma:lwm2m:x:25010:1",
+      "ObjectVersion": "1.0",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "20170",
+            "Name": "Device",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "The device description of the EMM."
+          },
+          {
+            "-ID": "20171",
+            "Name": "LogControl",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "Sensor log control link."
+          },
+          {
+            "-ID": "20172",
+            "Name": "DeviceBind",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "Binding the EMM to a physical device it measures."
+          },
+          {
+            "-ID": "20173",
+            "Name": "VoltageSensor",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "The integrated voltage sensor."
+          },
+          {
+            "-ID": "20174",
+            "Name": "CurrentSensor",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "The integrated current sensor."
+          },
+          {
+            "-ID": "20175",
+            "Name": "PowerSensor",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "The integrated power sensor."
+          }
+        ]
+      }
+    }
+  }
+}
+
+			</pre>
+			</div>
+		</div>
+	      </div>
+		  <!-- Nested Accordion 1 ends-->
+
+	  </div>
+  	  
+    </div>
+    
+	<!-- Top level Accordion ends-->
+ 
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+	      <p> Return to <a href="../">previous page</a> </p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "LWM2M": {
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "-xsi:noNamespaceSchemaLocation": "http://openmobilealliance.org/tech/profiles/LWM2M.xsd",
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "EMM-Integrator",
+      "Description1": "This object integrates all the components that belong to the physical Energy Measurement Module Platform as Object 
+Links.",
+      "ObjectID": "25010",
+      "ObjectURN": "urn:oma:lwm2m:x:25010:1",
+      "ObjectVersion": "1.0",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "20170",
+            "Name": "Device",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "The device description of the EMM."
+          },
+          {
+            "-ID": "20171",
+            "Name": "LogControl",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "Sensor log control link."
+          },
+          {
+            "-ID": "20172",
+            "Name": "DeviceBind",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "Binding the EMM to a physical device it measures."
+          },
+          {
+            "-ID": "20173",
+            "Name": "VoltageSensor",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "The integrated voltage sensor."
+          },
+          {
+            "-ID": "20174",
+            "Name": "CurrentSensor",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "The integrated current sensor."
+          },
+          {
+            "-ID": "20175",
+            "Name": "PowerSensor",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "The integrated power sensor."
+          }
+        ]
+      }
+    }
+  }
+}
