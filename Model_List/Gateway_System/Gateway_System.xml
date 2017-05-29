@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M>
+    <Object ObjectType="MODefinition">
+        <Name>IPSO Gateway System</Name>
+        <Description1>This Object defines the basic settings for a generic gateway.</Description1>
+        <ObjectID>1022</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:ext:1022:1</ObjectURN>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Resources>
+            <Item ID="0">
+                <Name>Hostname</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the hostname of the gateway.</Description>
+            </Item>            
+            <Item ID="1">
+                <Name>Timezone</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the default timezone.</Description>
+            </Item>      
+            <Item ID="2">
+                <Name>DNS Server List</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns a list of DNS Servers used by this system.</Description>
+            </Item>  
+            <Item ID="3">
+                <Name>NTP Server List</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns a list of NTP Servers.</Description>
+            </Item>  
+        </Resources>
+        <Description2></Description2>
+    </Object>
+</LWM2M>
