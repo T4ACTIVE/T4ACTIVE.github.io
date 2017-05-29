@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="T4ACTIVE.github.io : HII ACTIVE Task 4: Semantic Meta Model Repository Demo">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=413c838a6a6a2af1bb6a688c40f3ffd0e8ed7259">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".daccordion" ).accordion({
+      collapsible: true,
+      heightStyle: "content"
+    });
+  } );
+  </script>
+    <title>T4ACTIVE.github.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io">View on GitHub</a>
+
+          <h1 id="project_title">HII ACTIVE Task 4 Demo</h1>
+          <h2 id="project_tagline">Semantic Object Models</h2>
+
+               <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/pages-themes/slate/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/pages-themes/slate/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+       
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+	  <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+	      
+	      
+        <h1 id="Object_name">Gateway System</h1>
+        <h2 id="Object_description">Description</h2>
+           <p>This Object defines the basic settings for a generic gateway.</p>
+
+	      <h2 id="Object Models">Data Models</h2>
+      </section>
+    </div>
+ 
+ <!--Accordion-->
+  <div class="daccordion">
+  	<h3>LWM2M</h3>
+  		<div>
+			<p>Object Version: <b>urn:oma:lwm2m:ext:1022:1</b></p>
+  	  <div class="daccordion">
+    	   <h3>SHA1 Checksum</h3>
+		     <div><p>917d11c244a7271a054a68b1cf1d47c618ca562f</p></div>
+    	   <h3>Fields</h3>
+           <div>    
+	   <ul>
+      		<li>Hostname</li>
+      		<li>Tinezone</li>
+      		<li>DNS Server List</li>
+      		<li>NTP Server List</li>
+    	   </ul>
+           </div>
+    	   <h3>XML</h3>
+		  <div> 
+		  <pre><xmp class="prettyprint lang-html">
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M>
+    <Object ObjectType="MODefinition">
+        <Name>IPSO Gateway System</Name>
+        <Description1>This IPSO Object defines the basic settings for a generic gateway.</Description1>
+        <ObjectID>1022</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:ext:1022</ObjectURN>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Resources>
+            <Item ID="0">
+                <Name>Hostname</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the hostname of the gateway.</Description>
+            </Item>            
+            <Item ID="1">
+                <Name>Timezone</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the default timezone.</Description>
+            </Item>      
+            <Item ID="2">
+                <Name>DNS Server List</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns a list of DNS Servers used by this system.</Description>
+            </Item>  
+            <Item ID="3">
+                <Name>NTP Server List</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns a list of NTP Servers.</Description>
+            </Item>  
+        </Resources>
+        <Description2></Description2>
+    </Object>
+</LWM2M>
+		  </xmp></pre>
+		  </div>
+    	   <h3>JSON</h3>
+	   <div>
+	     <pre class="prettyprint">
+	     {
+  "LWM2M": {
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "IPSO Gateway System",
+      "Description1": "This IPSO Object defines the basic settings for a generic gateway.",
+      "ObjectID": "1022",
+      "ObjectURN": "urn:oma:lwm2m:ext:1022",
+      "MultipleInstances": "Single",
+      "Mandatory": "Mandatory",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "0",
+            "Name": "Hostname",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns the hostname of the gateway."
+          },
+          {
+            "-ID": "1",
+            "Name": "Timezone",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns the default timezone."
+          },
+          {
+            "-ID": "2",
+            "Name": "DNS Server List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns a list of DNS Servers used by this system."
+          },
+          {
+            "-ID": "3",
+            "Name": "NTP Server List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns a list of NTP Servers."
+          }
+        ]
+      }
+    }
+  }
+}
+	     </pre>
+	   </div>
+           <h3>Code</h3>
+		<div>
+			<div class="daccordion">
+				<h3>Wakaama</h3>
+				<div>
+				 <pre class="prettyprint linenums">
+lwm2m_object_t * get_object_system()  
+{
+    lwm2m_object_t * objSystem;
+
+    objSystem = (lwm2m_object_t *)malloc(sizeof(lwm2m_object_t));
+
+    if (NULL != objSystem)
+    {
+        int i;
+        prv_instance_t * targetP;
+
+        memset(objSystem, 0, sizeof(lwm2m_object_t));
+
+        objSystem->objID = 1022; // *** MODIFY: the object ID ***
+
+	/* Create object instances - specify just one for System Object */
+        for (i=0 ; i < 1 ; i++)   {
+            targetP = (prv_instance_t *)malloc(sizeof(prv_instance_t));
+            if (NULL == targetP) return NULL;
+            memset(targetP, 0, sizeof(prv_instance_t));
+            targetP->shortID = i;
+            targetP->test = 20 + i;
+            objSystem->instanceList = LWM2M_LIST_ADD(objSystem->instanceList, targetP);
+        }
+
+        /*
+         * From a single instance object, two more functions are available.
+         * - The first one (createFunc) create a new instance and filled it with the provided informations. If an ID is
+         *   provided a check is done for verifying its availability, or a new one is generated.
+         * - The other one (deleteFunc) delete an instance by removing it from the instance list (and freeing the memory
+         *   allocated to it)
+         */
+        objSystem->readFunc = prv_system_read;
+        objSystem->writeFunc = prv_system_write;
+        objSystem->createFunc = prv_system_create;
+        objSystem->deleteFunc = prv_system_delete;
+        objSystem->executeFunc = prv_system_exec;
+	objSystem->closeFunc = prv_system_close;
+
+    }
+
+    return objSystem;
+}
+				 </pre>
+				</div>
+				<h3>Leshan</h3>
+				<div></div>
+			</div>
+
+		</div>
+	  </div>
+
+	  </div>
+  	  
+  </div>
+    
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+	      <p> Return to <a href="../">previous page</a> </p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
