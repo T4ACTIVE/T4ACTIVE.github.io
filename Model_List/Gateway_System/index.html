@@ -379,6 +379,153 @@ lwm2m_object_t * get_object_system()
 
 	  </div>
   	  
+	 <h3>UCI</h3>
+	  <div>
+		<!-- Nested Accordion 2 starts-->
+		<div class="daccordion">
+		  <h3>Description</h3>
+		   <div>
+			<p>OpenWRT gateway native data model for the whole gateway</p>
+		   </div>
+		  <h3>URI</h3>
+		   <div>
+			<p>file://localhost/etc/config/system</p>
+		   </div>
+		  <h3>config</h3>
+		   <div>
+			<!-- Nested Accordion 2.1 starts-->
+			<div class="daccordion">
+			  <h3>system</h3>
+			   <div>
+				<p>The system section contains settings that apply to the most basic operation of the system.</p>
+				<!-- Nested Accordion 2.1.1 starts -->
+				<div class="daccordion">
+				  <h3>Option Fields</h3>
+				  <div>
+					<ul>
+					  <li>hostname</li>
+					    <style type="text/css">
+						.tg  {border-collapse:collapse;border-spacing:0;}
+						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg .tg-s6z2{text-align:center}
+						.tg .tg-yw4l{vertical-align:top}
+					    </style>
+				        <table class="tg">
+						 <tr>
+					      <th class="tg-031e">Type</th>
+					      <th class="tg-yw4l">Required</th>
+					      <th class="tg-yw4l">Default</th>
+					      <th class="tg-yw4l">Description</th>
+				         </tr>
+				         <tr>
+					      <td class="tg-031e">string</td>
+					      <td class="tg-031e">no</td>
+					      <td class="tg-031e">OpenWrt</td>
+					      <td class="tg-yw4l">The hostname for this system. Avoid points, even if they are within single or double quotes. For example 'my.hostname' will show only the 'my' part.</td>
+				         </tr>
+				        </table>
+					  <li>timezone</li>
+					    <style type="text/css">
+						.tg  {border-collapse:collapse;border-spacing:0;}
+						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg .tg-s6z2{text-align:center}
+						.tg .tg-yw4l{vertical-align:top}
+					    </style>
+				        <table class="tg">
+						 <tr>
+					      <th class="tg-031e">Type</th>
+					      <th class="tg-yw4l">Required</th>
+					      <th class="tg-yw4l">Default</th>
+					      <th class="tg-yw4l">Description</th>
+				         </tr>
+				         <tr>
+					      <td class="tg-031e">string</td>
+					      <td class="tg-031e">no</td>
+					      <td class="tg-031e">UTC</td>
+					      <td class="tg-yw4l">The time zone that date and time should be rendered in by default.</td>
+				         </tr>
+				        </table>
+
+					</ul>
+				  </div>
+				</div>
+				<!-- Nested Accordion 2.1.1 ends -->
+			   </div>
+			  <h3>timeserver</h3>
+			   <div>
+				<p>The timeserver section contains a list of NTP servers for the system to use.</p>
+				<!-- Nested Accordion 2.1.2 starts -->
+				<div class="daccordion">
+				  <h3>List Fields</h3>
+				  <div>
+					<ul>
+					  <li>server</li>
+					    <style type="text/css">
+						.tg  {border-collapse:collapse;border-spacing:0;}
+						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg .tg-s6z2{text-align:center}
+						.tg .tg-yw4l{vertical-align:top}
+					    </style>
+				        <table class="tg">
+						 <tr>
+					      <th class="tg-031e">Type</th>
+					      <th class="tg-yw4l">Required</th>
+					      <th class="tg-yw4l">Default</th>
+					      <th class="tg-yw4l">Description</th>
+				         </tr>
+				         <tr>
+					      <td class="tg-031e">list of hostnames</td>
+					      <td class="tg-031e">no</td>
+					      <td class="tg-031e">(none)</td>
+					      <td class="tg-yw4l">Defines the pool of NTP servers to poll the time from. If the list is empty, the builtin NTP daemon is not started.</td>
+				         </tr>
+				        </table>
+					</ul>
+				  </div>
+				  <h3>Option Fields</h3>
+				  <div>
+					<ul>
+					  <li>enable_server</li>
+					    <style type="text/css">
+						.tg  {border-collapse:collapse;border-spacing:0;}
+						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg .tg-s6z2{text-align:center}
+						.tg .tg-yw4l{vertical-align:top}
+					    </style>
+				        <table class="tg">
+						 <tr>
+					      <th class="tg-031e">Type</th>
+					      <th class="tg-yw4l">Required</th>
+					      <th class="tg-yw4l">Default</th>
+					      <th class="tg-yw4l">Description</th>
+				         </tr>
+				         <tr>
+					      <td class="tg-031e">boolean</td>
+					      <td class="tg-031e">no</td>
+					      <td class="tg-031e">0</td>
+					      <td class="tg-yw4l">You can put busybox-ntpd in
+client mode only: by defining at least one host to server and puting enable_server 0 
+client & server mode: by putting enable_server to 1, (busybox-ntpd listens to UDP 123 by default),
+server mode only: by not defining any servers in the config and just put enable_server 1 (ntpd will answer with the time of the router)</td>
+				         </tr>
+				        </table>
+					</ul>
+				  </div>
+
+				</div>
+				<!-- Nested Accordion 2.1.2 ends -->
+			   </div>			  
+			</div>
+			<!-- Nested Accordion 2.1 ends -->
+		   </div>
+		</div>
+	   <!-- Nested Accordion 2 ends-->
+
+	  </div>
     </div>
     
 	<!-- Top level Accordion ends-->
