@@ -1,0 +1,46 @@
+{
+  "LWM2M": {
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "-xsi:noNamespaceSchemaLocation": "http://openmobilealliance.org/tech/profiles/LWM2M.xsd",
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "Device Binding",
+      "Description1": "Binds the EMM Platform to some device, as in the device the EMM is physically connected to and measuring.",
+      "ObjectID": "25012",
+      "ObjectURN": "urn:oma:lwm2m:ext:25012:1",
+      "ObjectVersion": "1.0",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "20190",
+            "Name": "DeviceName",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "Name of the device under measurement, e.g. \"Wireless Access Point\"."
+          },
+          {
+            "-ID": "20191",
+            "Name": "DeviceID",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Type": "String",
+            "Description": "Identifier for the device under measurement, e.g. serial number, IP or MAC address"
+          },
+          {
+            "-ID": "20192",
+            "Name": "DevicePhysLoc",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "The physical location of the device, e.g. floor/corridor/room"
+          }
+        ]
+      }
+    }
+  }
+}

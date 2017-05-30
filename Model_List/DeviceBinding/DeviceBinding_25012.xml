@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>Device Binding</Name>
+		<Description1><![CDATA[Binds the EMM Platform to some device, as in the device the EMM is physically connected to and measuring.]]></Description1>
+		<ObjectID>25012</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:ext:25012:1</ObjectURN>
+		<LWM2MVersion />
+		<ObjectVersion>1.0</ObjectVersion>
+		<MultipleInstances>Multiple</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="20190"><Name>DeviceName</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Name of the device under measurement, e.g. "Wireless Access Point".]]></Description>
+			</Item>
+			<Item ID="20191"><Name>DeviceID</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory></Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Identifier for the device under measurement, e.g. serial number, IP or MAC address]]></Description>
+			</Item>
+			<Item ID="20192"><Name>DevicePhysLoc</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[The physical location of the device, e.g. floor/corridor/room]]></Description>
+			</Item></Resources>
+		<Description2 />
+	</Object>
+</LWM2M>
