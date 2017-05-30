@@ -7,7 +7,7 @@
       "Name": "Device Binding",
       "Description1": "Binds the EMM Platform to some device, as in the device the EMM is physically connected to and measuring.",
       "ObjectID": "25012",
-      "ObjectURN": "urn:oma:lwm2m:ext:25012:1",
+      "ObjectURN": "urn:oma:lwm2m:x:25012:1",
       "ObjectVersion": "1.0",
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
