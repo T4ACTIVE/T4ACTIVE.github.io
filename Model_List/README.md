@@ -10,4 +10,4 @@ Object Name | Description
 [BLE GATT](BLE_GATT/index.html) | Generic object for proxies to expose BLE services
 [EMM-Integrator](EMM-Integrator/index.html) | Object for defining the components of an Energy Measurement Module
 [Log Control](Log_Control/index.html) | Controls the log handling for the sensor data
-[Device Binding](Device_Binding/index.html) | Connects the EMM to the device it measures
+[Device Binding](DeviceBinding/index.html) | Connects the EMM to the device it measures
