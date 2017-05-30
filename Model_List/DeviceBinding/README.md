@@ -1,1 +1,1 @@
-Placeholder for Object description, definitions and code
+The Device Binding object links the physical EMM to some device it's measuring.
