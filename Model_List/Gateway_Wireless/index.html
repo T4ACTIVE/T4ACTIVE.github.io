@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="T4ACTIVE.github.io : HII ACTIVE Task 4: Semantic Meta Model Repository Demo">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=413c838a6a6a2af1bb6a688c40f3ffd0e8ed7259">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+	  $( ".daccordion" ).accordion({
+		collapsible: true,
+		heightStyle: "content"
+	  });
+	} );
+	</script>
+    <title>T4ACTIVE.github.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/Gateway_Wireless">View on GitHub</a>
+
+          <h1 id="project_title">HII ACTIVE Task 4 Demo</h1>
+          <h2 id="project_tagline">Semantic Object Models</h2>
+
+		  <section id="downloads">
+			<a class="zip_download_link" href="https://github.com/pages-themes/slate/zipball/master">Download this project as a .zip file</a>
+			<a class="tar_download_link" href="https://github.com/pages-themes/slate/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+       
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+	<div id="main_content_wrap" class="outer">
+	  
+      <section id="main_content" class="inner">    
+
+        <h1 id="Object_name">Gateway Wireless Interface Object</h1>
+
+        <h3 id="Object_description">Description</h3>
+           <p>This Object defines the basic settings for a wireless interface.</p>
+
+	    <h3 id="Object Models">Data Models</h3>
+      </section>
+    </div>
+ 
+	<!-- Top level Accordion starts-->
+	<div class="daccordion">
+  	 <h3>LWM2M</h3>
+  	  <div>
+		<p>Object Version: <b>urn:oma:lwm2m:ext:1025:1</b></p>
+
+		  <!-- Nested Accordion 1 starts-->
+		  <div class="daccordion">
+    	   <h3>SHA1 Checksum</h3>
+		     <div><p>9b5d6f3831af41d19db3f871fe5864635d36c0be</p></div>
+    	   <h3>Resource Fields</h3>
+            <div>
+			 <ul>
+			  <li>Ifname</li>
+  				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">0</td>
+					<td class="tg-031e">R,W</td>
+					<td class="tg-031e">No</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">String</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Name of the Wireless Interface</td>
+				  </tr>
+				</table>
+			  <li>Mode</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">1</td>
+					<td class="tg-031e">R,W</td>
+					<td class="tg-031e">No</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">String</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Operation mode of the wireless interface</td>
+				  </tr>
+				</table>
+
+			  <li>Disabled</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">2</td>
+					<td class="tg-031e">R,W</td>
+					<td class="tg-031e">No</td>
+					<td class="tg-yw4l">Optional</td>
+					<td class="tg-yw4l">Boolean</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">When set to 1, wireless interface is disabled</td>
+				  </tr>
+				</table>
+			  <li>SSID</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">3</td>
+					<td class="tg-031e">R,W</td>
+					<td class="tg-031e">No</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">String</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">The broadcasted SSID</td>
+				  </tr>
+				</table>
+			  <li>MAC Address</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">4</td>
+					<td class="tg-031e">R,W</td>
+					<td class="tg-031e">No</td>
+					<td class="tg-yw4l">Optional</td>
+					<td class="tg-yw4l">String</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">MAC Address of the Interface</td>
+				  </tr>
+				</table>
+			  <li>IP Address List</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">5</td>
+					<td class="tg-031e">R,W</td>
+					<td class="tg-031e">No</td>
+					<td class="tg-yw4l">Optional</td>
+					<td class="tg-yw4l">String</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">List of IP addresses of the wireless interface</td>
+				  </tr>
+				</table>
+			  <li>Transmission Power</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">6</td>
+					<td class="tg-031e">R,W</td>
+					<td class="tg-031e">No</td>
+					<td class="tg-yw4l">Optional</td>
+					<td class="tg-yw4l">Integer</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">dBM</td>
+					<td class="tg-yw4l">Transmission Power</td>
+				  </tr>
+				</table>
+			  <li>Network</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">7</td>
+					<td class="tg-031e">R,W</td>
+					<td class="tg-031e">No</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">String</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Attached Network Interface</td>
+				  </tr>
+				</table>
+			 </ul>
+			</div>
+    	   <h3>Example Usage</h3>
+            <div>    
+            Outline how to interact with this object, if needed.
+			</div>
+    	   <h3>XML</h3>
+			<div> 
+			  <pre><xmp class="prettyprint lang-html">
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M>
+    <Object ObjectType="MODefinition">
+        <Name>IPSO Gateway Wireless Interface</Name>
+        <Description1>This IPSO Object is used to represent basic settings for the wireless interface.</Description1>
+        <ObjectID>1025</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:ext:1025</ObjectURN>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Resources>
+            <Item ID="0">
+                <Name>Ifname</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the name of the wireless interface in human-readable form (e.g. wlan0).</Description>
+            </Item> 
+            <Item ID="1">
+                <Name>Mode</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the operation mode of the wireless interface.</Description>
+	    </Item>
+            <Item ID="2">
+                <Name>Disabled</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>Boolean</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns whether the interface is disabled or enabled.</Description>
+            </Item>
+	    <Item ID="3">
+	      <Name>SSID</Name>
+	      <Operations>RW</Operations>
+	      <MultipleInstances>Single</MultipleInstances>
+	      <Mandatory>Mandatory</Mandatory>
+	      <Type>String</Type>
+	      <RangeEnumeration/>
+	      <Units/>
+	      <Description>This resource type returns the broadcasted SSID.</Description>
+	    </Item>
+            <Item ID="4">
+                <Name>Mac Address</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the MAC address of the wireless interface.</Description>
+            </Item>      
+            <Item ID="5">
+                <Name>IP Address List</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns a list of IP addresses of the wireless interface.</Description>
+            </Item>  
+            <Item ID="6">
+                <Name>Transmission Power</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>Int</Type>
+                <RangeEnumeration/>
+                <Units>dBm</Units>
+                <Description>This resource type returns the transmission power.</Description>
+            </Item>  
+	    <Item ID="7">
+	      <Name>Network</Name>
+	      <Operations>RW</Operations>
+	      <MultipleInstances>Single</MultipleInstances>
+	      <Mandatory>Mandatory</Mandatory>
+	      <Type>String</Type>
+	      <RangeEnumeration/>
+	      <Units/>
+	      <Description>This resource type returns the attached network interface.</Description>
+	    </Item>
+        </Resources>
+        <Description2></Description2>
+    </Object>
+</LWM2M>
+			  </xmp></pre>
+			</div>
+    	   <h3>JSON</h3>
+			<div>
+			  <pre class="prettyprint">
+{
+  "LWM2M": {
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "IPSO Gateway Wireless Interface",
+      "Description1": "This IPSO Object is used to represent basic settings for the wireless interface.",
+      "ObjectID": "1025",
+      "ObjectURN": "urn:oma:lwm2m:ext:1025",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "0",
+            "Name": "Ifname",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "This resource type returns the name of the wireless interface in human-readable form (e.g. wlan0)."
+          },
+          {
+            "-ID": "1",
+            "Name": "Mode",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "This resource type returns the operation mode of the wireless interface."
+          },
+          {
+            "-ID": "2",
+            "Name": "Disabled",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Boolean",
+            "Description": "This resource type returns whether the interface is disabled or enabled."
+          },
+          {
+            "-ID": "3",
+            "Name": "SSID",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "This resource type returns the broadcasted SSID."
+          },
+          {
+            "-ID": "4",
+            "Name": "Mac Address",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns the MAC address of the wireless interface."
+          },
+          {
+            "-ID": "5",
+            "Name": "IP Address List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns a list of IP addresses of the wireless interface."
+          },
+          {
+            "-ID": "6",
+            "Name": "Transmission Power",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Int",
+            "Units": "dBm",
+            "Description": "This resource type returns the transmission power."
+          },
+          {
+            "-ID": "7",
+            "Name": "Network",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "This resource type returns the attached network interface."
+          }
+        ]
+      }
+    }
+  }
+}
+	          </pre>
+			</div>
+           <h3>Code</h3>
+			<div>
+			  
+		    <!-- Nested Accordion 1.1 starts-->
+			 <div class="daccordion">
+			  <h3>Wakaama</h3>
+				<div>
+				 <pre class="prettyprint linenums">
+lwm2m_object_t * get_object_wireless() // *** MODIFY ***
+{
+    lwm2m_object_t * objNetIf;
+    char ifname[100];
+    char *linePtr = NULL;
+    FILE *fp;
+    ssize_t read;
+    ssize_t len;
+    uint16_t icount = 0;
+
+    objNetIf = (lwm2m_object_t *)malloc(sizeof(lwm2m_object_t));
+
+    if (NULL != objNetIf)
+      {
+        int i;
+        prv_instance_t * targetP;
+
+        memset(objNetIf, 0, sizeof(lwm2m_object_t));
+
+        objNetIf->objID = 1025; // *** MODIFY: the object ID ***
+
+	// Scan for interfaces currently configured
+	systemCmd("uci show wireless | grep ]=wifi-iface > output.txt");
+	fp = fopen("output.txt","r");
+	if (fp != NULL) {
+	  do {
+	    read = getline(&linePtr, &len, fp);
+	    if (read > 0) {
+	      char* pos = linePtr;
+	      
+	      // Advance pointer until dot or end of read data
+	      while (*pos != '@' && pos <= linePtr+read) pos++;
+
+	      if (*pos == '@') { // Was dot found?
+		pos++; // Advance pointer over @
+
+		// Advance pointer until equal sign or end of read data
+		// copy characters while seeking equal sign
+		int i = 0;
+		while (*pos != '=' && pos <= linePtr+read) {
+		  ifname[i] = *pos;
+		  i++;
+		  pos++;
+		}
+		ifname[i] = '\0'; // Terminate string
+
+		// Check if we found equal sign, if so, we have ifname
+		if (*pos == '=') {
+		  printf("Found wireless interface: >%s<, creating object instance %i\n", ifname, icount);
+		  targetP = (prv_instance_t *)malloc(sizeof(prv_instance_t));
+		  if (NULL == targetP) return NULL;
+		  memset(targetP, 0, sizeof(prv_instance_t));
+		  targetP->shortID = icount;
+		  icount++;
+		  char *tempPtr = malloc(strlen(ifname)+1);
+		  strcpy(tempPtr, ifname);
+		  targetP->ifname = tempPtr;
+		  objNetIf->instanceList = LWM2M_LIST_ADD(objNetIf->instanceList, targetP);
+		}	       
+	      }
+	    }
+	    free(linePtr);
+	    linePtr = NULL;
+	  } while (read > 0);
+	}
+
+	/* Create two object instances */
+	/*	  for (i=0 ; i < 2 ; i++)
+	    {
+	      targetP = (prv_instance_t *)malloc(sizeof(prv_instance_t));
+	      if (NULL == targetP) return NULL;
+	      memset(targetP, 0, sizeof(prv_instance_t));
+	      targetP->shortID = i;
+	      if (i == 0) targetP->ifname = "radio0"; //@wifi-iface[?]
+	      if (i == 1) targetP->ifname = "radio1"; //@wifi-iface[?]
+	      objNetIf->instanceList = LWM2M_LIST_ADD(objNetIf->instanceList, targetP);
+	    }
+	*/
+
+        /*
+         * From a single instance object, two more functions are available.
+         * - The first one (createFunc) create a new instance and filled it with the provided informations. If an ID is
+         *   provided a check is done for verifying his disponibility, or a new one is generated.
+         * - The other one (deleteFunc) delete an instance by removing it from the instance list (and freeing the memory
+         *   allocated to it)
+         */
+        objNetIf->readFunc = prv_wireless_read;
+        objNetIf->writeFunc = prv_wireless_write;
+        objNetIf->createFunc = prv_wireless_create;
+        objNetIf->deleteFunc = prv_wireless_delete;
+        objNetIf->executeFunc = prv_wireless_exec;
+	objNetIf->closeFunc = prv_wireless_close;
+    }
+
+    return objNetIf;
+}
+				 </pre>
+				</div>
+			  <h3>Leshan</h3>
+				<div>
+				</div>
+			 </div>
+		    <!-- Nested Accordion 1.1 ends-->
+
+		</div>
+	      </div>
+		  <!-- Nested Accordion 1 ends-->
+
+	  </div>
+  	  
+	 <h3>UCI</h3>
+	  <div>
+		<!-- Nested Accordion 2 starts-->
+		<div class="daccordion">
+		  <h3>Description</h3>
+		   <div>
+			<p>OpenWRT gateway native data model for wireless settings and wifi network definition</p>
+		   </div>
+		  <h3>URI</h3>
+		   <div>
+			<p>file://localhost/etc/config/wireless</p>
+		   </div>
+		  <h3>config</h3>
+		   <div>
+			<!-- Nested Accordion 2.1 starts-->
+			<div class="daccordion">
+			  <h3>wifi-iface</h3>
+			   <div>
+				<p>The system section contains settings that apply to the most basic operation of the system.</p>
+				<!-- Nested Accordion 2.1.1 starts -->
+				<div class="daccordion">
+				  <h3>Option Fields</h3>
+				  <div>
+					<ul>
+					  <li>device</li>
+					    <style type="text/css">
+						.tg  {border-collapse:collapse;border-spacing:0;}
+						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg .tg-s6z2{text-align:center}
+						.tg .tg-yw4l{vertical-align:top}
+					    </style>
+				        <table class="tg">
+						 <tr>
+					      <th class="tg-031e">Type</th>
+					      <th class="tg-yw4l">Required</th>
+					      <th class="tg-yw4l">Default</th>
+					      <th class="tg-yw4l">Description</th>
+				         </tr>
+				         <tr>
+					      <td class="tg-031e">string</td>
+					      <td class="tg-031e">yes</td>
+					      <td class="tg-031e">(first device id)</td>
+					      <td class="tg-yw4l">Specifies the used wireless adapter.</td>
+				         </tr>
+				        </table>
+					  <li>mode</li>
+					    <style type="text/css">
+						.tg  {border-collapse:collapse;border-spacing:0;}
+						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg .tg-s6z2{text-align:center}
+						.tg .tg-yw4l{vertical-align:top}
+					    </style>
+				        <table class="tg">
+						 <tr>
+					      <th class="tg-031e">Type</th>
+					      <th class="tg-yw4l">Required</th>
+					      <th class="tg-yw4l">Default</th>
+					      <th class="tg-yw4l">Description</th>
+				         </tr>
+				         <tr>
+					      <td class="tg-031e">string</td>
+					      <td class="tg-031e">yes</td>
+					      <td class="tg-031e">ap</td>
+					      <td class="tg-yw4l">Selects the operation mode of the wireless interface</td>
+				         </tr>
+				        </table>
+					  <li>disabled</li>
+					    <style type="text/css">
+						.tg  {border-collapse:collapse;border-spacing:0;}
+						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg .tg-s6z2{text-align:center}
+						.tg .tg-yw4l{vertical-align:top}
+					    </style>
+				        <table class="tg">
+						 <tr>
+					      <th class="tg-031e">Type</th>
+					      <th class="tg-yw4l">Required</th>
+					      <th class="tg-yw4l">Default</th>
+					      <th class="tg-yw4l">Description</th>
+				         </tr>
+				         <tr>
+					      <td class="tg-031e">boolean</td>
+					      <td class="tg-031e">no</td>
+					      <td class="tg-031e">0</td>
+					      <td class="tg-yw4l">When set to 1, wireless network is disabled.</td>
+				         </tr>
+				        </table>
+					  <li>ssid</li>
+					    <style type="text/css">
+						.tg  {border-collapse:collapse;border-spacing:0;}
+						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg .tg-s6z2{text-align:center}
+						.tg .tg-yw4l{vertical-align:top}
+					    </style>
+				        <table class="tg">
+						 <tr>
+					      <th class="tg-031e">Type</th>
+					      <th class="tg-yw4l">Required</th>
+					      <th class="tg-yw4l">Default</th>
+					      <th class="tg-yw4l">Description</th>
+				         </tr>
+				         <tr>
+					      <td class="tg-031e">string</td>
+					      <td class="tg-031e">yes</td>
+					      <td class="tg-031e">OpenWrt</td>
+					      <td class="tg-yw4l">The broadcasted SSID of the wireless network.</td>
+				         </tr>
+				        </table>
+					  <li>macaddr</li>
+					    <style type="text/css">
+						.tg  {border-collapse:collapse;border-spacing:0;}
+						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg .tg-s6z2{text-align:center}
+						.tg .tg-yw4l{vertical-align:top}
+					    </style>
+				        <table class="tg">
+						 <tr>
+					      <th class="tg-031e">Type</th>
+					      <th class="tg-yw4l">Required</th>
+					      <th class="tg-yw4l">Default</th>
+					      <th class="tg-yw4l">Description</th>
+				         </tr>
+				         <tr>
+					      <td class="tg-031e">MAC address</td>
+					      <td class="tg-031e">no</td>
+					      <td class="tg-031e">(hostapd/driver default)</td>
+					      <td class="tg-yw4l">Overrides the MAC address used for the wifi interface.</td>
+				         </tr>
+				        </table>
+					  <li>network</li>
+					    <style type="text/css">
+						.tg  {border-collapse:collapse;border-spacing:0;}
+						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+						.tg .tg-s6z2{text-align:center}
+						.tg .tg-yw4l{vertical-align:top}
+					    </style>
+				        <table class="tg">
+						 <tr>
+					      <th class="tg-031e">Type</th>
+					      <th class="tg-yw4l">Required</th>
+					      <th class="tg-yw4l">Default</th>
+					      <th class="tg-yw4l">Description</th>
+				         </tr>
+				         <tr>
+					      <td class="tg-031e">string</td>
+					      <td class="tg-031e">yes</td>
+					      <td class="tg-031e">lan</td>
+					      <td class="tg-yw4l">Specifies the network interface to attach the wireless to.</td>
+				         </tr>
+				        </table>
+
+					</ul>
+				  </div>
+				</div>
+				<!-- Nested Accordion 2.1.1 ends -->
+			   </div>
+			</div>
+			<!-- Nested Accordion 2.1 ends -->
+		   </div>
+		</div>
+	   <!-- Nested Accordion 2 ends-->
+
+	  </div>
+    </div>
+    
+	<!-- Top level Accordion ends-->
+ 
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+	      <p> Return to <a href="../">previous page</a> </p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
