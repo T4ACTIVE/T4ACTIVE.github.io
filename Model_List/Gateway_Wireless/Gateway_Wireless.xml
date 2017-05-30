@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M>
+    <Object ObjectType="MODefinition">
+        <Name>IPSO Gateway Wireless Interface</Name>
+        <Description1>This IPSO Object is used to represent basic settings for the wireless interface.</Description1>
+        <ObjectID>1025</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:ext:1025</ObjectURN>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Resources>
+            <Item ID="0">
+                <Name>Ifname</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the name of the wireless interface in human-readable form (e.g. wlan0).</Description>
+            </Item> 
+            <Item ID="1">
+                <Name>Mode</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the operation mode of the wireless interface.</Description>
+	    </Item>
+            <Item ID="2">
+                <Name>Disabled</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>Boolean</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns whether the interface is disabled or enabled.</Description>
+            </Item>
+	    <Item ID="3">
+	      <Name>SSID</Name>
+	      <Operations>RW</Operations>
+	      <MultipleInstances>Single</MultipleInstances>
+	      <Mandatory>Mandatory</Mandatory>
+	      <Type>String</Type>
+	      <RangeEnumeration/>
+	      <Units/>
+	      <Description>This resource type returns the broadcasted SSID.</Description>
+	    </Item>
+            <Item ID="4">
+                <Name>Mac Address</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the MAC address of the wireless interface.</Description>
+            </Item>      
+            <Item ID="5">
+                <Name>IP Address List</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns a list of IP addresses of the wireless interface.</Description>
+            </Item>  
+            <Item ID="6">
+                <Name>Transmission Power</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>Int</Type>
+                <RangeEnumeration/>
+                <Units>dBm</Units>
+                <Description>This resource type returns the transmission power.</Description>
+            </Item>  
+	    <Item ID="7">
+	      <Name>Network</Name>
+	      <Operations>RW</Operations>
+	      <MultipleInstances>Single</MultipleInstances>
+	      <Mandatory>Mandatory</Mandatory>
+	      <Type>String</Type>
+	      <RangeEnumeration/>
+	      <Units/>
+	      <Description>This resource type returns the attached network interface.</Description>
+	    </Item>
+        </Resources>
+        <Description2></Description2>
+    </Object>
+</LWM2M>
