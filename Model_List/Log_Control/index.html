@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="T4ACTIVE.github.io : HII ACTIVE Task 4: Semantic Meta Model Repository Demo">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=413c838a6a6a2af1bb6a688c40f3ffd0e8ed7259">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+	  $( ".daccordion" ).accordion({
+		collapsible: true,
+		heightStyle: "content"
+	  });
+	} );
+	</script>
+    <title>T4ACTIVE.github.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/EMM_Integrator">View on GitHub</a>
+
+          <h1 id="project_title">HII ACTIVE Task 4 Demo</h1>
+          <h2 id="project_tagline">Semantic Object Models</h2>
+
+		  <section id="downloads">
+			<a class="zip_download_link" href="https://github.com/pages-themes/slate/zipball/master">Download this project as a .zip file</a>
+			<a class="tar_download_link" href="https://github.com/pages-themes/slate/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+       
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+	<div id="main_content_wrap" class="outer">
+	  
+      <section id="main_content" class="inner">    
+
+        <h1 id="Object_name">Log Control Object</h1>
+
+        <h3 id="Object_description">Description</h3>
+           <p>This Object defines the log control for the sensor data.</p>
+
+	    <h3 id="Object Models">Data Models</h3>
+      </section>
+    </div>
+ 
+	<!-- Top level Accordion starts-->
+	<div class="daccordion">
+  	 <h3>LWM2M</h3>
+  	  <div>
+		<p>Object Version: <b>urn:oma:lwm2m:x:25011:1</b></p>
+
+		  <!-- Nested Accordion 1 starts-->
+		  <div class="daccordion">
+    	   <h3>SHA1 Checksum</h3>
+		     <div><p>917d11c244a7271a054a68b1cf1d47c618ca562f</p></div>
+    	   <h3>Resource Fields</h3>
+            <div>
+			 <ul>
+			  <li>LogClass</li>
+  				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">4010</td>
+					<td class="tg-031e">R</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">Integer</td>
+					<td class="tg-yw4l">0-255</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Part of the Logging Event Set: 1/5 (Must be a Single-Instance Resource) Define the Log Event Class: 0: generic (default) 1: system 2: security 3: event 4: trace 5: panic 6: charging [7-99]: reserved [100-255]: vendor specific</td>
+				  </tr>
+				</table>
+			  <li>LogStart</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">4011</td>
+					<td class="tg-031e">E</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">String</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Part of the Logging Event Set: 2/5 Actions: a) Start data collection(DC) b) LogStatus is set to 0 (running) c) DC is emptied(default) or extended according to arg'0' value d) DC Period is set according to arg'1' value Arguments '0': DC emptied(=0[default] or extended(=1) '1': set the DC Period (in sec): if=0 or absent[default] DC is stopped by LogStop action only. </td>
+				  </tr>
+				</table>
+
+			  <li>LogStop</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">4012</td>
+					<td class="tg-031e">E</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">String</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Log Event Set Interface 3/5 Actions: a) Stop data collection(DC) b) LogStatus is set to 1 (stopped) c) DC is kept(default) or emptied according to arg'0' value Argument: '0': DC kept(=0)[default]or emptied(=1)</td>
+				  </tr>
+				</table>
+			  <li>LogStatus</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">4013</td>
+					<td class="tg-031e">R</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">Integer</td>
+					<td class="tg-yw4l">0-255</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Log Event Set Interface 4/5 (Must be a Single-Instance Resource) Data Collection process status: 0 : running 1 : stopped [2-99] : reserved [100-255] : vendor specific.</td>
+				  </tr>
+				</table>
+				<li>LogData</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">4014</td>
+					<td class="tg-031e">R</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">Opaque</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Log Event Set Interface 5/5 (May be a Multiple-Instance Resource) Read Access on that Resource returns the Data Collection associated to the current Object Instance. Data format followed by this Opaque Resource is given by the 1st byte of the opaque sequence: 0 : OMA-LwM2M TLV format 1 : OMA-LwM2M JSON format 2 : OMA-LwM2M CBOR format [3..99] reserved [100..255] vendor specific</td>
+				  </tr>
+				</table>
+				<li>LogFile</li>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-spacing:0;}
+				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.tg .tg-s6z2{text-align:center}
+				.tg .tg-yw4l{vertical-align:top}
+				</style>
+				<table class="tg">
+				  <tr>
+					<th class="tg-s6z2">Resource ID</th>
+					<th class="tg-031e">Access Type</th>
+					<th class="tg-031e">Multiple Instances</th>
+					<th class="tg-yw4l">Mandatory</th>
+					<th class="tg-yw4l">Type</th>
+					<th class="tg-yw4l">Range or Enumeration</th>
+					<th class="tg-yw4l">Units</th>
+					<th class="tg-yw4l">Description</th>
+				  </tr>
+				  <tr>
+					<td class="tg-031e">27013</td>
+					<td class="tg-031e">R</td>
+					<td class="tg-031e">Yes</td>
+					<td class="tg-yw4l">Mandatory</td>
+					<td class="tg-yw4l">String</td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l"></td>
+					<td class="tg-yw4l">Sets the filename logs are saved into.</td>
+				  </tr>
+				</table>
+			 </ul>
+			</div>
+    	   <h3>Example Usage</h3>
+            <div>    
+            Outline how to interact with this object, if needed.
+			</div>
+    	   <h3>XML</h3>
+			<div> 
+				<pre>
+					<xmp class="prettyprint lang-html">
+					<?xml version="1.0" encoding="utf-8"?><LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>Log Control</Name>
+		<Description1><![CDATA[Controls logging sensor data to filesystem.]]></Description1>
+		<ObjectID>25011</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:x:25011:1</ObjectURN>
+		<LWM2MVersion />
+		<ObjectVersion>1.0</ObjectVersion>
+		<MultipleInstances>Multiple</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="4010"><Name>LogClass</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>0-255</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Part of the Logging Event Set: 1/5 (Must be a Single-Instance Resource) Define the Log Event Class: 0: generic (default) 1: system 2: security 3: event 4: trace 5: panic 6: charging [7-99]: reserved [100-255]: vendor specific ]]></Description>
+			</Item>
+			<Item ID="4011"><Name>LogStart</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Part of the Logging Event Set: 2/5 Actions: a) Start data collection(DC) b) LogStatus is set to 0 (running) c) DC is emptied(default) or extended according to arg'0' value d) DC Period is set according to arg'1' value Arguments '0': DC emptied(=0[default] or extended(=1) '1': set the DC Period (in sec): if=0 or absent[default] DC is stopped by LogStop action only. ]]></Description>
+			</Item>
+			<Item ID="4012"><Name>LogStop</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Log Event Set Interface 3/5 Actions: a) Stop data collection(DC) b) LogStatus is set to 1 (stopped) c) DC is kept(default) or emptied according to arg'0' value Argument: '0': DC kept(=0)[default]or emptied(=1) ]]></Description>
+			</Item>
+			<Item ID="4013"><Name>LogStatus</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>0-255</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Log Event Set Interface 4/5 (Must be a Single-Instance Resource) Data Collection process status: 0 : running 1 : stopped [2-99] : reserved [100-255] : vendor specific.]]></Description>
+			</Item>
+			<Item ID="4014"><Name>LogData</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Opaque</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Log Event Set Interface 5/5 (May be a Multiple-Instance Resource) Read Access on that Resource returns the Data Collection associated to the current Object Instance. Data format followed by this Opaque Resource is given by the 1st byte of the opaque sequence: 0 : OMA-LwM2M TLV format 1 : OMA-LwM2M JSON format 2 : OMA-LwM2M CBOR format [3..99] reserved [100..255] vendor specific ]]></Description>
+			</Item>
+			<Item ID="20180"><Name>LogFile</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Sets the filename logs are saved into."]]></Description>
+			</Item></Resources>
+		<Description2 />
+	</Object>
+</LWM2M>
+					</xmp>
+				</pre>
+			</div>
+    	   <h3>JSON</h3>
+			<div>
+			<pre class="prettyprint">
+			{
+  "LWM2M": {
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "-xsi:noNamespaceSchemaLocation": "http://openmobilealliance.org/tech/profiles/LWM2M.xsd",
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "Log Control",
+      "Description1": "Controls logging sensor data to filesystem.",
+      "ObjectID": "25011",
+      "ObjectURN": "urn:oma:lwm2m:x:25011:1",
+      "ObjectVersion": "1.0",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "4010",
+            "Name": "LogClass",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "Integer",
+            "RangeEnumeration": "0-255",
+            "Description": "Part of the Logging Event Set: 1/5 (Must be a Single-Instance Resource) Define the Log Event Class: 0: generic 
+(default) 1: system 2: security 3: event 4: trace 5: panic 6: charging [7-99]: reserved [100-255]: vendor specific "
+          },
+          {
+            "-ID": "4011",
+            "Name": "LogStart",
+            "Operations": "E",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "Part of the Logging Event Set: 2/5 Actions: a) Start data collection(DC) b) LogStatus is set to 0 (running) c) DC 
+is emptied(default) or extended according to arg'0' value d) DC Period is set according to arg'1' value Arguments '0': DC emptied(=0[default] 
+or extended(=1) '1': set the DC Period (in sec): if=0 or absent[default] DC is stopped by LogStop action only. "
+          },
+          {
+            "-ID": "4012",
+            "Name": "LogStop",
+            "Operations": "E",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "Log Event Set Interface 3/5 Actions: a) Stop data collection(DC) b) LogStatus is set to 1 (stopped) c) DC is 
+kept(default) or emptied according to arg'0' value Argument: '0': DC kept(=0)[default]or emptied(=1) "
+          },
+          {
+            "-ID": "4013",
+            "Name": "LogStatus",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "Integer",
+            "RangeEnumeration": "0-255",
+            "Description": "Log Event Set Interface 4/5 (Must be a Single-Instance Resource) Data Collection process status: 0 : running 1 : 
+stopped [2-99] : reserved [100-255] : vendor specific."
+          },
+          {
+            "-ID": "4014",
+            "Name": "LogData",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "Opaque",
+            "Description": "Log Event Set Interface 5/5 (May be a Multiple-Instance Resource) Read Access on that Resource returns the Data 
+Collection associated to the current Object Instance. Data format followed by this Opaque Resource is given by the 1st byte of the opaque 
+sequence: 0 : OMA-LwM2M TLV format 1 : OMA-LwM2M JSON format 2 : OMA-LwM2M CBOR format [3..99] reserved [100..255] vendor specific "
+          },
+          {
+            "-ID": "20180",
+            "Name": "LogFile",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "Sets the filename logs are saved into.\""
+          }
+        ]
+      }
+    }
+  }
+}
+
+			</pre>
+			</div>
+		</div>
+	      </div>
+		  <!-- Nested Accordion 1 ends-->
+
+	  </div>
+  	  
+    </div>
+    
+	<!-- Top level Accordion ends-->
+ 
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+	      <p> Return to <a href="../">previous page</a> </p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
