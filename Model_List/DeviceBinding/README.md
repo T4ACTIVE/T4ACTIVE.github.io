@@ -1,1 +1,1 @@
-The Device Binding object links the physical EMM to some device it's measuring.
+This Object defines the link between the EMM and the device it's measuring.
