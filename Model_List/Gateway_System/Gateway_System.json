@@ -1,0 +1,53 @@
+{
+  "LWM2M": {
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "IPSO Gateway System",
+      "Description1": "This IPSO Object defines the basic settings for a generic gateway.",
+      "ObjectID": "1022",
+      "ObjectURN": "urn:oma:lwm2m:ext:1022",
+      "MultipleInstances": "Single",
+      "Mandatory": "Mandatory",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "0",
+            "Name": "Hostname",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns the hostname of the gateway."
+          },
+          {
+            "-ID": "1",
+            "Name": "Timezone",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns the default timezone."
+          },
+          {
+            "-ID": "2",
+            "Name": "DNS Server List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns a list of DNS Servers used by this system."
+          },
+          {
+            "-ID": "3",
+            "Name": "NTP Server List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns a list of NTP Servers."
+          }
+        ]
+      }
+    }
+  }
+}
