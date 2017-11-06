@@ -1,7 +1,7 @@
 
-# HII ACTIVE Task 4 Semantic Meta Model Repository 
+# HII ACTIVE Task 4 [Semantic Meta Model Repository](https://t4active.github.io)
 
-## [Welcome to Semantic Meta Model Repository](https://t4active.github.io)
+##Welcome to Semantic Meta Model Repository
 This repository can be seen as a platform for presenting and sharing multiple data models for IoT device management, such as LWM2M, BLE models as well as other non-standard or proprietary models. Moreover, it helps enterprises (organizations) to manage data models for objects and demonstrate them publicly in more appealing way.
 
 ### Features
