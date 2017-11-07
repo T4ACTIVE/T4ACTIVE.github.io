@@ -1,815 +1,631 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <meta name="description" content="T4ACTIVE.github.io : HII ACTIVE Task 4: Semantic Meta Model Repository Demo">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Object models of Gateway Wireless</title>
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+<link rel="stylesheet" href="../../css/main.css">
+<link rel="stylesheet" href="../../css/responsive.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="../../google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../../google-code-prettify/prettify.js"></script>
+</head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=413c838a6a6a2af1bb6a688c40f3ffd0e8ed7259">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script>
-	$( function() {
-	  $( ".daccordion" ).accordion({
-		collapsible: true,
-		heightStyle: "content"
-	  });
-	} );
-	</script>
-    <title>T4ACTIVE.github.io</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/Gateway_Wireless">View on GitHub</a>
-
-          <h1 id="project_title">HII ACTIVE Task 4 Demo</h1>
-          <h2 id="project_tagline">Semantic Object Models</h2>
-
-		  <section id="downloads">
-			<a class="zip_download_link" href="https://github.com/pages-themes/slate/zipball/master">Download this project as a .zip file</a>
-			<a class="tar_download_link" href="https://github.com/pages-themes/slate/tarball/master">Download this project as a tar.gz file</a>
-          </section>
-       
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-
-	<div id="main_content_wrap" class="outer">
-	  
-      <section id="main_content" class="inner">    
-
-        <h1 id="Object_name">Gateway Wireless Interface Object</h1>
-
-        <h3 id="Object_description">Description</h3>
-           <p>This Object defines the basic settings for a wireless interface.</p>
-
-	    <h3 id="Object Models">Data Models</h3>
-      </section>
-    </div>
- 
-	<!-- Top level Accordion starts-->
-	<div class="daccordion">
-  	 <h3>LWM2M</h3>
-  	  <div>
-		<p>Object Version: <b>urn:oma:lwm2m:ext:1025:1</b></p>
-
-		  <!-- Nested Accordion 1 starts-->
-		  <div class="daccordion">
-    	   <h3>SHA1 Checksum</h3>
-		     <div><p>9b5d6f3831af41d19db3f871fe5864635d36c0be</p></div>
-    	   <h3>Resource Fields</h3>
-            <div>
-			 <ul>
-			  <li>Ifname</li>
-  				<style type="text/css">
-				.tg  {border-collapse:collapse;border-spacing:0;}
-				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg .tg-s6z2{text-align:center}
-				.tg .tg-yw4l{vertical-align:top}
-				</style>
-				<table class="tg">
-				  <tr>
-					<th class="tg-s6z2">Resource ID</th>
-					<th class="tg-031e">Access Type</th>
-					<th class="tg-031e">Multiple Instances</th>
-					<th class="tg-yw4l">Mandatory</th>
-					<th class="tg-yw4l">Type</th>
-					<th class="tg-yw4l">Range or Enumeration</th>
-					<th class="tg-yw4l">Units</th>
-					<th class="tg-yw4l">Description</th>
-				  </tr>
-				  <tr>
-					<td class="tg-031e">0</td>
-					<td class="tg-031e">R,W</td>
-					<td class="tg-031e">No</td>
-					<td class="tg-yw4l">Mandatory</td>
-					<td class="tg-yw4l">String</td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l">Name of the Wireless Interface</td>
-				  </tr>
-				</table>
-			  <li>Mode</li>
-				<style type="text/css">
-				.tg  {border-collapse:collapse;border-spacing:0;}
-				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg .tg-s6z2{text-align:center}
-				.tg .tg-yw4l{vertical-align:top}
-				</style>
-				<table class="tg">
-				  <tr>
-					<th class="tg-s6z2">Resource ID</th>
-					<th class="tg-031e">Access Type</th>
-					<th class="tg-031e">Multiple Instances</th>
-					<th class="tg-yw4l">Mandatory</th>
-					<th class="tg-yw4l">Type</th>
-					<th class="tg-yw4l">Range or Enumeration</th>
-					<th class="tg-yw4l">Units</th>
-					<th class="tg-yw4l">Description</th>
-				  </tr>
-				  <tr>
-					<td class="tg-031e">1</td>
-					<td class="tg-031e">R,W</td>
-					<td class="tg-031e">No</td>
-					<td class="tg-yw4l">Mandatory</td>
-					<td class="tg-yw4l">String</td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l">Operation mode of the wireless interface</td>
-				  </tr>
-				</table>
-
-			  <li>Disabled</li>
-				<style type="text/css">
-				.tg  {border-collapse:collapse;border-spacing:0;}
-				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg .tg-s6z2{text-align:center}
-				.tg .tg-yw4l{vertical-align:top}
-				</style>
-				<table class="tg">
-				  <tr>
-					<th class="tg-s6z2">Resource ID</th>
-					<th class="tg-031e">Access Type</th>
-					<th class="tg-031e">Multiple Instances</th>
-					<th class="tg-yw4l">Mandatory</th>
-					<th class="tg-yw4l">Type</th>
-					<th class="tg-yw4l">Range or Enumeration</th>
-					<th class="tg-yw4l">Units</th>
-					<th class="tg-yw4l">Description</th>
-				  </tr>
-				  <tr>
-					<td class="tg-031e">2</td>
-					<td class="tg-031e">R,W</td>
-					<td class="tg-031e">No</td>
-					<td class="tg-yw4l">Optional</td>
-					<td class="tg-yw4l">Boolean</td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l">When set to 1, wireless interface is disabled</td>
-				  </tr>
-				</table>
-			  <li>SSID</li>
-				<style type="text/css">
-				.tg  {border-collapse:collapse;border-spacing:0;}
-				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg .tg-s6z2{text-align:center}
-				.tg .tg-yw4l{vertical-align:top}
-				</style>
-				<table class="tg">
-				  <tr>
-					<th class="tg-s6z2">Resource ID</th>
-					<th class="tg-031e">Access Type</th>
-					<th class="tg-031e">Multiple Instances</th>
-					<th class="tg-yw4l">Mandatory</th>
-					<th class="tg-yw4l">Type</th>
-					<th class="tg-yw4l">Range or Enumeration</th>
-					<th class="tg-yw4l">Units</th>
-					<th class="tg-yw4l">Description</th>
-				  </tr>
-				  <tr>
-					<td class="tg-031e">3</td>
-					<td class="tg-031e">R,W</td>
-					<td class="tg-031e">No</td>
-					<td class="tg-yw4l">Mandatory</td>
-					<td class="tg-yw4l">String</td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l">The broadcasted SSID</td>
-				  </tr>
-				</table>
-			  <li>MAC Address</li>
-				<style type="text/css">
-				.tg  {border-collapse:collapse;border-spacing:0;}
-				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg .tg-s6z2{text-align:center}
-				.tg .tg-yw4l{vertical-align:top}
-				</style>
-				<table class="tg">
-				  <tr>
-					<th class="tg-s6z2">Resource ID</th>
-					<th class="tg-031e">Access Type</th>
-					<th class="tg-031e">Multiple Instances</th>
-					<th class="tg-yw4l">Mandatory</th>
-					<th class="tg-yw4l">Type</th>
-					<th class="tg-yw4l">Range or Enumeration</th>
-					<th class="tg-yw4l">Units</th>
-					<th class="tg-yw4l">Description</th>
-				  </tr>
-				  <tr>
-					<td class="tg-031e">4</td>
-					<td class="tg-031e">R,W</td>
-					<td class="tg-031e">No</td>
-					<td class="tg-yw4l">Optional</td>
-					<td class="tg-yw4l">String</td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l">MAC Address of the Interface</td>
-				  </tr>
-				</table>
-			  <li>IP Address List</li>
-				<style type="text/css">
-				.tg  {border-collapse:collapse;border-spacing:0;}
-				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg .tg-s6z2{text-align:center}
-				.tg .tg-yw4l{vertical-align:top}
-				</style>
-				<table class="tg">
-				  <tr>
-					<th class="tg-s6z2">Resource ID</th>
-					<th class="tg-031e">Access Type</th>
-					<th class="tg-031e">Multiple Instances</th>
-					<th class="tg-yw4l">Mandatory</th>
-					<th class="tg-yw4l">Type</th>
-					<th class="tg-yw4l">Range or Enumeration</th>
-					<th class="tg-yw4l">Units</th>
-					<th class="tg-yw4l">Description</th>
-				  </tr>
-				  <tr>
-					<td class="tg-031e">5</td>
-					<td class="tg-031e">R,W</td>
-					<td class="tg-031e">No</td>
-					<td class="tg-yw4l">Optional</td>
-					<td class="tg-yw4l">String</td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l">List of IP addresses of the wireless interface</td>
-				  </tr>
-				</table>
-			  <li>Transmission Power</li>
-				<style type="text/css">
-				.tg  {border-collapse:collapse;border-spacing:0;}
-				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg .tg-s6z2{text-align:center}
-				.tg .tg-yw4l{vertical-align:top}
-				</style>
-				<table class="tg">
-				  <tr>
-					<th class="tg-s6z2">Resource ID</th>
-					<th class="tg-031e">Access Type</th>
-					<th class="tg-031e">Multiple Instances</th>
-					<th class="tg-yw4l">Mandatory</th>
-					<th class="tg-yw4l">Type</th>
-					<th class="tg-yw4l">Range or Enumeration</th>
-					<th class="tg-yw4l">Units</th>
-					<th class="tg-yw4l">Description</th>
-				  </tr>
-				  <tr>
-					<td class="tg-031e">6</td>
-					<td class="tg-031e">R,W</td>
-					<td class="tg-031e">No</td>
-					<td class="tg-yw4l">Optional</td>
-					<td class="tg-yw4l">Integer</td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l">dBM</td>
-					<td class="tg-yw4l">Transmission Power</td>
-				  </tr>
-				</table>
-			  <li>Network</li>
-				<style type="text/css">
-				.tg  {border-collapse:collapse;border-spacing:0;}
-				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.tg .tg-s6z2{text-align:center}
-				.tg .tg-yw4l{vertical-align:top}
-				</style>
-				<table class="tg">
-				  <tr>
-					<th class="tg-s6z2">Resource ID</th>
-					<th class="tg-031e">Access Type</th>
-					<th class="tg-031e">Multiple Instances</th>
-					<th class="tg-yw4l">Mandatory</th>
-					<th class="tg-yw4l">Type</th>
-					<th class="tg-yw4l">Range or Enumeration</th>
-					<th class="tg-yw4l">Units</th>
-					<th class="tg-yw4l">Description</th>
-				  </tr>
-				  <tr>
-					<td class="tg-031e">7</td>
-					<td class="tg-031e">R,W</td>
-					<td class="tg-031e">No</td>
-					<td class="tg-yw4l">Mandatory</td>
-					<td class="tg-yw4l">String</td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l"></td>
-					<td class="tg-yw4l">Attached Network Interface</td>
-				  </tr>
-				</table>
-			 </ul>
+<body onload="prettyPrint()">
+<!-- header section -->
+<section class="navpart">
+  <header id="header">
+		<div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
 			</div>
-    	   <h3>Example Usage</h3>
-            <div>    
-            Outline how to interact with this object, if needed.
-			</div>
-    	   <h3>XML</h3>
-			<div> 
-			  <pre><xmp class="prettyprint lang-html">
-<?xml version="1.0" encoding="utf-8"?>
-<LWM2M>
-    <Object ObjectType="MODefinition">
-        <Name>IPSO Gateway Wireless Interface</Name>
-        <Description1>This IPSO Object is used to represent basic settings for the wireless interface.</Description1>
-        <ObjectID>1025</ObjectID>
-        <ObjectURN>urn:oma:lwm2m:ext:1025</ObjectURN>
-        <MultipleInstances>Multiple</MultipleInstances>
-        <Mandatory>Optional</Mandatory>
-        <Resources>
-            <Item ID="0">
-                <Name>Ifname</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Mandatory</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns the name of the wireless interface in human-readable form (e.g. wlan0).</Description>
-            </Item> 
-            <Item ID="1">
-                <Name>Mode</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Mandatory</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns the operation mode of the wireless interface.</Description>
-	    </Item>
-            <Item ID="2">
-                <Name>Disabled</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>Boolean</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns whether the interface is disabled or enabled.</Description>
-            </Item>
-	    <Item ID="3">
-	      <Name>SSID</Name>
-	      <Operations>RW</Operations>
-	      <MultipleInstances>Single</MultipleInstances>
-	      <Mandatory>Mandatory</Mandatory>
-	      <Type>String</Type>
-	      <RangeEnumeration/>
-	      <Units/>
-	      <Description>This resource type returns the broadcasted SSID.</Description>
-	    </Item>
-            <Item ID="4">
-                <Name>Mac Address</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns the MAC address of the wireless interface.</Description>
-            </Item>      
-            <Item ID="5">
-                <Name>IP Address List</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns a list of IP addresses of the wireless interface.</Description>
-            </Item>  
-            <Item ID="6">
-                <Name>Transmission Power</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>Int</Type>
-                <RangeEnumeration/>
-                <Units>dBm</Units>
-                <Description>This resource type returns the transmission power.</Description>
-            </Item>  
-	    <Item ID="7">
-	      <Name>Network</Name>
-	      <Operations>RW</Operations>
-	      <MultipleInstances>Single</MultipleInstances>
-	      <Mandatory>Mandatory</Mandatory>
-	      <Type>String</Type>
-	      <RangeEnumeration/>
-	      <Units/>
-	      <Description>This resource type returns the attached network interface.</Description>
-	    </Item>
-        </Resources>
-        <Description2></Description2>
-    </Object>
-</LWM2M>
-			  </xmp></pre>
-			</div>
-    	   <h3>JSON</h3>
-			<div>
-			  <pre class="prettyprint">
-{
-  "LWM2M": {
-    "Object": {
-      "-ObjectType": "MODefinition",
-      "Name": "IPSO Gateway Wireless Interface",
-      "Description1": "This IPSO Object is used to represent basic settings for the wireless interface.",
-      "ObjectID": "1025",
-      "ObjectURN": "urn:oma:lwm2m:ext:1025",
-      "MultipleInstances": "Multiple",
-      "Mandatory": "Optional",
-      "Resources": {
-        "Item": [
-          {
-            "-ID": "0",
-            "Name": "Ifname",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Mandatory",
-            "Type": "String",
-            "Description": "This resource type returns the name of the wireless interface in human-readable form (e.g. wlan0)."
-          },
-          {
-            "-ID": "1",
-            "Name": "Mode",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Mandatory",
-            "Type": "String",
-            "Description": "This resource type returns the operation mode of the wireless interface."
-          },
-          {
-            "-ID": "2",
-            "Name": "Disabled",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "Boolean",
-            "Description": "This resource type returns whether the interface is disabled or enabled."
-          },
-          {
-            "-ID": "3",
-            "Name": "SSID",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Mandatory",
-            "Type": "String",
-            "Description": "This resource type returns the broadcasted SSID."
-          },
-          {
-            "-ID": "4",
-            "Name": "Mac Address",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns the MAC address of the wireless interface."
-          },
-          {
-            "-ID": "5",
-            "Name": "IP Address List",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns a list of IP addresses of the wireless interface."
-          },
-          {
-            "-ID": "6",
-            "Name": "Transmission Power",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "Int",
-            "Units": "dBm",
-            "Description": "This resource type returns the transmission power."
-          },
-          {
-            "-ID": "7",
-            "Name": "Network",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Mandatory",
-            "Type": "String",
-            "Description": "This resource type returns the attached network interface."
-          }
-        ]
-      }
-    }
-  }
-}
-	          </pre>
-			</div>
-           <h3>Code</h3>
-			<div>
-			  
-		    <!-- Nested Accordion 1.1 starts-->
-			 <div class="daccordion">
-			  <h3>Wakaama</h3>
-				<div>
-				 <pre class="prettyprint linenums">
-lwm2m_object_t * get_object_wireless() // *** MODIFY ***
-{
-    lwm2m_object_t * objNetIf;
-    char ifname[100];
-    char *linePtr = NULL;
-    FILE *fp;
-    ssize_t read;
-    ssize_t len;
-    uint16_t icount = 0;
-
-    objNetIf = (lwm2m_object_t *)malloc(sizeof(lwm2m_object_t));
-
-    if (NULL != objNetIf)
-      {
-        int i;
-        prv_instance_t * targetP;
-
-        memset(objNetIf, 0, sizeof(lwm2m_object_t));
-
-        objNetIf->objID = 1025; // *** MODIFY: the object ID ***
-
-	// Scan for interfaces currently configured
-	systemCmd("uci show wireless | grep ]=wifi-iface > output.txt");
-	fp = fopen("output.txt","r");
-	if (fp != NULL) {
-	  do {
-	    read = getline(&linePtr, &len, fp);
-	    if (read > 0) {
-	      char* pos = linePtr;
-	      
-	      // Advance pointer until dot or end of read data
-	      while (*pos != '@' && pos <= linePtr+read) pos++;
-
-	      if (*pos == '@') { // Was dot found?
-		pos++; // Advance pointer over @
-
-		// Advance pointer until equal sign or end of read data
-		// copy characters while seeking equal sign
-		int i = 0;
-		while (*pos != '=' && pos <= linePtr+read) {
-		  ifname[i] = *pos;
-		  i++;
-		  pos++;
-		}
-		ifname[i] = '\0'; // Terminate string
-
-		// Check if we found equal sign, if so, we have ifname
-		if (*pos == '=') {
-		  printf("Found wireless interface: >%s<, creating object instance %i\n", ifname, icount);
-		  targetP = (prv_instance_t *)malloc(sizeof(prv_instance_t));
-		  if (NULL == targetP) return NULL;
-		  memset(targetP, 0, sizeof(prv_instance_t));
-		  targetP->shortID = icount;
-		  icount++;
-		  char *tempPtr = malloc(strlen(ifname)+1);
-		  strcpy(tempPtr, ifname);
-		  targetP->ifname = tempPtr;
-		  objNetIf->instanceList = LWM2M_LIST_ADD(objNetIf->instanceList, targetP);
-		}	       
-	      }
-	    }
-	    free(linePtr);
-	    linePtr = NULL;
-	  } while (read > 0);
-	}
-
-	/* Create two object instances */
-	/*	  for (i=0 ; i < 2 ; i++)
-	    {
-	      targetP = (prv_instance_t *)malloc(sizeof(prv_instance_t));
-	      if (NULL == targetP) return NULL;
-	      memset(targetP, 0, sizeof(prv_instance_t));
-	      targetP->shortID = i;
-	      if (i == 0) targetP->ifname = "radio0"; //@wifi-iface[?]
-	      if (i == 1) targetP->ifname = "radio1"; //@wifi-iface[?]
-	      objNetIf->instanceList = LWM2M_LIST_ADD(objNetIf->instanceList, targetP);
-	    }
-	*/
-
-        /*
-         * From a single instance object, two more functions are available.
-         * - The first one (createFunc) create a new instance and filled it with the provided informations. If an ID is
-         *   provided a check is done for verifying his disponibility, or a new one is generated.
-         * - The other one (deleteFunc) delete an instance by removing it from the instance list (and freeing the memory
-         *   allocated to it)
-         */
-        objNetIf->readFunc = prv_wireless_read;
-        objNetIf->writeFunc = prv_wireless_write;
-        objNetIf->createFunc = prv_wireless_create;
-        objNetIf->deleteFunc = prv_wireless_delete;
-        objNetIf->executeFunc = prv_wireless_exec;
-	objNetIf->closeFunc = prv_wireless_close;
-    }
-
-    return objNetIf;
-}
-				 </pre>
-				</div>
-			  <h3>Leshan</h3>
-				<div>
-				</div>
-			 </div>
-		    <!-- Nested Accordion 1.1 ends-->
-
+	
+			<div class="navbar-collapse collapse move-me">
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="home"><a href="../../index.html">HOME</a></li>
+					<li class="models"><a href="../../models.html"><font color="#20B2AA">MODELS</font></a></li>
+					<li class="contributors"><a href="../../contribute.html">CONTRIBUTE</a></li>
+					<li class="aboutus"><a href="../../aboutUs.html">ABOUT US</a></li>
+				</ul>
+			</div>   
 		</div>
-	      </div>
-		  <!-- Nested Accordion 1 ends-->
-
-	  </div>
-  	  
-	 <h3>UCI</h3>
-	  <div>
-		<!-- Nested Accordion 2 starts-->
-		<div class="daccordion">
-		  <h3>Description</h3>
-		   <div>
-			<p>OpenWRT gateway native data model for wireless settings and wifi network definition</p>
-		   </div>
-		  <h3>URI</h3>
-		   <div>
-			<p>file://localhost/etc/config/wireless</p>
-		   </div>
-		  <h3>config</h3>
-		   <div>
-			<!-- Nested Accordion 2.1 starts-->
-			<div class="daccordion">
-			  <h3>wifi-iface</h3>
-			   <div>
-				<p>The system section contains settings that apply to the most basic operation of the system.</p>
-				<!-- Nested Accordion 2.1.1 starts -->
-				<div class="daccordion">
-				  <h3>Option Fields</h3>
-				  <div>
-					<ul>
-					  <li>device</li>
-					    <style type="text/css">
-						.tg  {border-collapse:collapse;border-spacing:0;}
-						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg .tg-s6z2{text-align:center}
-						.tg .tg-yw4l{vertical-align:top}
-					    </style>
-				        <table class="tg">
-						 <tr>
-					      <th class="tg-031e">Type</th>
-					      <th class="tg-yw4l">Required</th>
-					      <th class="tg-yw4l">Default</th>
-					      <th class="tg-yw4l">Description</th>
-				         </tr>
-				         <tr>
-					      <td class="tg-031e">string</td>
-					      <td class="tg-031e">yes</td>
-					      <td class="tg-031e">(first device id)</td>
-					      <td class="tg-yw4l">Specifies the used wireless adapter.</td>
-				         </tr>
-				        </table>
-					  <li>mode</li>
-					    <style type="text/css">
-						.tg  {border-collapse:collapse;border-spacing:0;}
-						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg .tg-s6z2{text-align:center}
-						.tg .tg-yw4l{vertical-align:top}
-					    </style>
-				        <table class="tg">
-						 <tr>
-					      <th class="tg-031e">Type</th>
-					      <th class="tg-yw4l">Required</th>
-					      <th class="tg-yw4l">Default</th>
-					      <th class="tg-yw4l">Description</th>
-				         </tr>
-				         <tr>
-					      <td class="tg-031e">string</td>
-					      <td class="tg-031e">yes</td>
-					      <td class="tg-031e">ap</td>
-					      <td class="tg-yw4l">Selects the operation mode of the wireless interface</td>
-				         </tr>
-				        </table>
-					  <li>disabled</li>
-					    <style type="text/css">
-						.tg  {border-collapse:collapse;border-spacing:0;}
-						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg .tg-s6z2{text-align:center}
-						.tg .tg-yw4l{vertical-align:top}
-					    </style>
-				        <table class="tg">
-						 <tr>
-					      <th class="tg-031e">Type</th>
-					      <th class="tg-yw4l">Required</th>
-					      <th class="tg-yw4l">Default</th>
-					      <th class="tg-yw4l">Description</th>
-				         </tr>
-				         <tr>
-					      <td class="tg-031e">boolean</td>
-					      <td class="tg-031e">no</td>
-					      <td class="tg-031e">0</td>
-					      <td class="tg-yw4l">When set to 1, wireless network is disabled.</td>
-				         </tr>
-				        </table>
-					  <li>ssid</li>
-					    <style type="text/css">
-						.tg  {border-collapse:collapse;border-spacing:0;}
-						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg .tg-s6z2{text-align:center}
-						.tg .tg-yw4l{vertical-align:top}
-					    </style>
-				        <table class="tg">
-						 <tr>
-					      <th class="tg-031e">Type</th>
-					      <th class="tg-yw4l">Required</th>
-					      <th class="tg-yw4l">Default</th>
-					      <th class="tg-yw4l">Description</th>
-				         </tr>
-				         <tr>
-					      <td class="tg-031e">string</td>
-					      <td class="tg-031e">yes</td>
-					      <td class="tg-031e">OpenWrt</td>
-					      <td class="tg-yw4l">The broadcasted SSID of the wireless network.</td>
-				         </tr>
-				        </table>
-					  <li>macaddr</li>
-					    <style type="text/css">
-						.tg  {border-collapse:collapse;border-spacing:0;}
-						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg .tg-s6z2{text-align:center}
-						.tg .tg-yw4l{vertical-align:top}
-					    </style>
-				        <table class="tg">
-						 <tr>
-					      <th class="tg-031e">Type</th>
-					      <th class="tg-yw4l">Required</th>
-					      <th class="tg-yw4l">Default</th>
-					      <th class="tg-yw4l">Description</th>
-				         </tr>
-				         <tr>
-					      <td class="tg-031e">MAC address</td>
-					      <td class="tg-031e">no</td>
-					      <td class="tg-031e">(hostapd/driver default)</td>
-					      <td class="tg-yw4l">Overrides the MAC address used for the wifi interface.</td>
-				         </tr>
-				        </table>
-					  <li>network</li>
-					    <style type="text/css">
-						.tg  {border-collapse:collapse;border-spacing:0;}
-						.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.tg .tg-s6z2{text-align:center}
-						.tg .tg-yw4l{vertical-align:top}
-					    </style>
-				        <table class="tg">
-						 <tr>
-					      <th class="tg-031e">Type</th>
-					      <th class="tg-yw4l">Required</th>
-					      <th class="tg-yw4l">Default</th>
-					      <th class="tg-yw4l">Description</th>
-				         </tr>
-				         <tr>
-					      <td class="tg-031e">string</td>
-					      <td class="tg-031e">yes</td>
-					      <td class="tg-031e">lan</td>
-					      <td class="tg-yw4l">Specifies the network interface to attach the wireless to.</td>
-				         </tr>
-				        </table>
-
-					</ul>
-				  </div>
-				</div>
-				<!-- Nested Accordion 2.1.1 ends -->
-			   </div>
-			</div>
-			<!-- Nested Accordion 2.1 ends -->
-		   </div>
 		</div>
-	   <!-- Nested Accordion 2 ends-->
+  </header>
+  <!-- banner text -->
+</section>
+<!-- header section --> 
 
-	  </div>
-    </div>
-    
-	<!-- Top level Accordion ends-->
- 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        
-	      <p> Return to <a href="../">previous page</a> </p>
-      </footer>
-    </div>
+<!-- models section -->
+<section id="contact" class="section">
+<div class="container">
+ <div class="row">
+	<div class="col-md-8 col-md-offset-2 conForm">
+	<h4><span id="Name"></span>
+      	 <a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/Gateway_Wireless">View on GitHub
+	 <img src="../../images/github.png" alt=""/></a>
+	</h4>	
+        <h3 id="Description1"></h3>
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	    
+		<!-- LWM2M MODEL-->
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+				<h4 class="panel-title">
+				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				LWM2M Model
+				</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="panel-body">
+					<div class="body-content">	
+						<div class="panel-headingl" role="tab" id="headingSOne">
+							<h4 class="panel-titlel">
+							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSOne" aria-expanded="false" aria-controls="collapseSOne">
+							Object version:   <span id="ObjectURN"></span>
+							</a>
+							</h4>
+						</div>
+						
+						<div id="collapseSOne" class="panel-collapse collapse" role="tabpane1" aria-labelledby="headingtSOne">
+							<div class="panel-body">
+							    <!-- object_file_sumcheck-->
+							     <div class="body-content">
+									<div class="panel-headings" role="tab" id="headingsone">
+									<h4 class="panel-titles">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesone" aria-expanded="false" aria-controls="collapsesone">
+										Checksum 
+									</a>
+									</h4>
+									</div>
+									<div id="collapsesone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsone">
+									<div class="panel-bodys" style="word-break:break-all;">	
+										917d11c244a7271a054a68b1cf1d47c618ca562 
+									</div>
+									</div>
+								
+								 </div>
+								
+								<!-- object_file_Resources fields-->
+								<div class="body-content">
+									<div class="panel-headings" role="tab" id="headingstwo">
+									<h4 class="panel-titles">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsestwo" aria-expanded="false" aria-controls="collapsestwo">
+										Resources Fields	
+									</a>
+									</h4>
+									</div>
+									<div id="collapsestwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtstwo">
+										<div class="panel-bodys">
+										    <!-- table of content-->
+											<div class="table-responsive">
+											<table class="table table-bordered table-hover">
+											  <thead>
+												<tr>
+												    <th>Resource</th>
+												    <th>ID</th>
+													<th>Access Type</th>
+													<th>Multiple Instances</th>
+													<th>Mandatory</th>
+													<th>Type</th>
+													<th>Range/Enumeration</th>
+													<th>Units</th>
+													<th>Description</th>
+												</tr>
+											  </thead>
+											  <tbody>
+												<tr>
+												    <td id="rname0"></td>
+													<td>0</td>
+													<td id="Operations0"></td>
+													<td id="MultipleInstances0"></td>
+													<td id="Mandatory0"></td>
+													<td id="Type0"></td>
+													<td>/</td>
+													<td>/</td>
+													<td id="Description0"></td>
+												</tr>
+												<tr>
+												    <td id="rname1"></td>
+													<td>1</td>
+													<td id="Operations1"></td>
+													<td id="MultipleInstances1"></td>
+													<td id="Mandatory1"></td>
+													<td id="Type1"></td>
+													<td>/</td>
+													<td>/</td>
+													<td id="Description01"></td>
+												</tr>
+												<tr>
+												    <td id="rname2"></td>
+													<td>2</td>
+													<td id="Operations2"></td>
+													<td id="MultipleInstances2"></td>
+													<td id="Mandatory2"></td>
+													<td id="Type2"></td>
+													<td>/</td>
+													<td>/</td>
+													<td id="Description2"></td>
+												</tr>
+												<tr>
+												    <td id="rname3"></td>
+													<td>3</td>
+													<td id="Operations3"></td>
+													<td id="MultipleInstances3"></td>
+													<td id="Mandatory3"></td>
+													<td id="Type3"></td>
+													<td>/</td>
+													<td>/</td>
+													<td id="Description3"></td>
+												</tr>
+											  </tbody>
+											</table>
+										  </div><!--end of .table-responsive-->
+										</div>
+									</div>	
+								</div>
+						
+								<!-- object_example_usage-->
+								<div class="body-content">
+									<div class="panel-headings" role="tab" id="headingsthree">
+									<h4 class="panel-titles">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesthree" aria-expanded="false" aria-controls="collapsesthree">
+										Example usage
+									</a>
+									</h4>
+									</div>
+									<div id="collapsesthree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsthree">
+										<div class="panel-bodys">
+										Outline how to interact with this object, if needed
+										</div>
+									</div>	
+								</div>
+								
+								<!-- object_file_xml-->
+								<div class="body-content">
+									<div class="panel-headings" role="tab" id="headingsfour">
+									<h4 class="panel-titles">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfour" aria-expanded="false" aria-controls="collapsesfour">
+										XML
+									</a>
+									</h4>
+									</div>
+									<div id="collapsesfour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfour">
+										<div class="panel-bodys">
+										<div class="downloadButt">
+										<a href="Gateway_System.xml" download="Gateway_System"><img src="../../images/download.png" alt="download" title="download" /></a>
+										</div>
+										<pre class="prettyprint lang-xml" id="placeholder"></pre>
+										</div>
+									</div>	
+								</div>
+									
+								<!-- object_file_json-->
+								<div class="body-content">
+									<div class="panel-headings" role="tab" id="headingsfive">
+									<h4 class="panel-titles">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfive" aria-expanded="false" aria-controls="collapsesfive">
+										JSON
+									</a>
+									</h4>
+									</div>
+									<div id="collapsesfive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfive">
+										<div class="panel-bodys">
+										<div class="downloadButt">
+										<a href="Gateway_System.json" download=""><img src="../../images/download.png" alt="download" title="download" /></a>
+										</div>
+										 <pre class="prettyprint lang-json" id="placeholderJ"><xmp></xmp></pre>
+	     
+										</div>
+									</div>	
+								</div>
+								
+								<!-- object_file_code-->
+								<div class="body-content">
+									<div class="panel-headings" role="tab" id="headingssix">
+									<h4 class="panel-titles">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsessix" aria-expanded="false" aria-controls="collapsessix">
+										Code
+									</a>
+									</h4>
+									</div>
+									<div id="collapsessix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtssix">
+										<div class="panel-body">
+										<div class="body-content">
+												<div class="panel-headingsb" role="tab" id="headingssix1">
+												<h4 class="panel-titles">
+												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetssix" href="#collapsessix1" aria-expanded="false" aria-controls="collapsetssix1">
+												Wakaama
+												</a>
+												</h4>
+												</div>
+												<div id="collapsessix1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtssix1">
+													<div class="panel-bodys">
+													<a href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/blob/master/Model_List/Gateway_Wireless/object_wireless.c" class="codelink">View code</a>
+													</div>
+												</div>
+										</div>
+										<div class="body-content">
+												<div class="panel-headingsb" role="tab" id="headingssix2">
+												<h4 class="panel-titles">
+												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsessix" href="#collapsessix2" aria-expanded="false" aria-controls="collapsessix2">
+												Leshan
+												</a>
+												</h4>
+												</div>
+												<div id="collapsessix2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingssix2">
+													<div class="panel-bodys">
+														none
+													</div>
+												</div>
+										</div>	
 
-    
-  </body>
-</html>
+										</div>
+									</div>	
+								</div>
+							 </div>
+						</div>
+						
+						<div class="panel-headingl" role="tab" id="headingSTwo">
+							<h4 class="panel-titlel">
+							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSTwo" aria-expanded="false" aria-controls="collapseSTwo">
+							Object version:   urn:oma:lwm2m:ext:1022:2 
+							</a>
+							</h4>
+						</div>
+						<div id="collapseSTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSTwo">
+							<div class="panel-body">
+							
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- UCI MODEL-->
+		<div class="panel panel-default">
+			<div class="panel-heading sn" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				UCI Model
+				</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="panel-body">
+					<div class="body-content">
+					
+						<!-- description-->
+						<div class="panel-headings" role="tab" id="headinguone">
+							<h4 class="panel-titled">
+							Description -- OpenWRT gateway native data model for the whole gateway
+							</h4>
+						</div>
+						
+						
+						<!-- URL-->
+						<div class="panel-headings" role="tab" id="headingutwo">
+							<h4 class="panel-titled">
+							URL -- file://localhost/etc/config/system
+							</h4>
+						</div>
+						
+						<!-- Config-->
+						<div class="panel-headings" role="tab" id="headinguthree">
+							<h4 class="panel-titles">
+							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseTwo" href="#collapseuthree" aria-expanded="false" aria-controls="collapseuthree">
+							Config
+							</a>
+							</h4>
+						</div>
+						<div id="collapseuthree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinguthree">
+							<div class="panel-body">
+							    <!-- Config-system-->
+								<div class="body-content">
+									<div class="panel-headingsb" role="tab" id="headingtso">
+									<h4 class="panel-titlesb">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseuthree" href="#collapsetso" aria-expanded="false" aria-controls="collapsetso">
+										System -- The system section contains settings that apply to the most basic operation of the system.
+									</a>
+									</h4>
+									</div>
+									<div id="collapsetso" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso">
+										<div class="panel-body">
+										<div class="body-content">
+												<div class="panel-headingsbt" role="tab" id="headingtso1">
+												<h4 class="panel-titlesb">
+												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetso" href="#collapsetso1" aria-expanded="false" aria-controls="collapsetso1">
+												Option fields
+												</a>
+												</h4>
+												</div>
+												<div id="collapsetso1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso1">
+													<div class="panel-bodys">
+													<!-- table of content-->
+													<div class="table-responsive">
+													<table class="table table-bordered table-hover">
+														  <thead>
+															<tr>
+															<th>Name</th>
+															<th>Type</th>
+															<th>Required</th>
+															<th>Default</th>
+															<th>Description</th>
+															</tr>
+														  </thead>
+															  <tbody>
+																<tr>
+																	<td>hostname</td>
+																	<td>string</td>
+																	<td>no</td>
+																	<td>OpenWrt</td>
+																	<td>The hostname for this system. Avoid points, even if they are within single or double quotes. For example 'my.hostname' will show only the 'my' part.</td>	
+																</tr>
+																
+																<tr>
+																	<td>timezone</td>
+																	<td>string</td>
+																	<td>no</td>
+																	<td>UTC</td>
+																	<td>The time zone that date and time should be rendered in by default.</td>	
+																</tr>
+														  </tbody>
+														</table>
+													  </div><!--end of .table-responsive-->
+													</div>
+												</div>
+											</div>	 
+										</div>
+									</div>
+								</div>	
+								
+								<!-- Config-timeserver-->
+								<div class="body-content">
+									<div class="panel-headingsb" role="tab" id="headingtst">
+									<h4 class="panel-titlesb">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseuthree" href="#collapsetst" aria-expanded="false" aria-controls="collapsetst">
+										Timeserver -- The timeserver section contains a list of NTP servers for the system to use.
+									</a>
+									</h4>
+									</div>
+									<div id="collapsetst" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst">
+										<div class="panel-body">
+										
+										<!-- Config-timeserver-list fields-->
+											<div class="body-content">
+												<div class="panel-headingsbt" role="tab" id="headingtst1">
+												<h4 class="panel-titles">
+												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetst" href="#collapsetst1" aria-expanded="false" aria-controls="collapsetst1">
+												List fields
+												</a>
+												</h4>
+												</div>
+												<div id="collapsetst1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst1">
+													<div class="panel-bodys">
+													<!-- table of content-->
+													<div class="table-responsive">
+															<table class="table table-bordered table-hover">
+															  <thead>
+																<tr>
+																	<th>Name</th>
+																	<th>Type</th>
+																	<th>Required</th>
+																	<th>Default</th>
+																	<th>Description</th>
+																</tr>
+															  </thead>
+															  <tbody>
+																<tr>
+																	<td>server</td>
+																	<td>list of hostnames</td>
+																	<td>no</td>
+																	<td>none</td>
+																	<td>Defines the pool of NTP servers to poll the time from. If the list is empty, the builtin NTP daemon is not started.</td>	
+																</tr>																
+															  </tbody>
+															</table>
+													</div>			
+										<!-- table end--> 
+													</div>
+												</div>
+											</div>	
+										
+										<!-- Config-timeserver-option fields-->
+											<div class="body-content">
+												<div class="panel-headingsbt" role="tab" id="headingtst2">
+												<h4 class="panel-titlesb">
+												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetst" href="#collapsetst2" aria-expanded="false" aria-controls="collapsetst2">
+												Option fields
+												</a>
+												</h4>
+												</div>
+												<div id="collapsetst2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst2">
+													<div class="panel-bodys">
+														<!-- table of content-->
+													<div class="table-responsive">
+															<table class="table table-bordered table-hover">
+															  <thead>
+																<tr>
+																	<th>Name</th>
+																	<th>Type</th>
+																	<th>Required</th>
+																	<th>Default</th>
+																	<th>Description</th>
+																</tr>
+															  </thead>
+															  <tbody>
+																<tr>
+																	<td>enable_server</td>
+																	<td>boolean</td>
+																	<td>no</td>
+																	<td>0</td>
+																	<td>You can put busybox-ntpd in client mode only: by defining at least one host to server and puting enable_server 0 client & server mode: by putting enable_server to 1, (busybox-ntpd listens to UDP 123 by default), server mode only: by not defining any servers in the config and just put enable_server 1 (ntpd will answer with the time of the router)</td>	
+																</tr>															
+															  </tbody>
+															</table>
+													</div>						
+										<!-- table end--> 
+													</div>
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>		
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="panel panel-default">
+			<div class="panel-heading sn" role="tab" id="headingThree">
+				<h4 class="panel-title">
+				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				Other Model
+				</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="panel-body">
+					
+				</div>
+			</div>
+		</div>
+
+</div>		
+</div>
+</div>
+
+	
+</div><!-- .container --> 
+<!-- models section --> 	
+</section>
+
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script>
+if (window.XMLHttpRequest)
+{
+xmlhttp=new XMLHttpRequest();
+}
+else
+{
+xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+
+
+xmlhttp.open("GET","Gateway_Wireless.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+	
+//read xml code
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+   if (xhr.readyState == 4 && xhr.status == 200) {
+       document.getElementById("placeholder").innerText = xhr.responseText;
+     }
+ }
+ xhr.open("GET", "Gateway_Wireless.xml");
+ xhr.send();
+
+	
+//read JSON file
+var xhrJson = new XMLHttpRequest();
+xhrJson.onreadystatechange = function() {
+   if (xhrJson.readyState == 4 && xhrJson.status == 200) {
+       document.getElementById("placeholderJ").innerText = xhrJson.responseText;
+     }
+ }
+ xhrJson.open("GET", "Gateway_Wireless.json");
+ xhrJson.send();	
+		
+document.getElementById("Name").innerHTML=
+xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+document.getElementById("Description1").innerHTML=
+xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
+document.getElementById("ObjectURN").innerHTML=
+xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
+
+//get elements for resources table
+//name value
+document.getElementById("rname0").innerHTML=
+xmlDoc.getElementsByTagName("Name")[1].childNodes[0].nodeValue;
+document.getElementById("rname1").innerHTML=
+xmlDoc.getElementsByTagName("Name")[2].childNodes[0].nodeValue;
+document.getElementById("rname2").innerHTML=
+xmlDoc.getElementsByTagName("Name")[3].childNodes[0].nodeValue;
+document.getElementById("rname3").innerHTML=
+xmlDoc.getElementsByTagName("Name")[4].childNodes[0].nodeValue;
+	
+	
+//get elements for resources table
+//Operations value
+document.getElementById("Operations0").innerHTML=
+xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
+document.getElementById("Operations1").innerHTML=
+xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
+document.getElementById("Operations2").innerHTML=
+xmlDoc.getElementsByTagName("Operations")[2].childNodes[0].nodeValue;
+document.getElementById("Operations3").innerHTML=
+xmlDoc.getElementsByTagName("Operations")[3].childNodes[0].nodeValue;
+
+//MultipleInstances value
+document.getElementById("MultipleInstances0").innerHTML=
+xmlDoc.getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue;
+document.getElementById("MultipleInstances1").innerHTML=
+xmlDoc.getElementsByTagName("MultipleInstances")[1].childNodes[0].nodeValue;
+document.getElementById("MultipleInstances2").innerHTML=
+xmlDoc.getElementsByTagName("MultipleInstances")[2].childNodes[0].nodeValue;
+document.getElementById("MultipleInstances3").innerHTML=
+xmlDoc.getElementsByTagName("MultipleInstances")[3].childNodes[0].nodeValue;
+
+//Mandatory value
+document.getElementById("Mandatory0").innerHTML=
+xmlDoc.getElementsByTagName("Mandatory")[0].childNodes[0].nodeValue;
+document.getElementById("Mandatory1").innerHTML=
+xmlDoc.getElementsByTagName("Mandatory")[1].childNodes[0].nodeValue;
+document.getElementById("Mandatory2").innerHTML=
+xmlDoc.getElementsByTagName("Mandatory")[2].childNodes[0].nodeValue;
+document.getElementById("Mandatory3").innerHTML=
+xmlDoc.getElementsByTagName("Mandatory")[3].childNodes[0].nodeValue;
+
+//Type value
+document.getElementById("Type0").innerHTML=
+xmlDoc.getElementsByTagName("Type")[0].childNodes[0].nodeValue;
+document.getElementById("Type1").innerHTML=
+xmlDoc.getElementsByTagName("Type")[1].childNodes[0].nodeValue;
+document.getElementById("Type2").innerHTML=
+xmlDoc.getElementsByTagName("Type")[2].childNodes[0].nodeValue;
+document.getElementById("Type3").innerHTML=
+xmlDoc.getElementsByTagName("Type")[3].childNodes[0].nodeValue;
+
+//Description value
+document.getElementById("Description0").innerHTML=
+xmlDoc.getElementsByTagName("Description")[0].childNodes[0].nodeValue;
+document.getElementById("Description01").innerHTML=
+xmlDoc.getElementsByTagName("Description")[1].childNodes[0].nodeValue;
+document.getElementById("Description2").innerHTML=
+xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
+document.getElementById("Description3").innerHTML=
+xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
+
+</script> 
+</body>
+</html> 
