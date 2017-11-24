@@ -170,6 +170,28 @@
 													<td>/</td>
 													<td id="Description3"></td>
 												</tr>
+												  <tr>
+												    <td id="rname4"></td>
+													<td>3</td>
+													<td id="Operations4"></td>
+													<td id="MultipleInstances4"></td>
+													<td id="Mandatory4"></td>
+													<td id="Type4"></td>
+													<td>/</td>
+													<td>/</td>
+													<td id="Description4"></td>
+												</tr>
+												  <tr>
+												    <td id="rname5"></td>
+													<td>3</td>
+													<td id="Operations5"></td>
+													<td id="MultipleInstances5"></td>
+													<td id="Mandatory5"></td>
+													<td id="Type5"></td>
+													<td>/</td>
+													<td>/</td>
+													<td id="Description5"></td>
+												</tr>
 											  </tbody>
 											</table>
 										  </div><!--end of .table-responsive-->
@@ -347,25 +369,38 @@ xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 //name value
 document.getElementById("rname0").innerHTML=
 xmlDoc.getElementsByTagName("Name")[1].childNodes[0].nodeValue;
+	
 document.getElementById("rname1").innerHTML=
 xmlDoc.getElementsByTagName("Name")[2].childNodes[0].nodeValue;
+	
 document.getElementById("rname2").innerHTML=
 xmlDoc.getElementsByTagName("Name")[3].childNodes[0].nodeValue;
+	
 document.getElementById("rname3").innerHTML=
 xmlDoc.getElementsByTagName("Name")[4].childNodes[0].nodeValue;
+	
+document.getElementById("rname4").innerHTML=
+xmlDoc.getElementsByTagName("Name")[5].childNodes[0].nodeValue;
+	
+document.getElementById("rname5").innerHTML=
+xmlDoc.getElementsByTagName("Name")[6].childNodes[0].nodeValue;	
 	
 	
 //get elements for resources table
 //Operations value
 document.getElementById("Operations0").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
+xmlDoc.getElementsByTagName("Operations")[0].childNodes[0].nodeValue;
 document.getElementById("Operations1").innerHTML=
 xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
 document.getElementById("Operations2").innerHTML=
 xmlDoc.getElementsByTagName("Operations")[2].childNodes[0].nodeValue;
 document.getElementById("Operations3").innerHTML=
 xmlDoc.getElementsByTagName("Operations")[3].childNodes[0].nodeValue;
-
+document.getElementById("Operations4").innerHTML=
+xmlDoc.getElementsByTagName("Operations")[4].childNodes[0].nodeValue;
+document.getElementById("Operations5").innerHTML=
+xmlDoc.getElementsByTagName("Operations")[5].childNodes[0].nodeValue;
+	
 //MultipleInstances value
 document.getElementById("MultipleInstances0").innerHTML=
 xmlDoc.getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue;
@@ -375,7 +410,10 @@ document.getElementById("MultipleInstances2").innerHTML=
 xmlDoc.getElementsByTagName("MultipleInstances")[2].childNodes[0].nodeValue;
 document.getElementById("MultipleInstances3").innerHTML=
 xmlDoc.getElementsByTagName("MultipleInstances")[3].childNodes[0].nodeValue;
-
+document.getElementById("MultipleInstances4").innerHTML=
+xmlDoc.getElementsByTagName("MultipleInstances")[4].childNodes[0].nodeValue;
+document.getElementById("MultipleInstances5").innerHTML=
+xmlDoc.getElementsByTagName("MultipleInstances")[5].childNodes[0].nodeValue;
 //Mandatory value
 document.getElementById("Mandatory0").innerHTML=
 xmlDoc.getElementsByTagName("Mandatory")[0].childNodes[0].nodeValue;
@@ -385,6 +423,10 @@ document.getElementById("Mandatory2").innerHTML=
 xmlDoc.getElementsByTagName("Mandatory")[2].childNodes[0].nodeValue;
 document.getElementById("Mandatory3").innerHTML=
 xmlDoc.getElementsByTagName("Mandatory")[3].childNodes[0].nodeValue;
+document.getElementById("Mandatory4").innerHTML=
+xmlDoc.getElementsByTagName("Mandatory")[4].childNodes[0].nodeValue;
+document.getElementById("Mandatory5").innerHTML=
+xmlDoc.getElementsByTagName("Mandatory")[5].childNodes[0].nodeValue;
 
 //Type value
 document.getElementById("Type0").innerHTML=
@@ -395,7 +437,10 @@ document.getElementById("Type2").innerHTML=
 xmlDoc.getElementsByTagName("Type")[2].childNodes[0].nodeValue;
 document.getElementById("Type3").innerHTML=
 xmlDoc.getElementsByTagName("Type")[3].childNodes[0].nodeValue;
-
+document.getElementById("Type4").innerHTML=
+xmlDoc.getElementsByTagName("Type")[4].childNodes[0].nodeValue;
+document.getElementById("Type5").innerHTML=
+xmlDoc.getElementsByTagName("Type")[5].childNodes[0].nodeValue;
 //Description value
 document.getElementById("Description0").innerHTML=
 xmlDoc.getElementsByTagName("Description")[0].childNodes[0].nodeValue;
@@ -405,7 +450,10 @@ document.getElementById("Description2").innerHTML=
 xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
 document.getElementById("Description3").innerHTML=
 xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
-
+document.getElementById("Description4").innerHTML=
+xmlDoc.getElementsByTagName("Description")[4].childNodes[0].nodeValue;
+document.getElementById("Description5").innerHTML=
+xmlDoc.getElementsByTagName("Description")[5].childNodes[0].nodeValue;
 </script> 
 </body>
 </html> 
