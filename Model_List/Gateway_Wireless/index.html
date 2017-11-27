@@ -126,49 +126,93 @@
 												</tr>
 											  </thead>
 											  <tbody>
-												<tr>
-												    <td id="rname0"></td>
+											       <tr>
+												    <td>Ifname</td>
 													<td>0</td>
-													<td id="Operations0"></td>
-													<td id="MultipleInstances0"></td>
-													<td id="Mandatory0"></td>
-													<td id="Type0"></td>
+													<td>R,W</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>String</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description0"></td>
+													<td>This resource type returns the name of the wireless interface in human-readable form (e.g. wlan0)..</td>
 												</tr>
 												<tr>
-												    <td id="rname1"></td>
+												    <td>Mode</td>
 													<td>1</td>
-													<td id="Operations1"></td>
-													<td id="MultipleInstances1"></td>
-													<td id="Mandatory1"></td>
-													<td id="Type1"></td>
+													<td>R,W</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>String</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description01"></td>
+													<td>This resource type returns the operation mode of the wireless interface.</td>
 												</tr>
 												<tr>
-												    <td id="rname2"></td>
+												    <td>Disabled</td>
 													<td>2</td>
-													<td id="Operations2"></td>
-													<td id="MultipleInstances2"></td>
-													<td id="Mandatory2"></td>
-													<td id="Type2"></td>
+													<td>R,W</td>
+													<td>Single</td>
+													<td>Optional</td>
+													<td>Boolean</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description2"></td>
+													<td>This resource type returns whether the interface is disabled or enabled.</td>
 												</tr>
 												<tr>
-												    <td id="rname3"></td>
+												    <td>SSID</td>
 													<td>3</td>
-													<td id="Operations3"></td>
-													<td id="MultipleInstances3"></td>
-													<td id="Mandatory3"></td>
-													<td id="Type3"></td>
+													<td>R,W</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>String</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description3"></td>
+													<td>This resource type returns the broadcasted SSID.</td>
+												</tr>
+												  <tr>
+												    <td>Mac Addres</td>
+													<td>4</td>
+													<td>R,W</td>
+													<td>Single</td>
+													<td>Optional</td>
+													<td>String</td>
+													<td>/</td>
+													<td>/</td>
+													<td>This resource type returns the MAC address of the wireless interface.</td>
+												</tr>
+												<tr>
+												    <td>IP Address List</td>
+													<td>5</td>
+													<td>R,W</td>
+													<td>Single</td>
+													<td>Optional</td>
+													<td>String</td>
+													<td>/</td>
+													<td>/</td>
+													<td>This resource type returns a list of IP addresses of the wireless interface.</td>
+												</tr>
+												<tr>
+												    <td>Transmission Power</td>
+													<td>6</td>
+													<td>R,W</td>
+													<td>Single</td>
+													<td>Optional</td>
+													<td>Int</td>
+													<td>/</td>
+													<td>dBm</td>
+													<td>This resource type returns the transmission power.</td>
+												</tr>
+												<tr>
+												    <td>Network</td>
+													<td>7</td>
+													<td>R,W</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>String</td>
+													<td>/</td>
+													<td>/</td>
+													<td>This resource type returns the attached network interface.</td>
 												</tr>
 											  </tbody>
 											</table>
@@ -267,7 +311,7 @@
 												</div>
 												<div id="collapsessix2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingssix2">
 													<div class="panel-bodys">
-														none
+														None
 													</div>
 												</div>
 										</div>	
@@ -510,64 +554,7 @@ document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
-//get elements for resources table
-//name value
-document.getElementById("rname0").innerHTML=
-xmlDoc.getElementsByTagName("Name")[1].childNodes[0].nodeValue;
-document.getElementById("rname1").innerHTML=
-xmlDoc.getElementsByTagName("Name")[2].childNodes[0].nodeValue;
-document.getElementById("rname2").innerHTML=
-xmlDoc.getElementsByTagName("Name")[3].childNodes[0].nodeValue;
-document.getElementById("rname3").innerHTML=
-xmlDoc.getElementsByTagName("Name")[4].childNodes[0].nodeValue;
-	
-//get elements for resources table
-//Operations value
-document.getElementById("Operations0").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
-document.getElementById("Operations1").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
-document.getElementById("Operations2").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[2].childNodes[0].nodeValue;
-document.getElementById("Operations3").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[3].childNodes[0].nodeValue;
-//MultipleInstances value
-for 
-document.getElementById("MultipleInstances0").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances1").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[1].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances2").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[2].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances3").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[3].childNodes[0].nodeValue;
-//Mandatory value
-document.getElementById("Mandatory0").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[0].childNodes[0].nodeValue;
-document.getElementById("Mandatory1").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[1].childNodes[0].nodeValue;
-document.getElementById("Mandatory2").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[2].childNodes[0].nodeValue;
-document.getElementById("Mandatory3").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[3].childNodes[0].nodeValue;
-//Type value
-document.getElementById("Type0").innerHTML=
-xmlDoc.getElementsByTagName("Type")[0].childNodes[0].nodeValue;
-document.getElementById("Type1").innerHTML=
-xmlDoc.getElementsByTagName("Type")[1].childNodes[0].nodeValue;
-document.getElementById("Type2").innerHTML=
-xmlDoc.getElementsByTagName("Type")[2].childNodes[0].nodeValue;
-document.getElementById("Type3").innerHTML=
-xmlDoc.getElementsByTagName("Type")[3].childNodes[0].nodeValue;
-//Description value
-document.getElementById("Description0").innerHTML=
-xmlDoc.getElementsByTagName("Description")[0].childNodes[0].nodeValue;
-document.getElementById("Description01").innerHTML=
-xmlDoc.getElementsByTagName("Description")[1].childNodes[0].nodeValue;
-document.getElementById("Description2").innerHTML=
-xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
-document.getElementById("Description3").innerHTML=
-xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
+
 });
 
 </script> 
