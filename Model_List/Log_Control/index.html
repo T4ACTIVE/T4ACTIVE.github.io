@@ -517,20 +517,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
 <script>
-if (window.XMLHttpRequest)
-{
-xmlhttp=new XMLHttpRequest();
-}
-else
-{
-xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-}
-
-
-xmlhttp.open("GET","Log_Control_25011.xml",false);
-xmlhttp.send();
-xmlDoc=xmlhttp.responseXML;
-
 $.get("Log_Control_25011.xml", function(xmlDoc){
 	
 //read xml code
@@ -543,7 +529,6 @@ xhr.onreadystatechange = function() {
  xhr.open("GET", "Log_Control_25011.xml");
  xhr.send();
 
-	
 //read JSON file
 var xhrJson = new XMLHttpRequest();
 xhrJson.onreadystatechange = function() {
