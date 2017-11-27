@@ -205,7 +205,7 @@
 									<div id="collapsesfour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfour">
 										<div class="panel-bodys">
 										<div class="downloadButt">
-										<a href="Gateway_System.xml" download="Gateway_System"><img src="../../images/download.png" alt="download" title="download" /></a>
+										<a href="Gateway_System.xml" download=""><img src="../../images/download.png" alt="download" title="download" /></a>
 										</div>
 										<pre class="prettyprint lang-xml" id="placeholder"></pre>
 										</div>
@@ -493,6 +493,26 @@
 <script>
 $.get("Gateway_System.xml", function(xmlDoc){
 	
+/read xml code
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+   if (xhr.readyState == 4 && xhr.status == 200) {
+       document.getElementById("placeholder").innerText = xhr.responseText;
+     }
+ }
+ xhr.open("GET", "Gateway_System.xml");
+ xhr.send();
+	
+//read JSON file
+var xhrJson = new XMLHttpRequest();
+xhrJson.onreadystatechange = function() {
+   if (xhrJson.readyState == 4 && xhrJson.status == 200) {
+       document.getElementById("placeholderJ").innerText = xhrJson.responseText;
+     }
+ }
+ xhrJson.open("GET", "Gateway_System.json");
+ xhrJson.send();	
+			
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 document.getElementById("Description1").innerHTML=
