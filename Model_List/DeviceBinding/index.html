@@ -127,37 +127,37 @@
 											  </thead>
 											  <tbody>
 												<tr>
-												    <td id="rname0"></td>
+												    <td>DeviceName</td>
 													<td>20190</td>
-													<td id="Operations0"></td>
-													<td id="MultipleInstances0"></td>
-													<td id="Mandatory0"></td>
-													<td id="Type0"></td>
+													<td>R</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>String</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description0"></td>
+													<td>Name of the device under measurement, e.g. "Wireless Access Point".</td>
 												</tr>
 												<tr>
-												    <td id="rname1"></td>
+												    <td>DeviceID</td>
 													<td>20191</td>
-													<td id="Operations01"></td>
-													<td id="MultipleInstances1"></td>
-													<td id="Mandatory1"></td>
-													<td id="Type1"></td>
+													<td>R</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>String</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description1"></td>
+													<td>Identifier for the device under measurement, e.g. serial number, IP or MAC address.</td>
 												</tr>
 												<tr>
-												    <td id="rname2"></td>
+												    <td>DevicePhysLoc</td>
 													<td>20192</td>
-													<td id="Operations2"></td>
-													<td id="MultipleInstances2"></td>
-													<td id="Mandatory2"></td>
-													<td id="Type2"></td>
+													<td>R</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>String</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description2"></td>
+													<td>The physical location of the device, e.g. floor/corridor/room.</td>
 												</tr>
 											  </tbody>
 											</table>
@@ -492,7 +492,6 @@ xhr.onreadystatechange = function() {
  }
  xhr.open("GET", "DeviceBinding_25012.xml");
  xhr.send();
-
 	
 //read JSON file
 var xhrJson = new XMLHttpRequest();
@@ -510,61 +509,6 @@ document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
-
-//get elements for resources table
-//name value
-document.getElementById("rname0").innerHTML=
-xmlDoc.getElementsByTagName("Name")[1].childNodes[0].nodeValue;
-document.getElementById("rname1").innerHTML=
-xmlDoc.getElementsByTagName("Name")[2].childNodes[0].nodeValue;
-document.getElementById("rname2").innerHTML=
-xmlDoc.getElementsByTagName("Name")[3].childNodes[0].nodeValue;
-
-	
-	
-//get elements for resources table
-//Operations value
-document.getElementById("Operations0").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
-document.getElementById("Operations1").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[2].childNodes[0].nodeValue;
-document.getElementById("Operations2").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[3].childNodes[0].nodeValue;
-
-//MultipleInstances value
-document.getElementById("MultipleInstances0").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[1].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances1").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[2].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances2").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[3].childNodes[0].nodeValue;
-
-
-//Mandatory value
-document.getElementById("Mandatory0").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[1].childNodes[0].nodeValue;
-document.getElementById("Mandatory1").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[2].childNodes[0].nodeValue;
-document.getElementById("Mandatory2").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[3].childNodes[0].nodeValue;
-
-
-//Type value
-document.getElementById("Type0").innerHTML=
-xmlDoc.getElementsByTagName("Type")[1].childNodes[0].nodeValue;
-document.getElementById("Type1").innerHTML=
-xmlDoc.getElementsByTagName("Type")[2].childNodes[0].nodeValue;
-document.getElementById("Type2").innerHTML=
-xmlDoc.getElementsByTagName("Type")[3].childNodes[0].nodeValue;
-
-
-//Description value
-document.getElementById("Description0").innerHTML=
-xmlDoc.getElementsByTagName("Description")[1].childNodes[0].nodeValue;
-document.getElementById("Description01").innerHTML=
-xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
-document.getElementById("Description2").innerHTML=
-xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
 
 });
 	
