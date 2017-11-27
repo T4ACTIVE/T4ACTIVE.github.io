@@ -491,7 +491,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
 <script>
-$.get(Gateway_System.xml, function(xmlDoc){
+$.get("Gateway_System.xml", function(xmlDoc){
 	
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
