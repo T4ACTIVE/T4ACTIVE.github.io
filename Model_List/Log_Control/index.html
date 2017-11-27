@@ -277,19 +277,6 @@
 								</div>
 							 </div>
 						</div>
-						
-						<div class="panel-headingl" role="tab" id="headingSTwo">
-							<h4 class="panel-titlel">
-							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSTwo" aria-expanded="false" aria-controls="collapseSTwo">
-							Object version:   urn:oma:lwm2m:ext:1022:2 
-							</a>
-							</h4>
-						</div>
-						<div id="collapseSTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSTwo">
-							<div class="panel-body">
-							
-							</div>
-						</div>	
 					</div>
 				</div>
 			</div>
@@ -491,22 +478,6 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		<div class="panel panel-default">
-			<div class="panel-heading sn" role="tab" id="headingThree">
-				<h4 class="panel-title">
-				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				Other Model
-				</a>
-				</h4>
-			</div>
-			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-				<div class="panel-body">
-					
-				</div>
-			</div>
-		</div>
 
 </div>		
 </div>
@@ -534,6 +505,8 @@ xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 xmlhttp.open("GET","Log_Control_25011.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
+
+$.get("Log_Control_25011.xml", function(xmlDoc){
 	
 //read xml code
 var xhr = new XMLHttpRequest();
@@ -625,7 +598,7 @@ document.getElementById("Description2").innerHTML=
 xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
 document.getElementById("Description3").innerHTML=
 xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
-
+});
 </script> 
 </body>
 </html> 
