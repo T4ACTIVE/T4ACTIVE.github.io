@@ -129,7 +129,7 @@
 												<tr>
 												    <td id="rname0"></td>
 													<td>20170</td>
-													<td id="Operations0"></td>
+													<td id="Operations0">/</td>
 													<td id="MultipleInstances0">Single</td>
 													<td id="Mandatory0">Mandatory</td>
 													<td id="Type0">Objlink</td>
@@ -140,7 +140,7 @@
 												<tr>
 												    <td id="rname1"></td>
 													<td>20171</td>
-													<td id="Operations1"></td>
+													<td id="Operations1">/</td>
 													<td id="MultipleInstances1">Multiple</td>
 													<td id="Mandatory1">Mandatory</td>
 													<td id="Type1">Objlink</td>
@@ -151,7 +151,7 @@
 												<tr>
 												    <td id="rname2"></td>
 													<td>20172</td>
-													<td id="Operations2"></td>
+													<td id="Operations2">/</td>
 													<td id="MultipleInstances2">Multiple</td>
 													<td id="Mandatory2">Mandatory</td>
 													<td id="Type2">Objlink</td>
@@ -162,7 +162,7 @@
 												<tr>
 												    <td id="rname3"></td>
 													<td>20173</td>
-													<td id="Operations3"></td>
+													<td id="Operations3">/</td>
 													<td id="MultipleInstances3">Multiple</td>
 													<td id="Mandatory3">mandatory</td>
 													<td id="Type3">Objlink</td>
@@ -173,7 +173,7 @@
 												  <tr>
 												    <td id="rname4"></td>
 													<td>20174</td>
-													<td id="Operations4"></td>
+													<td id="Operations4">/</td>
 													<td id="MultipleInstances4"></td>
 													<td id="Mandatory4"></td>
 													<td id="Type4"></td>
@@ -184,7 +184,7 @@
 												  <tr>
 												    <td id="rname5"></td>
 													<td>20175</td>
-													<td id="Operations5"></td>
+													<td id="Operations5">/</td>
 													<td id="MultipleInstances5">Multiple</td>
 													<td id="Mandatory5">Mandatory</td>
 													<td id="Type5">Objlink</td>
@@ -322,19 +322,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
 <script>
-if (window.XMLHttpRequest)
-{
-xmlhttp=new XMLHttpRequest();
-}
-else
-{
-xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-}
-
-
-xmlhttp.open("GET","EMM_Integrator.xml",false);
-xmlhttp.send();
-xmlDoc=xmlhttp.responseXML;
+$.get("EMM_Integrator.xml", function(xmlDoc){
 	
 //read xml code
 var xhr = new XMLHttpRequest();
@@ -454,6 +442,7 @@ document.getElementById("Description4").innerHTML=
 xmlDoc.getElementsByTagName("Description")[4].childNodes[0].nodeValue;
 document.getElementById("Description5").innerHTML=
 xmlDoc.getElementsByTagName("Description")[5].childNodes[0].nodeValue;
+});
 </script> 
 </body>
 </html> 
