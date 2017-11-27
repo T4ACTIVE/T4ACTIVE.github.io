@@ -502,17 +502,7 @@ xhr.onreadystatechange = function() {
      }
  }
  xhr.open("GET", "Gateway_Wireless.xml");
- xhr.send();
-
-//read JSON file
-var xhrJson = new XMLHttpRequest();
-xhrJson.onreadystatechange = function() {
-   if (xhrJson.readyState == 4 && xhrJson.status == 200) {
-       document.getElementById("placeholderJ").innerText = xhrJson.responseText;
-     }
- }
- xhrJson.open("GET", "Gateway_Wireless.json");
- xhrJson.send();	
+ xhr.send();	
 					
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
