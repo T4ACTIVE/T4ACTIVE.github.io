@@ -127,70 +127,70 @@
 											  </thead>
 											  <tbody>
 												<tr>
-												    <td id="rname0"></td>
+												    <td>Device</td>
 													<td>20170</td>
-													<td id="Operations0">/</td>
-													<td id="MultipleInstances0">Single</td>
-													<td id="Mandatory0">Mandatory</td>
-													<td id="Type0">Objlink</td>
+													<td>R</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>Objlink</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description0">The device description of the EMM.</td>
+													<td>The device description of the EMM.</td>
 												</tr>
 												<tr>
-												    <td id="rname1"></td>
+												    <td>LogControl</td>
 													<td>20171</td>
-													<td id="Operations1">/</td>
-													<td id="MultipleInstances1">Multiple</td>
-													<td id="Mandatory1">Mandatory</td>
-													<td id="Type1">Objlink</td>
+													<td>/</td>
+													<td>Multiple</td>
+													<td>Mandatory</td>
+													<td>Objlink</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description01">Sensor log control link.</td>
+													<td>Sensor log control link.</td>
 												</tr>
 												<tr>
-												    <td id="rname2"></td>
+												    <td>DeviceBind</td>
 													<td>20172</td>
-													<td id="Operations2">/</td>
-													<td id="MultipleInstances2">Multiple</td>
-													<td id="Mandatory2">Mandatory</td>
-													<td id="Type2">Objlink</td>
+													<td>/</td>
+													<td>Multiple</td>
+													<td>Mandatory</td>
+													<td>Objlink</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description2">Binding the EMM to a physical device it measures.</td>
+													<td>Binding the EMM to a physical device it measures.</td>
 												</tr>
 												<tr>
-												    <td id="rname3"></td>
+												    <td>VoltageSensor</td>
 													<td>20173</td>
-													<td id="Operations3">/</td>
-													<td id="MultipleInstances3">Multiple</td>
-													<td id="Mandatory3">mandatory</td>
-													<td id="Type3">Objlink</td>
+													<td>/</td>
+													<td>Multiple</td>
+													<td>mandatory</td>
+													<td>Objlink</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description3"></td>
+													<td>The integrated voltage sensor.</td>
 												</tr>
 												  <tr>
-												    <td id="rname4"></td>
+												    <td>CurrentSensor</td>
 													<td>20174</td>
-													<td id="Operations4">/</td>
-													<td id="MultipleInstances4"></td>
-													<td id="Mandatory4"></td>
-													<td id="Type4"></td>
+													<td>/</td>
+													<td>Multiple</td>
+													<td>Mandatory</td>
+													<td>Objlink</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description4">The integrated voltage sensor.</td>
+													<td>The integrated current sensor.</td>
 												</tr>
 												  <tr>
-												    <td id="rname5"></td>
+												    <td>PowerSensor</td>
 													<td>20175</td>
-													<td id="Operations5">/</td>
-													<td id="MultipleInstances5">Multiple</td>
-													<td id="Mandatory5">Mandatory</td>
-													<td id="Type5">Objlink</td>
+													<td>/</td>
+													<td>Multiple</td>
+													<td>Mandatory</td>
+													<td>Objlink</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description5">The integrated current sensor.</td>
+													<td>The integrated power sensor.</td>
 												</tr>
 											  </tbody>
 											</table>
@@ -353,95 +353,6 @@ xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
-//get elements for resources table
-//name value
-document.getElementById("rname0").innerHTML=
-xmlDoc.getElementsByTagName("Name")[1].childNodes[0].nodeValue;
-	
-document.getElementById("rname1").innerHTML=
-xmlDoc.getElementsByTagName("Name")[2].childNodes[0].nodeValue;
-	
-document.getElementById("rname2").innerHTML=
-xmlDoc.getElementsByTagName("Name")[3].childNodes[0].nodeValue;
-	
-document.getElementById("rname3").innerHTML=
-xmlDoc.getElementsByTagName("Name")[4].childNodes[0].nodeValue;
-	
-document.getElementById("rname4").innerHTML=
-xmlDoc.getElementsByTagName("Name")[5].childNodes[0].nodeValue;
-	
-document.getElementById("rname5").innerHTML=
-xmlDoc.getElementsByTagName("Name")[6].childNodes[0].nodeValue;	
-	
-	
-//get elements for resources table
-//Operations value
-document.getElementById("Operations0").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[0].childNodes[0].nodeValue;
-document.getElementById("Operations1").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
-document.getElementById("Operations2").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[2].childNodes[0].nodeValue;
-document.getElementById("Operations3").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[3].childNodes[0].nodeValue;
-document.getElementById("Operations4").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[4].childNodes[0].nodeValue;
-document.getElementById("Operations5").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[5].childNodes[0].nodeValue;
-	
-//MultipleInstances value
-document.getElementById("MultipleInstances0").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances1").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[1].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances2").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[2].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances3").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[3].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances4").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[4].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances5").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[5].childNodes[0].nodeValue;
-//Mandatory value
-document.getElementById("Mandatory0").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[0].childNodes[0].nodeValue;
-document.getElementById("Mandatory1").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[1].childNodes[0].nodeValue;
-document.getElementById("Mandatory2").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[2].childNodes[0].nodeValue;
-document.getElementById("Mandatory3").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[3].childNodes[0].nodeValue;
-document.getElementById("Mandatory4").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[4].childNodes[0].nodeValue;
-document.getElementById("Mandatory5").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[5].childNodes[0].nodeValue;
-
-//Type value
-document.getElementById("Type0").innerHTML=
-xmlDoc.getElementsByTagName("Type")[0].childNodes[0].nodeValue;
-document.getElementById("Type1").innerHTML=
-xmlDoc.getElementsByTagName("Type")[1].childNodes[0].nodeValue;
-document.getElementById("Type2").innerHTML=
-xmlDoc.getElementsByTagName("Type")[2].childNodes[0].nodeValue;
-document.getElementById("Type3").innerHTML=
-xmlDoc.getElementsByTagName("Type")[3].childNodes[0].nodeValue;
-document.getElementById("Type4").innerHTML=
-xmlDoc.getElementsByTagName("Type")[4].childNodes[0].nodeValue;
-document.getElementById("Type5").innerHTML=
-xmlDoc.getElementsByTagName("Type")[5].childNodes[0].nodeValue;
-//Description value
-document.getElementById("Description0").innerHTML=
-xmlDoc.getElementsByTagName("Description")[0].childNodes[0].nodeValue;
-document.getElementById("Description01").innerHTML=
-xmlDoc.getElementsByTagName("Description")[1].childNodes[0].nodeValue;
-document.getElementById("Description2").innerHTML=
-xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
-document.getElementById("Description3").innerHTML=
-xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
-document.getElementById("Description4").innerHTML=
-xmlDoc.getElementsByTagName("Description")[4].childNodes[0].nodeValue;
-document.getElementById("Description5").innerHTML=
-xmlDoc.getElementsByTagName("Description")[5].childNodes[0].nodeValue;
 });
 </script> 
 </body>
