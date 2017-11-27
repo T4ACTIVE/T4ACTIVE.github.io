@@ -13,4 +13,12 @@ This repository can be seen as a platform for presenting and sharing multiple da
 
 ### To Contribute
 
-We suggest contributing new data models by using Github pull requests. If you are new to pull requests, please check for more information here: [read more](https://docs.google.com/presentation/d/1X_hKpOGpy-lHmtnomO9aA8OPYzGSnaPdtiviwl7QY4U/edit#slide=id.p3)
+We suggest contributing new data models by using Github pull requests. When contributors submit their new data models, it should be placed in a folder named by it and under the model list folder, the structure is as below:
+- `Model_List/`
+  - `NewDataModel/`
+    - `NameOfModel.xml`: XML file of data model is minimum requirement, e.g. [Gateway_System.xml of Gateway System object](Model_List/Gateway_System/ Gateway_System.xml)
+    - ` NameOfModel.json`: JSON file of data model, e.g. [Gateway_System.json of Gateway System object](Model_List/Gateway_System/ Gateway_System.json)
+    - `example.c`/ `example.java`: Other available code snippet, files of data model, for example, code for wakamma, e.g. [object_system.c of Gateway System object](Model_List/Gateway_System/ object_system.c), or code for Leshan
+    - ` README.md`: Description of data model and it is optional
+
+Moreover, if you are new to pull requests, please check for more information here: [read more](https://docs.google.com/presentation/d/1X_hKpOGpy-lHmtnomO9aA8OPYzGSnaPdtiviwl7QY4U/edit#slide=id.p3)
