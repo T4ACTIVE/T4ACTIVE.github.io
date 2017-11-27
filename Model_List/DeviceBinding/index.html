@@ -140,13 +140,13 @@
 												<tr>
 												    <td id="rname1"></td>
 													<td>1</td>
-													<td id="Operations1"></td>
+													<td id="Operations01"></td>
 													<td id="MultipleInstances1"></td>
 													<td id="Mandatory1"></td>
 													<td id="Type1"></td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description01"></td>
+													<td id="Description1"></td>
 												</tr>
 												<tr>
 												    <td id="rname2"></td>
@@ -158,17 +158,6 @@
 													<td>/</td>
 													<td>/</td>
 													<td id="Description2"></td>
-												</tr>
-												<tr>
-												    <td id="rname3"></td>
-													<td>3</td>
-													<td id="Operations3"></td>
-													<td id="MultipleInstances3"></td>
-													<td id="Mandatory3"></td>
-													<td id="Type3"></td>
-													<td>/</td>
-													<td>/</td>
-													<td id="Description3"></td>
 												</tr>
 											  </tbody>
 											</table>
@@ -253,7 +242,7 @@
 												</div>
 												<div id="collapsessix1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtssix1">
 													<div class="panel-bodys">
-														none
+														None
 													</div>
 												</div>
 										</div>
@@ -267,7 +256,7 @@
 												</div>
 												<div id="collapsessix2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingssix2">
 													<div class="panel-bodys">
-														none
+														None
 													</div>
 												</div>
 										</div>	
@@ -277,19 +266,6 @@
 								</div>
 							 </div>
 						</div>
-						
-						<div class="panel-headingl" role="tab" id="headingSTwo">
-							<h4 class="panel-titlel">
-							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSTwo" aria-expanded="false" aria-controls="collapseSTwo">
-							Object version:   urn:oma:lwm2m:ext:1022:2 
-							</a>
-							</h4>
-						</div>
-						<div id="collapseSTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSTwo">
-							<div class="panel-body">
-							
-							</div>
-						</div>	
 					</div>
 				</div>
 			</div>
@@ -491,22 +467,6 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		<div class="panel panel-default">
-			<div class="panel-heading sn" role="tab" id="headingThree">
-				<h4 class="panel-title">
-				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				Other Model
-				</a>
-				</h4>
-			</div>
-			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-				<div class="panel-body">
-					
-				</div>
-			</div>
-		</div>
 
 </div>		
 </div>
@@ -520,20 +480,8 @@
 <!-- JS FILES --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
-<script>
-if (window.XMLHttpRequest)
-{
-xmlhttp=new XMLHttpRequest();
-}
-else
-{
-xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-}
-
-
-xmlhttp.open("GET","DeviceBinding_25012.xml",false);
-xmlhttp.send();
-xmlDoc=xmlhttp.responseXML;
+<script>	
+$.get("DeviceBinding_25012.xml", function(xmlDoc){	
 	
 //read xml code
 var xhr = new XMLHttpRequest();
@@ -571,8 +519,7 @@ document.getElementById("rname1").innerHTML=
 xmlDoc.getElementsByTagName("Name")[2].childNodes[0].nodeValue;
 document.getElementById("rname2").innerHTML=
 xmlDoc.getElementsByTagName("Name")[3].childNodes[0].nodeValue;
-document.getElementById("rname3").innerHTML=
-xmlDoc.getElementsByTagName("Name")[4].childNodes[0].nodeValue;
+
 	
 	
 //get elements for resources table
@@ -580,10 +527,8 @@ xmlDoc.getElementsByTagName("Name")[4].childNodes[0].nodeValue;
 document.getElementById("Operations0").innerHTML=
 xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
 document.getElementById("Operations1").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
-document.getElementById("Operations2").innerHTML=
 xmlDoc.getElementsByTagName("Operations")[2].childNodes[0].nodeValue;
-document.getElementById("Operations3").innerHTML=
+document.getElementById("Operations2").innerHTML=
 xmlDoc.getElementsByTagName("Operations")[3].childNodes[0].nodeValue;
 
 //MultipleInstances value
@@ -593,8 +538,7 @@ document.getElementById("MultipleInstances1").innerHTML=
 xmlDoc.getElementsByTagName("MultipleInstances")[1].childNodes[0].nodeValue;
 document.getElementById("MultipleInstances2").innerHTML=
 xmlDoc.getElementsByTagName("MultipleInstances")[2].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances3").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[3].childNodes[0].nodeValue;
+
 
 //Mandatory value
 document.getElementById("Mandatory0").innerHTML=
@@ -603,8 +547,7 @@ document.getElementById("Mandatory1").innerHTML=
 xmlDoc.getElementsByTagName("Mandatory")[1].childNodes[0].nodeValue;
 document.getElementById("Mandatory2").innerHTML=
 xmlDoc.getElementsByTagName("Mandatory")[2].childNodes[0].nodeValue;
-document.getElementById("Mandatory3").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[3].childNodes[0].nodeValue;
+
 
 //Type value
 document.getElementById("Type0").innerHTML=
@@ -613,8 +556,7 @@ document.getElementById("Type1").innerHTML=
 xmlDoc.getElementsByTagName("Type")[1].childNodes[0].nodeValue;
 document.getElementById("Type2").innerHTML=
 xmlDoc.getElementsByTagName("Type")[2].childNodes[0].nodeValue;
-document.getElementById("Type3").innerHTML=
-xmlDoc.getElementsByTagName("Type")[3].childNodes[0].nodeValue;
+
 
 //Description value
 document.getElementById("Description0").innerHTML=
@@ -623,9 +565,9 @@ document.getElementById("Description01").innerHTML=
 xmlDoc.getElementsByTagName("Description")[1].childNodes[0].nodeValue;
 document.getElementById("Description2").innerHTML=
 xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
-document.getElementById("Description3").innerHTML=
-xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
 
+});
+	
 </script> 
 </body>
 </html> 
