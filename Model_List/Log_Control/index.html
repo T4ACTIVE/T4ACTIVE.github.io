@@ -135,7 +135,7 @@
 													<td>Integer</td>
 													<td>0-255</td>
 													<td>/</td>
-													<td><![CDATA[Part of the Logging Event Set: 1/5 (Must be a Single-Instance Resource) Define the Log Event Class: 0: generic (default) 1: system 2: security 3: event 4: trace 5: panic 6: charging [7-99]: reserved [100-255]: vendor specific. ]]></td>
+													<td>Part of the Logging Event Set: 1/5 (Must be a Single-Instance Resource) Define the Log Event Class: 0: generic (default) 1: system 2: security 3: event 4: trace 5: panic 6: charging [7-99]: reserved [100-255]: vendor specific.</td>
 												</tr>
 																								
 												<tr>
@@ -147,7 +147,7 @@
 													<td>String</td>
 													<td>/</td>
 													<td>/</td>
-													<td><![CDATA[Part of the Logging Event Set: 2/5 Actions: a) Start data collection(DC) b) LogStatus is set to 0 (running) c) DC is emptied(default) or extended according to arg'0' value d) DC Period is set according to arg'1' value Arguments '0': DC emptied(=0[default] or extended(=1) '1': set the DC Period (in sec): if=0 or absent[default] DC is stopped by LogStop action only. ]]></td>
+													<td>Part of the Logging Event Set: 2/5 Actions: a) Start data collection(DC) b) LogStatus is set to 0 (running) c) DC is emptied(default) or extended according to arg'0' value d) DC Period is set according to arg'1' value Arguments '0': DC emptied(=0[default] or extended(=1) '1': set the DC Period (in sec): if=0 or absent[default] DC is stopped by LogStop action only.</td>
 												</tr>
 												<tr>
 												    <td>LogStop</td>
@@ -156,9 +156,9 @@
 													<td>Multiple</td>
 													<td>Mandatory</td>
 													<td>String</td>
-													<td>0/</td>
 													<td>/</td>
-													<td><![CDATA[Log Event Set Interface 3/5 Actions: a) Stop data collection(DC) b) LogStatus is set to 1 (stopped) c) DC is kept(default) or emptied according to arg'0' value Argument: '0': DC kept(=0)[default]or emptied(=1).]]></td>
+													<td>/</td>
+													<td>Log Event Set Interface 3/5 Actions: a) Stop data collection(DC) b) LogStatus is set to 1 (stopped) c) DC is kept(default) or emptied according to arg'0' value Argument: '0': DC kept(=0)[default]or emptied(=1).</td>
 												</tr>
 												<tr>
 												    <td>LogStatus</td>
@@ -169,7 +169,7 @@
 													<td>Integer</td>
 													<td>0-255</td>
 													<td>/</td>
-													<td><![CDATA[Log Event Set Interface 4/5 (Must be a Single-Instance Resource) Data Collection process status: 0 : running 1 : stopped [2-99] : reserved [100-255] : vendor specific.]]></td>
+													<td>Log Event Set Interface 4/5 (Must be a Single-Instance Resource) Data Collection process status: 0 : running 1 : stopped [2-99] : reserved [100-255] : vendor specific.</td>
 												</tr>
 												<tr>
 												    <td>LogData</td>
@@ -180,7 +180,7 @@
 													<td>Opaque</td>
 													<td>/</td>
 													<td>/</td>
-													<td><![CDATA[Log Event Set Interface 5/5 (May be a Multiple-Instance Resource) Read Access on that Resource returns the Data Collection associated to the current Object Instance. Data format followed by this Opaque Resource is given by the 1st byte of the opaque sequence: 0 : OMA-LwM2M TLV format 1 : OMA-LwM2M JSON format 2 : OMA-LwM2M CBOR format [3..99] reserved [100..255] vendor specific ]]></td>
+													<td>Log Event Set Interface 5/5 (May be a Multiple-Instance Resource) Read Access on that Resource returns the Data Collection associated to the current Object Instance. Data format followed by this Opaque Resource is given by the 1st byte of the opaque sequence: 0 : OMA-LwM2M TLV format 1 : OMA-LwM2M JSON format 2 : OMA-LwM2M CBOR format [3..99] reserved [100..255] vendor specific.</td>
 												</tr>
 												<tr>
 												    <td>LogFile</td>
@@ -191,9 +191,9 @@
 													<td>String</td>
 													<td>/</td>
 													<td>/</td>
-													<td><![CDATA[Sets the filename logs are saved into."]]></td>
+													<td>Sets the filename logs are saved into.></td>
 												</tr>
-												  								<tr>
+												  								
 			
 											  </tbody>
 											</table>
