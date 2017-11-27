@@ -277,19 +277,6 @@
 								</div>
 							 </div>
 						</div>
-						
-						<div class="panel-headingl" role="tab" id="headingSTwo">
-							<h4 class="panel-titlel">
-							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSTwo" aria-expanded="false" aria-controls="collapseSTwo">
-							Object version:   urn:oma:lwm2m:ext:1022:2 
-							</a>
-							</h4>
-						</div>
-						<div id="collapseSTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSTwo">
-							<div class="panel-body">
-							
-							</div>
-						</div>	
 					</div>
 				</div>
 			</div>
@@ -491,22 +478,6 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		<div class="panel panel-default">
-			<div class="panel-heading sn" role="tab" id="headingThree">
-				<h4 class="panel-title">
-				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				Other Model
-				</a>
-				</h4>
-			</div>
-			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-				<div class="panel-body">
-					
-				</div>
-			</div>
-		</div>
 
 </div>		
 </div>
@@ -521,19 +492,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
 <script>
-if (window.XMLHttpRequest)
-{
-xmlhttp=new XMLHttpRequest();
-}
-else
-{
-xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-}
-
-
-xmlhttp.open("GET","Gateway_Wireless.xml",false);
-xmlhttp.send();
-xmlDoc=xmlhttp.responseXML;
+$.get("Gateway_Wireless.xml", function(xmlDoc){
 	
 //read xml code
 var xhr = new XMLHttpRequest();
@@ -545,7 +504,6 @@ xhr.onreadystatechange = function() {
  xhr.open("GET", "Gateway_Wireless.xml");
  xhr.send();
 
-	
 //read JSON file
 var xhrJson = new XMLHttpRequest();
 xhrJson.onreadystatechange = function() {
@@ -555,14 +513,13 @@ xhrJson.onreadystatechange = function() {
  }
  xhrJson.open("GET", "Gateway_Wireless.json");
  xhrJson.send();	
-		
+					
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
-
 //get elements for resources table
 //name value
 document.getElementById("rname0").innerHTML=
@@ -574,7 +531,6 @@ xmlDoc.getElementsByTagName("Name")[3].childNodes[0].nodeValue;
 document.getElementById("rname3").innerHTML=
 xmlDoc.getElementsByTagName("Name")[4].childNodes[0].nodeValue;
 	
-	
 //get elements for resources table
 //Operations value
 document.getElementById("Operations0").innerHTML=
@@ -585,8 +541,8 @@ document.getElementById("Operations2").innerHTML=
 xmlDoc.getElementsByTagName("Operations")[2].childNodes[0].nodeValue;
 document.getElementById("Operations3").innerHTML=
 xmlDoc.getElementsByTagName("Operations")[3].childNodes[0].nodeValue;
-
 //MultipleInstances value
+for 
 document.getElementById("MultipleInstances0").innerHTML=
 xmlDoc.getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue;
 document.getElementById("MultipleInstances1").innerHTML=
@@ -595,7 +551,6 @@ document.getElementById("MultipleInstances2").innerHTML=
 xmlDoc.getElementsByTagName("MultipleInstances")[2].childNodes[0].nodeValue;
 document.getElementById("MultipleInstances3").innerHTML=
 xmlDoc.getElementsByTagName("MultipleInstances")[3].childNodes[0].nodeValue;
-
 //Mandatory value
 document.getElementById("Mandatory0").innerHTML=
 xmlDoc.getElementsByTagName("Mandatory")[0].childNodes[0].nodeValue;
@@ -605,7 +560,6 @@ document.getElementById("Mandatory2").innerHTML=
 xmlDoc.getElementsByTagName("Mandatory")[2].childNodes[0].nodeValue;
 document.getElementById("Mandatory3").innerHTML=
 xmlDoc.getElementsByTagName("Mandatory")[3].childNodes[0].nodeValue;
-
 //Type value
 document.getElementById("Type0").innerHTML=
 xmlDoc.getElementsByTagName("Type")[0].childNodes[0].nodeValue;
@@ -615,7 +569,6 @@ document.getElementById("Type2").innerHTML=
 xmlDoc.getElementsByTagName("Type")[2].childNodes[0].nodeValue;
 document.getElementById("Type3").innerHTML=
 xmlDoc.getElementsByTagName("Type")[3].childNodes[0].nodeValue;
-
 //Description value
 document.getElementById("Description0").innerHTML=
 xmlDoc.getElementsByTagName("Description")[0].childNodes[0].nodeValue;
@@ -625,6 +578,7 @@ document.getElementById("Description2").innerHTML=
 xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
 document.getElementById("Description3").innerHTML=
 xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
+});
 
 </script> 
 </body>
