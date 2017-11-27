@@ -127,49 +127,74 @@
 											  </thead>
 											  <tbody>
 												<tr>
-												    <td id="rname0"></td>
-													<td>0</td>
-													<td id="Operations0"></td>
-													<td id="MultipleInstances0"></td>
-													<td id="Mandatory0"></td>
-													<td id="Type0"></td>
+												    <td>LogClass</td>
+													<td>4010</td>
+													<td>R</td>
+													<td>Multiple</td>
+													<td>Mandatory</td>
+													<td>Integer</td>
+													<td>0-255</td>
+													<td>/</td>
+													<td><![CDATA[Part of the Logging Event Set: 1/5 (Must be a Single-Instance Resource) Define the Log Event Class: 0: generic (default) 1: system 2: security 3: event 4: trace 5: panic 6: charging [7-99]: reserved [100-255]: vendor specific. ]]></td>
+												</tr>
+																								
+												<tr>
+												    <td>LogStart</td>
+													<td>4011</td>
+													<td>E</td>
+													<td>Multiple</td>
+													<td>Mandatory</td>
+													<td>String</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description0"></td>
+													<td><![CDATA[Part of the Logging Event Set: 2/5 Actions: a) Start data collection(DC) b) LogStatus is set to 0 (running) c) DC is emptied(default) or extended according to arg'0' value d) DC Period is set according to arg'1' value Arguments '0': DC emptied(=0[default] or extended(=1) '1': set the DC Period (in sec): if=0 or absent[default] DC is stopped by LogStop action only. ]]></td>
 												</tr>
 												<tr>
-												    <td id="rname1"></td>
-													<td>1</td>
-													<td id="Operations1"></td>
-													<td id="MultipleInstances1"></td>
-													<td id="Mandatory1"></td>
-													<td id="Type1"></td>
+												    <td>LogStop</td>
+													<td>4012</td>
+													<td>E</td>
+													<td>Multiple</td>
+													<td>Mandatory</td>
+													<td>String</td>
+													<td>0/</td>
 													<td>/</td>
-													<td>/</td>
-													<td id="Description01"></td>
+													<td><![CDATA[Log Event Set Interface 3/5 Actions: a) Stop data collection(DC) b) LogStatus is set to 1 (stopped) c) DC is kept(default) or emptied according to arg'0' value Argument: '0': DC kept(=0)[default]or emptied(=1).]]></td>
 												</tr>
 												<tr>
-												    <td id="rname2"></td>
-													<td>2</td>
-													<td id="Operations2"></td>
-													<td id="MultipleInstances2"></td>
-													<td id="Mandatory2"></td>
-													<td id="Type2"></td>
+												    <td>LogStatus</td>
+													<td>4013</td>
+													<td>R</td>
+													<td>Multiple</td>
+													<td>Mandatory</td>
+													<td>Integer</td>
+													<td>0-255</td>
 													<td>/</td>
-													<td>/</td>
-													<td id="Description2"></td>
+													<td><![CDATA[Log Event Set Interface 4/5 (Must be a Single-Instance Resource) Data Collection process status: 0 : running 1 : stopped [2-99] : reserved [100-255] : vendor specific.]]></td>
 												</tr>
 												<tr>
-												    <td id="rname3"></td>
-													<td>3</td>
-													<td id="Operations3"></td>
-													<td id="MultipleInstances3"></td>
-													<td id="Mandatory3"></td>
-													<td id="Type3"></td>
+												    <td>LogData</td>
+													<td>4014</td>
+													<td>R</td>
+													<td>Multiple</td>
+													<td>Mandatory</td>
+													<td>Opaque</td>
 													<td>/</td>
 													<td>/</td>
-													<td id="Description3"></td>
+													<td><![CDATA[Log Event Set Interface 5/5 (May be a Multiple-Instance Resource) Read Access on that Resource returns the Data Collection associated to the current Object Instance. Data format followed by this Opaque Resource is given by the 1st byte of the opaque sequence: 0 : OMA-LwM2M TLV format 1 : OMA-LwM2M JSON format 2 : OMA-LwM2M CBOR format [3..99] reserved [100..255] vendor specific ]]></td>
 												</tr>
+												<tr>
+												    <td>LogFile</td>
+													<td>20180</td>
+													<td>R</td>
+													<td>Multiple</td>
+													<td>Mandatory</td>
+													<td>String</td>
+													<td>/</td>
+													<td>/</td>
+													<td><![CDATA[Sets the filename logs are saved into."]]></td>
+												</tr>
+												  								<tr>
+			
 											  </tbody>
 											</table>
 										  </div><!--end of .table-responsive-->
@@ -535,69 +560,6 @@ document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
-
-//get elements for resources table
-//name value
-document.getElementById("rname0").innerHTML=
-xmlDoc.getElementsByTagName("Name")[1].childNodes[0].nodeValue;
-document.getElementById("rname1").innerHTML=
-xmlDoc.getElementsByTagName("Name")[2].childNodes[0].nodeValue;
-document.getElementById("rname2").innerHTML=
-xmlDoc.getElementsByTagName("Name")[3].childNodes[0].nodeValue;
-document.getElementById("rname3").innerHTML=
-xmlDoc.getElementsByTagName("Name")[4].childNodes[0].nodeValue;
-	
-	
-//get elements for resources table
-//Operations value
-document.getElementById("Operations0").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
-document.getElementById("Operations1").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
-document.getElementById("Operations2").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[2].childNodes[0].nodeValue;
-document.getElementById("Operations3").innerHTML=
-xmlDoc.getElementsByTagName("Operations")[3].childNodes[0].nodeValue;
-
-//MultipleInstances value
-document.getElementById("MultipleInstances0").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances1").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[1].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances2").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[2].childNodes[0].nodeValue;
-document.getElementById("MultipleInstances3").innerHTML=
-xmlDoc.getElementsByTagName("MultipleInstances")[3].childNodes[0].nodeValue;
-
-//Mandatory value
-document.getElementById("Mandatory0").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[0].childNodes[0].nodeValue;
-document.getElementById("Mandatory1").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[1].childNodes[0].nodeValue;
-document.getElementById("Mandatory2").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[2].childNodes[0].nodeValue;
-document.getElementById("Mandatory3").innerHTML=
-xmlDoc.getElementsByTagName("Mandatory")[3].childNodes[0].nodeValue;
-
-//Type value
-document.getElementById("Type0").innerHTML=
-xmlDoc.getElementsByTagName("Type")[0].childNodes[0].nodeValue;
-document.getElementById("Type1").innerHTML=
-xmlDoc.getElementsByTagName("Type")[1].childNodes[0].nodeValue;
-document.getElementById("Type2").innerHTML=
-xmlDoc.getElementsByTagName("Type")[2].childNodes[0].nodeValue;
-document.getElementById("Type3").innerHTML=
-xmlDoc.getElementsByTagName("Type")[3].childNodes[0].nodeValue;
-
-//Description value
-document.getElementById("Description0").innerHTML=
-xmlDoc.getElementsByTagName("Description")[0].childNodes[0].nodeValue;
-document.getElementById("Description01").innerHTML=
-xmlDoc.getElementsByTagName("Description")[1].childNodes[0].nodeValue;
-document.getElementById("Description2").innerHTML=
-xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
-document.getElementById("Description3").innerHTML=
-xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
 });
 </script> 
 </body>
