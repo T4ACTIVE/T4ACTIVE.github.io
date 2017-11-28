@@ -18,7 +18,7 @@ We suggest contributing new data models by using Github pull requests. When cont
   - `NewDataModel/`
     - `NameOfModel.xml`: XML file of data model is _**minimum requirement**_, e.g. [Gateway_System.xml of Gateway System Object](Model_List/Gateway_System/Gateway_System.xml)
     - `NameOfModel.json`: JSON file of data model, e.g. [Gateway_System.json of Gateway System Object](Model_List/Gateway_System/Gateway_System.json)
-    - `Example.c`/`example.java`: Other available code snippet, or files of data model, for example, code for wakamma, e.g. [object_system.c of Gateway System Object](Model_List/Gateway_System/object_system.c), or code for Leshan
+    - `Example.c`/`example.java`: Other available code snippet, or files of data model, for example, code for Wakaama, e.g. [object_system.c of Gateway System Object](Model_List/Gateway_System/object_system.c), or code for Leshan
     - `README.md`: Description of data model and it is optional
 
 Moreover, if you are new to pull requests, please check for more information here: [read more](https://docs.google.com/presentation/d/1X_hKpOGpy-lHmtnomO9aA8OPYzGSnaPdtiviwl7QY4U/edit#slide=id.p3)
