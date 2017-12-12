@@ -135,8 +135,8 @@ a:hover, a:focus {
 body {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 400;
-	color: #6c7279;
-	background-color: ;
+	color: ;
+	background-color: #fdfdfd;
 }
 
 ul, ol {
