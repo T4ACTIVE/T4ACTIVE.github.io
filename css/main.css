@@ -783,6 +783,18 @@ a:hover,a:focus{
  	text-align:left;
 }
 
+#accordion .panel-bodysb{
+ 	font-size: 13px;
+ 	color: #7c7c7c;
+ 	background: #fff;
+ 	padding: 12px 15px;
+ 	line-height: 25px;
+ 	position: relative;
+ 	margin-bottom:10px;
+ 	text-align:left;
+}
+
+
 #accordion .body-content{
 	margin-bottom: 15px;
 }
