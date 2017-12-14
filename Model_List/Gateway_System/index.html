@@ -49,7 +49,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 conForm">
 			<div class="model-title">
-				<h4><span id="Name"></span>
+				<h4>Gateway System data models
 				<a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/Gateway_System">View on GitHub
 				<img src="../../images/github.png" alt=""/></a>
 				</h4>
@@ -576,8 +576,6 @@ xhrJson.onreadystatechange = function() {
  xhrJson.open("GET", "Gateway_System.json");
  xhrJson.send();	
 			
-document.getElementById("Name").innerHTML=
-xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
