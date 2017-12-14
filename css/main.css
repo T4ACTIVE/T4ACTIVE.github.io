@@ -68,7 +68,8 @@ h5 {
 	color: #8a8a8a;
 	border-radius: 3px;
 	font-weight: bold;
-	font-size: 10px;	
+	font-size: 10px;
+	margin-left: 20px;
 }
 
 .btn-xs:hover, .btn-xs:focus {
@@ -500,7 +501,7 @@ ul li {
 }
 
 .model-title {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 #cta-section {
