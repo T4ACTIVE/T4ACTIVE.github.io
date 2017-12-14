@@ -819,6 +819,6 @@ th {
   	font-weight: bold; 
 }
 
-tr:nth-of-type(odd) { 
+tr:nth-of-type(even) { 
   	background: #eee; 
 }
