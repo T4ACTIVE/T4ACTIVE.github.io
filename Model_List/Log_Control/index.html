@@ -17,7 +17,7 @@
 </head>
 
 <body onload="prettyPrint()">
-<!-- header section -->
+<!-- header/navigation section --> 
 <section class="navpart">
   <header id="header">
 		<div class="navbar navbar-inverse navbar-fixed-top " id="menu">
@@ -30,9 +30,7 @@
 				</button>
 				
 			</div>
-	
-			<div class="navbar-collapse collapse move-me">
-				
+			<div class="navbar-collapse collapse move-me">	
 				<ul class="nav navbar-nav navbar-right">
 					<li class="home"><a href="../../index.html">HOME</a></li>
 					<li class="models"><a href="../../models.html"><font color="#20B2AA">MODELS</font></a></li>
@@ -43,23 +41,23 @@
 		</div>
 		</div>
   </header>
-  <!-- banner text -->
 </section>
-<!-- header section --> 
+<!-- header/navigation section end --> 
 
-<!-- models section -->
+<!-- multiple models section -->
 <section id="contact" class="section">
 <div class="container">
- <div class="row">
+<div class="row">
 	<div class="col-md-8 col-md-offset-2 conForm">
-	<h4><span id="Name"></span>
-      	 <a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/Log_Control">View on GitHub
-	 <img src="../../images/github.png" alt=""/></a>
-	</h4>	
-        <h3 id="Description1"></h3>
+		<h4><span id="Name"></span>
+      	 	<a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/Log_Control">View on GitHub
+	 	    <img src="../../images/github.png" alt=""/></a>
+		</h4>	
+        	
+    <!-- panels for data models -->
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 	    
-		<!-- LWM2M MODEL-->
+		<!-- LWM2M MODEL -->
 		<div class="panel panel-default">
 			<div class="panel-heading" role="tab" id="headingOne">
 				<h4 class="panel-title">
@@ -70,7 +68,8 @@
 			</div>
 			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 				<div class="panel-body">
-					<div class="body-content">	
+					<div class="body-content">
+						<!-- URN of the data model -->
 						<div class="panel-headingl" role="tab" id="headingSOne">
 							<h4 class="panel-titlel">
 							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSOne" aria-expanded="false" aria-controls="collapseSOne">
@@ -79,33 +78,35 @@
 							</h4>
 						</div>
 						
+						<!-- more content of the data model -->
 						<div id="collapseSOne" class="panel-collapse collapse" role="tabpane1" aria-labelledby="headingtSOne">
 							<div class="panel-body">
-							    <!-- object_file_sumcheck-->
-							     <div class="body-content">
+								
+							    <!-- description of data model -->
+							    <div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsone">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesone" aria-expanded="false" aria-controls="collapsesone">
-										Checksum 
-									</a>
-									</h4>
+										<h4 class="panel-titles">
+										<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesone" aria-expanded="false" aria-controls="collapsesone">
+										Description
+										</a>
+										</h4>
 									</div>
 									<div id="collapsesone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsone">
-									<div class="panel-bodys" style="word-break:break-all;">	
-										917d11c244a7271a054a68b1cf1d47c618ca562 
+										<div class="panel-bodys" style="word-break:break-all;">	
+										<span id="Description1"></span> 
+										</div>
 									</div>
-									</div>
+							    </div>
+							    <!-- description of data model end -->
 								
-								 </div>
-								
-								<!-- object_file_Resources fields-->
-								<div class="body-content">
+							    <!-- resources fields of data model -->
+							    <div class="body-content">
 									<div class="panel-headings" role="tab" id="headingstwo">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsestwo" aria-expanded="false" aria-controls="collapsestwo">
+										<h4 class="panel-titles">
+										<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsestwo" aria-expanded="false" aria-controls="collapsestwo">
 										Resources Fields	
-									</a>
-									</h4>
+										</a>
+										</h4>
 									</div>
 									<div id="collapsestwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtstwo">
 										<div class="panel-bodys">
@@ -136,8 +137,7 @@
 													<td>0-255</td>
 													<td>/</td>
 													<td>Part of the Logging Event Set: 1/5 (Must be a Single-Instance Resource) Define the Log Event Class: 0: generic (default) 1: system 2: security 3: event 4: trace 5: panic 6: charging [7-99]: reserved [100-255]: vendor specific.</td>
-												</tr>
-																								
+												</tr>													
 												<tr>
 												    <td>LogStart</td>
 													<td>4011</td>
@@ -193,16 +193,15 @@
 													<td>/</td>
 													<td>Sets the filename logs are saved into.></td>
 												</tr>
-												  								
-			
 											  </tbody>
 											</table>
 										  </div><!--end of .table-responsive-->
 										</div>
 									</div>	
 								</div>
-						
-								<!-- object_example_usage-->
+								<!-- resources fields of data model end -->
+								
+								<!-- example usage of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsthree">
 									<h4 class="panel-titles">
@@ -217,8 +216,9 @@
 										</div>
 									</div>	
 								</div>
+								<!-- example usage of data model end -->
 								
-								<!-- object_file_xml-->
+								<!-- xml file of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsfour">
 									<h4 class="panel-titles">
@@ -236,8 +236,9 @@
 										</div>
 									</div>	
 								</div>
-									
-								<!-- object_file_json-->
+								<!-- xml file of data model end -->
+
+								<!-- json file of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsfive">
 									<h4 class="panel-titles">
@@ -256,8 +257,9 @@
 										</div>
 									</div>	
 								</div>
+								<!-- json file of data model end -->
 								
-								<!-- object_file_code-->
+								<!-- code part -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingssix">
 									<h4 class="panel-titles">
@@ -300,21 +302,21 @@
 										</div>
 									</div>	
 								</div>
+								<!-- code part end -->
 							 </div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-</div>		
-</div>
-</div>
-
-	
-</div><!-- .container --> 
-<!-- models section --> 	
+		<!-- LWM2M MODEL end -->
+	</div>
+	<!-- panels for data models end -->			
+	</div>
+</div>	
+</div> 	
 </section>
+<!-- multiple models section end -->
 
 <!-- JS FILES --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
