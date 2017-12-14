@@ -17,7 +17,7 @@
 </head>
 
 <body onload="prettyPrint()">
-<!-- header section -->
+<!-- header/navigation section --> 
 <section class="navpart">
   <header id="header">
 		<div class="navbar navbar-inverse navbar-fixed-top " id="menu">
@@ -45,18 +45,21 @@
   </header>
   <!-- banner text -->
 </section>
-<!-- header section --> 
+<!-- header/navigation section end -->  
 
-<!-- models section -->
+<!-- multiple models section -->
 <section id="contact" class="section">
 <div class="container">
  <div class="row">
 	<div class="col-md-8 col-md-offset-2 conForm">
-	<h4><span id="Name"></span>
-      	 <a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/Gateway_Wireless">View on GitHub
-	 <img src="../../images/github.png" alt=""/></a>
-	</h4>	
-        <h3 id="Description1"></h3>
+		<div class="model-title">
+			<h4><span id="Name"></span>
+      	 	<a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/Gateway_Wireless">View on GitHub
+	 		<img src="../../images/github.png" alt=""/></a>
+			</h4>	
+   		</div>
+
+    <!-- panels for data models -->
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 	    
 		<!-- LWM2M MODEL-->
@@ -71,6 +74,7 @@
 			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 				<div class="panel-body">
 					<div class="body-content">	
+						<!-- URN of the data model -->
 						<div class="panel-headingl" role="tab" id="headingSOne">
 							<h4 class="panel-titlel">
 							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSOne" aria-expanded="false" aria-controls="collapseSOne">
@@ -79,26 +83,28 @@
 							</h4>
 						</div>
 						
+						<!-- more content of the data model -->
 						<div id="collapseSOne" class="panel-collapse collapse" role="tabpane1" aria-labelledby="headingtSOne">
 							<div class="panel-body">
-							    <!-- object_file_sumcheck-->
-							     <div class="body-content">
+
+							    <!-- description of data model -->
+							    <div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsone">
 									<h4 class="panel-titles">
 									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesone" aria-expanded="false" aria-controls="collapsesone">
-										Checksum 
+										Description
 									</a>
 									</h4>
 									</div>
 									<div id="collapsesone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsone">
 									<div class="panel-bodys" style="word-break:break-all;">	
-										917d11c244a7271a054a68b1cf1d47c618ca562 
+										<span id="Description1"></span>
 									</div>
 									</div>
+								</div>
+								<!-- description of data model end -->
 								
-								 </div>
-								
-								<!-- object_file_Resources fields-->
+								<!-- resources fields of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingstwo">
 									<h4 class="panel-titles">
@@ -220,8 +226,9 @@
 										</div>
 									</div>	
 								</div>
+								<!-- resources fields of data model end -->
 						
-								<!-- object_example_usage-->
+								<!-- example usage of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsthree">
 									<h4 class="panel-titles">
@@ -236,8 +243,9 @@
 										</div>
 									</div>	
 								</div>
+								<!-- example usage of data model end -->
 								
-								<!-- object_file_xml-->
+								<!-- xml file of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsfour">
 									<h4 class="panel-titles">
@@ -255,8 +263,9 @@
 										</div>
 									</div>	
 								</div>
+								<!-- xml file of data model end -->
 									
-								<!-- object_file_json-->
+								<!-- json file of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsfive">
 									<h4 class="panel-titles">
@@ -275,8 +284,9 @@
 										</div>
 									</div>	
 								</div>
+								<!-- json file of data model end -->
 								
-								<!-- object_file_code-->
+								<!-- code part -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingssix">
 									<h4 class="panel-titles">
@@ -319,14 +329,16 @@
 										</div>
 									</div>	
 								</div>
+								<!-- code part end -->
 							 </div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-				<!-- UCI MODEL-->
+		<!-- LWM2M MODEL end -->
+
+		<!-- UCI MODEL-->
 		<div class="panel panel-default">
 			<div class="panel-heading sn" role="tab" id="headingTwo">
 				<h4 class="panel-title">
@@ -339,7 +351,7 @@
 				<div class="panel-body">
 
 					 <div class="body-content">
-
+					 	<!-- description of data model -->
 						<div class="panel-headings" role="tab" id="headinguone">
 							<h4 class="panel-titles">
 							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseuone" aria-expanded="false" aria-controls="collapseuone">
@@ -353,8 +365,9 @@
 										
 									</div>
 						</div>
+						<!-- description of data model end -->
 						
-						<!-- URL-->	
+						<!-- URL of data model -->	
 						<div class="panel-headings" role="tab" id="headingutwo">
 							<h4 class="panel-titles">
 							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseTwo" href="#collapseutwo" aria-expanded="false" aria-controls="collapseuone">
@@ -367,9 +380,9 @@
 										file://localhost/etc/config/wireless
 									</div>
 						</div>
-						
+						<!-- URL of data model end -->	
 		
-						<!-- Config-->
+						<!-- Config part-->
 						<div class="panel-headings" role="tab" id="headinguthree">
 							<h4 class="panel-titles">
 							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseTwo" href="#collapseuthree" aria-expanded="false" aria-controls="collapseuthree">
@@ -380,7 +393,6 @@
 						<div id="collapseuthree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinguthree">
 							<div class="panel-body">
 
-							    <!-- Config-system-->
 								<div class="body-content">
 
 									<div class="panel-headingsb" role="tab" id="headingtso">
@@ -391,12 +403,11 @@
 									</h4>
 									</div>
 
-
 									<div id="collapsetso" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso">
 										<div class="panel-body">
 										<div class="body-content">
-											<!-- description-->
 
+											<!-- description of Wifi-iface -->
 											<div class="panel-headingsbt" role="tab" id="headingtso1">
 												<h4 class="panel-titlesb">
 												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetso" href="#collapsetso1" aria-expanded="false" aria-controls="collapsetso1">
@@ -409,6 +420,7 @@
 													The system section contains settings that apply to the most basic operation of the system.
 													</div>
 											</div>
+											<!-- description of Wifi-iface end -->
 
 											<!-- option fields-->
 											<div class="panel-headingsbt" role="tab" id="headingtso2">
@@ -419,7 +431,7 @@
 												</h4>
 											</div>
 											<div id="collapsetso2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso2">
-													<div class="panel-bodysb">
+												<div class="panel-bodysb">
 													<!-- table of content-->
 													<div class="table-responsive">
 													<table class="table table-bordered table-hover">
@@ -482,34 +494,30 @@
 
 														  </tbody>
 														</table>
-													  </div><!--end of .table-responsive-->
-													</div>
+													</div><!--end of .table-responsive-->
 												</div>
-											</div>	 
+											</div>
+											<!-- option fields end -->	 
+										</div>	
 										</div>
 									</div>
-								</div>	
-								
-								<!-- Config-timeserver-->
-								
+								</div>		
 							</div>
 						</div>
-						
+						<!-- Config part end -->
 					</div>
 				</div>
 			</div>
 		</div>
-</div>		
-</div>
-</div>
-</div>		
-</div>
-</div>
+		<!-- UCI MODEL end -->
 
-	
-</div><!-- .container --> 
-<!-- models section --> 	
+	</div>	
+	<!-- panels for data models end -->
+	</div>
+</div>
+</div>	
 </section>
+<!-- multiple models section end -->
 
 <!-- JS FILES --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
