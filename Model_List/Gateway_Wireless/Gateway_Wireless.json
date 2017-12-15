@@ -1,0 +1,91 @@
+{
+  "LWM2M": {
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "IPSO Gateway Wireless Interface",
+      "Description1": "This IPSO Object is used to represent basic settings for the wireless interface.",
+      "ObjectID": "1025",
+      "ObjectURN": "urn:oma:lwm2m:ext:1025",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "0",
+            "Name": "Ifname",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "This resource type returns the name of the wireless interface in human-readable form (e.g. wlan0)."
+          },
+          {
+            "-ID": "1",
+            "Name": "Mode",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "This resource type returns the operation mode of the wireless interface."
+          },
+          {
+            "-ID": "2",
+            "Name": "Disabled",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Boolean",
+            "Description": "This resource type returns whether the interface is disabled or enabled."
+          },
+          {
+            "-ID": "3",
+            "Name": "SSID",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "This resource type returns the broadcasted SSID."
+          },
+          {
+            "-ID": "4",
+            "Name": "Mac Address",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns the MAC address of the wireless interface."
+          },
+          {
+            "-ID": "5",
+            "Name": "IP Address List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns a list of IP addresses of the wireless interface."
+          },
+          {
+            "-ID": "6",
+            "Name": "Transmission Power",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Int",
+            "Units": "dBm",
+            "Description": "This resource type returns the transmission power."
+          },
+          {
+            "-ID": "7",
+            "Name": "Network",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "This resource type returns the attached network interface."
+          }
+        ]
+      }
+    }
+  }
+}
+
