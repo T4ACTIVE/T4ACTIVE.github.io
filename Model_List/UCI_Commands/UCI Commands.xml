@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>UCI Commands</Name>
+		<Description1><![CDATA[The UCI (Unified Configuration Interface) Object allows LWM2M to issue system level calls to OpenWRT's UCI configuration system]]></Description1>
+		<ObjectID>32003</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:x:32003:1</ObjectURN>
+		<LWM2MVersion />
+		<ObjectVersion />
+		<MultipleInstances>Single</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="0"><Name>UCI_GET</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Gets a UCI parameter]]></Description>
+			</Item>
+			<Item ID="1"><Name>UCI_SET</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Sets a UCI parameter]]></Description>
+			</Item>
+			<Item ID="2"><Name>UCI_COMMIT</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Issues a "uci commit" operation when a UCI parameter is modified.]]></Description>
+			</Item></Resources>
+		<Description2 />
+	</Object>
+</LWM2M>

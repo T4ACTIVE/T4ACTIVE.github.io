@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>BLE Commands</Name>
+		<Description1><![CDATA[The BLE (Bluetooth Low Energy) Commands Object allows LWM2M to issue system level BLE operations via a bluetooth interface on a gateway or device 	]]></Description1>
+		<ObjectID>32004</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:x:32004:1</ObjectURN>
+		<LWM2MVersion />
+		<ObjectVersion />
+		<MultipleInstances>Single</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="0"><Name>HCI_TOOL</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Allows invocation of the native "hci_tool" with the string supplied]]></Description>
+			</Item>
+			<Item ID="1"><Name>HCI_CONFIG</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Allows invocation of the native "hci_config" with the string supplied]]></Description>
+			</Item>
+			<Item ID="2"><Name>GATT_TOOL</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Allows invocation of the native "gatt_tool" with the string supplied]]></Description>
+			</Item></Resources>
+		<Description2 />
+	</Object>
+</LWM2M>

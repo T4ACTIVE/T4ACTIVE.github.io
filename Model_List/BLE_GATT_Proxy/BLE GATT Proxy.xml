@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>BLE GATT Proxy</Name>
+		<Description1><![CDATA[The BLE GATT (Generic Attribute Profile) Proxy is a generic object allows mapping BLE services via low level operations over LWM2M. Each object represents a single BLE service.]]></Description1>
+		<ObjectID>32000</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:x:32000:1</ObjectURN>
+		<LWM2MVersion />
+		<ObjectVersion />
+		<MultipleInstances>Multiple</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="0"><Name>Handle</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[BLE Handle associated with this object and service]]></Description>
+			</Item>
+			<Item ID="1"><Name>Service</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[The Service UUID]]></Description>
+			</Item>
+			<Item ID="2"><Name>Characteristic</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[One or more characteristics associated with this service]]></Description>
+			</Item></Resources>
+		<Description2 />
+	</Object>
+</LWM2M>
