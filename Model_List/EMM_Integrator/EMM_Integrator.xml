@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
 	<Object ObjectType="MODefinition">
 		<Name>EMM-Integrator</Name>
-		<Description1><![CDATA[This object integrates all the components that belong to the physical Energy Measurement Module Platform as Object Links.]]></Description1>
+		<Description1><![CDATA[This object integrates all the components that belong to the physical Energy Management Module Platform as Object Links.]]></Description1>
 		<ObjectID>25010</ObjectID>
 		<ObjectURN>urn:oma:lwm2m:x:25010:1</ObjectURN>
 		<LWM2MVersion />

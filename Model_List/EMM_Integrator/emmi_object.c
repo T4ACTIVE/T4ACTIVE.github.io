@@ -4,7 +4,7 @@
  * LwM2M Object: EMM-Integrator
  * ID: 25010, URN: urn:oma:lwm2m:x:25010:1, Optional, Multiple
  *
- * This object integrates all the components that belong to the physical Energy Measurement Module Platform as Object Links.
+ * This object integrates all the components that belong to the physical Energy Management Module Platform as Object Links.
  */
 #include <assert.h>
 #include <stdbool.h>
