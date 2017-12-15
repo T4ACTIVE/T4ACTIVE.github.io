@@ -17,7 +17,7 @@
 </head>
 
 <body onload="prettyPrint()">
-<!-- header section -->
+<!-- header/navigation section --> 
 <section class="navpart">
   <header id="header">
 		<div class="navbar navbar-inverse navbar-fixed-top " id="menu">
@@ -43,20 +43,22 @@
 		</div>
 		</div>
   </header>
-  <!-- banner text -->
 </section>
-<!-- header section --> 
+<!-- header/navigation section end --> 
 
-<!-- models section -->
+<!-- multiple models section -->
 <section id="contact" class="section">
 <div class="container">
  <div class="row">
 	<div class="col-md-8 col-md-offset-2 conForm">
-	<h4><span id="Name"></span>
-      	 <a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/DeviceBinding">View on GitHub
-	 <img src="../../images/github.png" alt=""/></a>
-	</h4>	
-        <h3 id="Description1"></h3>
+	    <div class="model-title">
+	       <h4><span id="Name"></span>
+      	       <a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/DeviceBinding">View on GitHub
+	       <img src="../../images/github.png" alt=""/></a>
+	       </h4>
+	    </div>
+       
+    <!-- panels for data models -->
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 	    
 		<!-- LWM2M MODEL-->
@@ -64,13 +66,14 @@
 			<div class="panel-heading" role="tab" id="headingOne">
 				<h4 class="panel-title">
 				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-				LWM2M Model
+				LWM2M
 				</a>
 				</h4>
 			</div>
 			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 				<div class="panel-body">
-					<div class="body-content">	
+					<div class="body-content">
+						<!-- URN of the data model -->	
 						<div class="panel-headingl" role="tab" id="headingSOne">
 							<h4 class="panel-titlel">
 							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSOne" aria-expanded="false" aria-controls="collapseSOne">
@@ -79,26 +82,27 @@
 							</h4>
 						</div>
 						
+						<!-- more content of the data model -->
 						<div id="collapseSOne" class="panel-collapse collapse" role="tabpane1" aria-labelledby="headingtSOne">
 							<div class="panel-body">
-							    <!-- object_file_sumcheck-->
-							     <div class="body-content">
+							    <!-- description of data model -->
+							    <div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsone">
 									<h4 class="panel-titles">
 									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesone" aria-expanded="false" aria-controls="collapsesone">
-										Checksum 
+										Description 
 									</a>
 									</h4>
 									</div>
 									<div id="collapsesone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsone">
 									<div class="panel-bodys" style="word-break:break-all;">	
-										917d11c244a7271a054a68b1cf1d47c618ca562 
+										 <span id="Description1"></span> 
 									</div>
 									</div>
+								</div>
+								<!-- description of data model end -->
 								
-								 </div>
-								
-								<!-- object_file_Resources fields-->
+								<!-- resources fields of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingstwo">
 									<h4 class="panel-titles">
@@ -165,8 +169,9 @@
 										</div>
 									</div>	
 								</div>
-						
-								<!-- object_example_usage-->
+								<!-- resources fields of data model end -->
+
+								<!-- example usage of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsthree">
 									<h4 class="panel-titles">
@@ -181,8 +186,9 @@
 										</div>
 									</div>	
 								</div>
+								<!-- example usage of data model end -->
 								
-								<!-- object_file_xml-->
+								<!-- xml file of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsfour">
 									<h4 class="panel-titles">
@@ -200,8 +206,9 @@
 										</div>
 									</div>	
 								</div>
-									
-								<!-- object_file_json-->
+								<!-- xml file of data model end -->	
+
+								<!-- json file of data model -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingsfive">
 									<h4 class="panel-titles">
@@ -220,8 +227,9 @@
 										</div>
 									</div>	
 								</div>
+								<!-- json file of data model end -->
 								
-								<!-- object_file_code-->
+								<!-- code part -->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingssix">
 									<h4 class="panel-titles">
@@ -260,222 +268,24 @@
 													</div>
 												</div>
 										</div>	
-
 										</div>
 									</div>	
 								</div>
+								<!-- code part end -->
 							 </div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<!-- UCI MODEL-->
-		<div class="panel panel-default">
-			<div class="panel-heading sn" role="tab" id="headingTwo">
-				<h4 class="panel-title">
-				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				UCI Model
-				</a>
-				</h4>
-			</div>
-			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-				<div class="panel-body">
-					<div class="body-content">
-					
-						<!-- description-->
-						<div class="panel-headings" role="tab" id="headinguone">
-							<h4 class="panel-titled">
-							Description -- OpenWRT gateway native data model for the whole gateway
-							</h4>
-						</div>
-						
-						
-						<!-- URL-->
-						<div class="panel-headings" role="tab" id="headingutwo">
-							<h4 class="panel-titled">
-							URL -- file://localhost/etc/config/system
-							</h4>
-						</div>
-						
-						<!-- Config-->
-						<div class="panel-headings" role="tab" id="headinguthree">
-							<h4 class="panel-titles">
-							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseTwo" href="#collapseuthree" aria-expanded="false" aria-controls="collapseuthree">
-							Config
-							</a>
-							</h4>
-						</div>
-						<div id="collapseuthree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinguthree">
-							<div class="panel-body">
-							    <!-- Config-system-->
-								<div class="body-content">
-									<div class="panel-headingsb" role="tab" id="headingtso">
-									<h4 class="panel-titlesb">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseuthree" href="#collapsetso" aria-expanded="false" aria-controls="collapsetso">
-										System -- The system section contains settings that apply to the most basic operation of the system.
-									</a>
-									</h4>
-									</div>
-									<div id="collapsetso" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso">
-										<div class="panel-body">
-										<div class="body-content">
-												<div class="panel-headingsbt" role="tab" id="headingtso1">
-												<h4 class="panel-titlesb">
-												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetso" href="#collapsetso1" aria-expanded="false" aria-controls="collapsetso1">
-												Option fields
-												</a>
-												</h4>
-												</div>
-												<div id="collapsetso1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso1">
-													<div class="panel-bodys">
-													<!-- table of content-->
-													<div class="table-responsive">
-													<table class="table table-bordered table-hover">
-														  <thead>
-															<tr>
-															<th>Name</th>
-															<th>Type</th>
-															<th>Required</th>
-															<th>Default</th>
-															<th>Description</th>
-															</tr>
-														  </thead>
-															  <tbody>
-																<tr>
-																	<td>hostname</td>
-																	<td>string</td>
-																	<td>no</td>
-																	<td>OpenWrt</td>
-																	<td>The hostname for this system. Avoid points, even if they are within single or double quotes. For example 'my.hostname' will show only the 'my' part.</td>	
-																</tr>
-																
-																<tr>
-																	<td>timezone</td>
-																	<td>string</td>
-																	<td>no</td>
-																	<td>UTC</td>
-																	<td>The time zone that date and time should be rendered in by default.</td>	
-																</tr>
-														  </tbody>
-														</table>
-													  </div><!--end of .table-responsive-->
-													</div>
-												</div>
-											</div>	 
-										</div>
-									</div>
-								</div>	
-								
-								<!-- Config-timeserver-->
-								<div class="body-content">
-									<div class="panel-headingsb" role="tab" id="headingtst">
-									<h4 class="panel-titlesb">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseuthree" href="#collapsetst" aria-expanded="false" aria-controls="collapsetst">
-										Timeserver -- The timeserver section contains a list of NTP servers for the system to use.
-									</a>
-									</h4>
-									</div>
-									<div id="collapsetst" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst">
-										<div class="panel-body">
-										
-										<!-- Config-timeserver-list fields-->
-											<div class="body-content">
-												<div class="panel-headingsbt" role="tab" id="headingtst1">
-												<h4 class="panel-titles">
-												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetst" href="#collapsetst1" aria-expanded="false" aria-controls="collapsetst1">
-												List fields
-												</a>
-												</h4>
-												</div>
-												<div id="collapsetst1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst1">
-													<div class="panel-bodys">
-													<!-- table of content-->
-													<div class="table-responsive">
-															<table class="table table-bordered table-hover">
-															  <thead>
-																<tr>
-																	<th>Name</th>
-																	<th>Type</th>
-																	<th>Required</th>
-																	<th>Default</th>
-																	<th>Description</th>
-																</tr>
-															  </thead>
-															  <tbody>
-																<tr>
-																	<td>server</td>
-																	<td>list of hostnames</td>
-																	<td>no</td>
-																	<td>none</td>
-																	<td>Defines the pool of NTP servers to poll the time from. If the list is empty, the builtin NTP daemon is not started.</td>	
-																</tr>																
-															  </tbody>
-															</table>
-													</div>			
-										<!-- table end--> 
-													</div>
-												</div>
-											</div>	
-										
-										<!-- Config-timeserver-option fields-->
-											<div class="body-content">
-												<div class="panel-headingsbt" role="tab" id="headingtst2">
-												<h4 class="panel-titlesb">
-												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetst" href="#collapsetst2" aria-expanded="false" aria-controls="collapsetst2">
-												Option fields
-												</a>
-												</h4>
-												</div>
-												<div id="collapsetst2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst2">
-													<div class="panel-bodys">
-														<!-- table of content-->
-													<div class="table-responsive">
-															<table class="table table-bordered table-hover">
-															  <thead>
-																<tr>
-																	<th>Name</th>
-																	<th>Type</th>
-																	<th>Required</th>
-																	<th>Default</th>
-																	<th>Description</th>
-																</tr>
-															  </thead>
-															  <tbody>
-																<tr>
-																	<td>enable_server</td>
-																	<td>boolean</td>
-																	<td>no</td>
-																	<td>0</td>
-																	<td>You can put busybox-ntpd in client mode only: by defining at least one host to server and puting enable_server 0 client & server mode: by putting enable_server to 1, (busybox-ntpd listens to UDP 123 by default), server mode only: by not defining any servers in the config and just put enable_server 1 (ntpd will answer with the time of the router)</td>	
-																</tr>															
-															  </tbody>
-															</table>
-													</div>						
-										<!-- table end--> 
-													</div>
-												</div>
-											</div>	
-										</div>
-									</div>
-								</div>		
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-
-</div>		
-</div>
-</div>
-
-	
-</div><!-- .container --> 
-<!-- models section --> 	
+		<!-- LWM2M MODEL end -->
+	</div>	
+	<!-- panels for data models end -->		
+	</div>
+</div>	
+</div>	
 </section>
+<!-- multiple models section end -->
 
 <!-- JS FILES --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

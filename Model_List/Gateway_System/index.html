@@ -17,22 +17,19 @@
 </head>
 
 <body onload="prettyPrint()">
-<!-- header section -->
+<!-- header/navigation section -->
 <section class="navpart">
   <header id="header">
-		<div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+	<div class="navbar navbar-inverse navbar-fixed-top " id="menu">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-				</button>
-				
+				</button>	
 			</div>
-	
 			<div class="navbar-collapse collapse move-me">
-				
 				<ul class="nav navbar-nav navbar-right">
 					<li class="home"><a href="../../index.html">HOME</a></li>
 					<li class="models"><a href="../../models.html"><font color="#20B2AA">MODELS</font></a></li>
@@ -41,451 +38,517 @@
 				</ul>
 			</div>   
 		</div>
-		</div>
+	</div>
   </header>
-  <!-- banner text -->
 </section>
-<!-- header section --> 
+<!-- header/navigation section end--> 
 
-<!-- models section -->
+<!-- multiple models section -->
 <section id="contact" class="section">
 <div class="container">
- <div class="row">
-	<div class="col-md-8 col-md-offset-2 conForm">
-	<h4><span id="Name"></span>
-      	 <a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/Gateway_System">View on GitHub
-	 <img src="../../images/github.png" alt=""/></a>
-	</h4>	
-        <h3 id="Description1"></h3>
-	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 conForm">
+			<div class="model-title">
+				<h4>Gateway System data models
+				<a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/Gateway_System">View on GitHub
+				<img src="../../images/github.png" alt=""/></a>
+				</h4>
+		    </div>
+		<!-- panels for data models -->
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 	    
-		<!-- LWM2M MODEL-->
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h4 class="panel-title">
-				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-				LWM2M
-				</a>
-				</h4>
-			</div>
-			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-				<div class="panel-body">
-					<div class="body-content">	
-						<div class="panel-headingl" role="tab" id="headingSOne">
-							<h4 class="panel-titlel">
-							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSOne" aria-expanded="false" aria-controls="collapseSOne">
-							Object version:   <span id="ObjectURN"></span>
-							</a>
-							</h4>
-						</div>
-						
-						<div id="collapseSOne" class="panel-collapse collapse" role="tabpane1" aria-labelledby="headingtSOne">
-							<div class="panel-body">
-							    <!-- object_file_sumcheck-->
-							     <div class="body-content">
-									<div class="panel-headings" role="tab" id="headingsone">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesone" aria-expanded="false" aria-controls="collapsesone">
-										Checksum 
-									</a>
-									</h4>
-									</div>
-									<div id="collapsesone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsone">
-									<div class="panel-bodys" style="word-break:break-all;">	
-										917d11c244a7271a054a68b1cf1d47c618ca562 
-									</div>
-									</div>
-								
-								 </div>
-								
-								<!-- object_file_Resources fields-->
-								<div class="body-content">
-									<div class="panel-headings" role="tab" id="headingstwo">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsestwo" aria-expanded="false" aria-controls="collapsestwo">
-										Resource Fields	
-									</a>
-									</h4>
-									</div>
-									<div id="collapsestwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtstwo">
-										<div class="panel-bodys">
-										    <!-- table of content-->
-											<div class="table-responsive">
-											<table class="table table-bordered table-hover">
-											  <thead>
-												<tr>
-												    <th>Resource</th>
-												    <th>ID</th>
-													<th>Access Type</th>
-													<th>Multiple Instances</th>
-													<th>Mandatory</th>
-													<th>Type</th>
-													<th>Range/Enumeration</th>
-													<th>Units</th>
-													<th>Description</th>
-												</tr>
-											  </thead>
-											  <tbody>
-												<tr>
-												    <td>Hostname</td>
-													<td>0</td>
-													<td>R,W</td>
-													<td>Single</td>
-													<td>Optional</td>
-													<td>String</td>
-													<td>/</td>
-													<td>/</td>
-													<td>This resource type returns the hostname of the gateway.</td>
-												</tr>
-												<tr>
-												    <td>Timezone</td>
-													<td>1</td>
-													<td>R,W</td>
-													<td>Single</td>
-													<td>Optional</td>
-													<td>String</td>
-													<td>/</td>
-													<td>/</td>
-													<td>This resource type returns the default timezone.</td>
-												</tr>
-												<tr>
-												    <td>DNS Server List</td>
-													<td>2</td>
-													<td>R,W</td>
-													<td>Single</td>
-													<td>Optional</td>
-													<td>String</td>
-													<td>/</td>
-													<td>/</td>
-													<td>This resource type returns a list of DNS Servers used by this system.</td>
-												</tr>
-												<tr>
-												    <td>NTP Server List</td>
-													<td>3</td>
-													<td>R,W</td>
-													<td>Single</td>
-													<td>Optional</td>
-													<td>String</td>
-													<td>/</td>
-													<td>/</td>
-													<td>This resource type returns a list of NTP Servers.</td>
-												</tr>
-											  </tbody>
-											</table>
-										  </div><!--end of .table-responsive-->
-										</div>
-									</div>	
-								</div>
-						
-								<!-- object_example_usage-->
-								<div class="body-content">
-									<div class="panel-headings" role="tab" id="headingsthree">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesthree" aria-expanded="false" aria-controls="collapsesthree">
-										Example usage
-									</a>
-									</h4>
-									</div>
-									<div id="collapsesthree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsthree">
-										<div class="panel-bodys">
-										The gateway system object contains the most basic functionalities for a gateway such as its name, timezone and so on. All properties are represented as readable and writable resources using standard LWM2M operations.
-										</div>
-									</div>	
-								</div>
-								
-								<!-- object_file_xml-->
-								<div class="body-content">
-									<div class="panel-headings" role="tab" id="headingsfour">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfour" aria-expanded="false" aria-controls="collapsesfour">
-										XML
-									</a>
-									</h4>
-									</div>
-									<div id="collapsesfour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfour">
-										<div class="panel-bodys">
-										<div class="downloadButt">
-										<a href="Gateway_System.xml" download=""><img src="../../images/download.png" alt="download" title="download" /></a>
-										</div>
-										<pre class="prettyprint lang-xml" id="placeholder"></pre>
-										</div>
-									</div>	
-								</div>
-									
-								<!-- object_file_json-->
-								<div class="body-content">
-									<div class="panel-headings" role="tab" id="headingsfive">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfive" aria-expanded="false" aria-controls="collapsesfive">
-										JSON
-									</a>
-									</h4>
-									</div>
-									<div id="collapsesfive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfive">
-										<div class="panel-bodys">
-										<div class="downloadButt">
-										<a href="Gateway_System.json" download=""><img src="../../images/download.png" alt="download" title="download" /></a>
-										</div>
-										 <pre class="prettyprint lang-json" id="placeholderJ"><xmp></xmp></pre>
-	     
-										</div>
-									</div>	
-								</div>
-								
-								<!-- object_file_code-->
-								<div class="body-content">
-									<div class="panel-headings" role="tab" id="headingssix">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsessix" aria-expanded="false" aria-controls="collapsessix">
-										Code
-									</a>
-									</h4>
-									</div>
-									<div id="collapsessix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtssix">
-										<div class="panel-body">
-										<div class="body-content">
-												<div class="panel-headingsb" role="tab" id="headingssix1">
-												<h4 class="panel-titles">
-												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetssix" href="#collapsessix1" aria-expanded="false" aria-controls="collapsetssix1">
-												Wakaama
-												</a>
-												</h4>
-												</div>
-												<div id="collapsessix1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtssix1">
-													<div class="panel-bodys">
-													<a href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/blob/master/Model_List/Gateway_System/object_system.c" class="codelink">object_system.c</a>
-													</div>
-												</div>
-										</div>
-										<div class="body-content">
-												<div class="panel-headingsb" role="tab" id="headingssix2">
-												<h4 class="panel-titles">
-												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsessix" href="#collapsessix2" aria-expanded="false" aria-controls="collapsessix2">
-												Leshan
-												</a>
-												</h4>
-												</div>
-												<div id="collapsessix2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingssix2">
-													<div class="panel-bodys">
-														None
-													</div>
-												</div>
-										</div>	
-
-										</div>
-									</div>	
-								</div>
-							 </div>
-						</div>
-					</div>
+			<!-- LWM2M MODEL -->
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+					<h4 class="panel-title">
+					<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					LWM2M
+					</a>
+					</h4>
 				</div>
-			</div>
-		</div>
-		
-		<!-- UCI MODEL-->
-		<div class="panel panel-default">
-			<div class="panel-heading sn" role="tab" id="headingTwo">
-				<h4 class="panel-title">
-				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				UCI
-				</a>
-				</h4>
-			</div>
-			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-				<div class="panel-body">
-					<div class="body-content">
-					
-						<!-- description-->
-						<div class="panel-headings" role="tab" id="headinguone">
-							<h4 class="panel-titled">
-							Description -- OpenWRT gateway native data model for the whole gateway
-							</h4>
-						</div>
-						
-						
-						<!-- URL-->
-						<div class="panel-headings" role="tab" id="headingutwo">
-							<h4 class="panel-titled">
-							URL -- file://localhost/etc/config/system
-							</h4>
-						</div>
-						
-						<!-- Config-->
-						<div class="panel-headings" role="tab" id="headinguthree">
-							<h4 class="panel-titles">
-							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseTwo" href="#collapseuthree" aria-expanded="false" aria-controls="collapseuthree">
-							Config
-							</a>
-							</h4>
-						</div>
-						<div id="collapseuthree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinguthree">
-							<div class="panel-body">
-							    <!-- Config-system-->
-								<div class="body-content">
-									<div class="panel-headingsb" role="tab" id="headingtso">
-									<h4 class="panel-titlesb">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseuthree" href="#collapsetso" aria-expanded="false" aria-controls="collapsetso">
-										System -- The system section contains settings that apply to the most basic operation of the system.
-									</a>
-									</h4>
-									</div>
-									<div id="collapsetso" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso">
-										<div class="panel-body">
-										<div class="body-content">
-												<div class="panel-headingsbt" role="tab" id="headingtso1">
-												<h4 class="panel-titlesb">
-												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetso" href="#collapsetso1" aria-expanded="false" aria-controls="collapsetso1">
-												Option fields
-												</a>
-												</h4>
-												</div>
-												<div id="collapsetso1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso1">
-													<div class="panel-bodys">
-													<!-- table of content-->
-													<div class="table-responsive">
-													<table class="table table-bordered table-hover">
-														  <thead>
-															<tr>
-															<th>Name</th>
-															<th>Type</th>
-															<th>Required</th>
-															<th>Default</th>
-															<th>Description</th>
-															</tr>
-														  </thead>
-															  <tbody>
-																<tr>
-																	<td>hostname</td>
-																	<td>string</td>
-																	<td>no</td>
-																	<td>OpenWrt</td>
-																	<td>The hostname for this system. Avoid points, even if they are within single or double quotes. For example 'my.hostname' will show only the 'my' part.</td>	
-																</tr>
-																
-																<tr>
-																	<td>timezone</td>
-																	<td>string</td>
-																	<td>no</td>
-																	<td>UTC</td>
-																	<td>The time zone that date and time should be rendered in by default.</td>	
-																</tr>
-														  </tbody>
-														</table>
-													  </div><!--end of .table-responsive-->
-													</div>
-												</div>
-											</div>	 
-										</div>
-									</div>
-								</div>	
+				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+						<div class="body-content">	
+							<!-- URN of the data model -->
+							<div class="panel-headingl" role="tab" id="headingSOne">
+								<h4 class="panel-titlel">
+								<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSOne" aria-expanded="false" aria-controls="collapseSOne">
+								Object version:    <span id="ObjectURN"></span>
+								</a>
+								</h4>
+							</div>
+							
+							<!-- more content of the data model -->
+							<div id="collapseSOne" class="panel-collapse collapse" role="tabpane1" aria-labelledby="headingtSOne">
+								<div class="panel-body">
 								
-								<!-- Config-timeserver-->
-								<div class="body-content">
-									<div class="panel-headingsb" role="tab" id="headingtst">
-									<h4 class="panel-titlesb">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseuthree" href="#collapsetst" aria-expanded="false" aria-controls="collapsetst">
-										Timeserver -- The timeserver section contains a list of NTP servers for the system to use.
-									</a>
-									</h4>
-									</div>
-									<div id="collapsetst" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst">
-										<div class="panel-body">
-										
-										<!-- Config-timeserver-list fields-->
-											<div class="body-content">
-												<div class="panel-headingsbt" role="tab" id="headingtst1">
-												<h4 class="panel-titles">
-												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetst" href="#collapsetst1" aria-expanded="false" aria-controls="collapsetst1">
-												List fields
-												</a>
-												</h4>
-												</div>
-												<div id="collapsetst1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst1">
-													<div class="panel-bodys">
-													<!-- table of content-->
-													<div class="table-responsive">
-															<table class="table table-bordered table-hover">
-															  <thead>
-																<tr>
-																	<th>Name</th>
-																	<th>Type</th>
-																	<th>Required</th>
-																	<th>Default</th>
-																	<th>Description</th>
-																</tr>
-															  </thead>
-															  <tbody>
-																<tr>
-																	<td>server</td>
-																	<td>list of hostnames</td>
-																	<td>no</td>
-																	<td>none</td>
-																	<td>Defines the pool of NTP servers to poll the time from. If the list is empty, the builtin NTP daemon is not started.</td>	
-																</tr>																
-															  </tbody>
-															</table>
-													</div>			
-										<!-- table end--> 
-													</div>
-												</div>
-											</div>	
-										
-										<!-- Config-timeserver-option fields-->
-											<div class="body-content">
-												<div class="panel-headingsbt" role="tab" id="headingtst2">
-												<h4 class="panel-titlesb">
-												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetst" href="#collapsetst2" aria-expanded="false" aria-controls="collapsetst2">
-												Option fields
-												</a>
-												</h4>
-												</div>
-												<div id="collapsetst2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst2">
-													<div class="panel-bodys">
-														<!-- table of content-->
-													<div class="table-responsive">
-															<table class="table table-bordered table-hover">
-															  <thead>
-																<tr>
-																	<th>Name</th>
-																	<th>Type</th>
-																	<th>Required</th>
-																	<th>Default</th>
-																	<th>Description</th>
-																</tr>
-															  </thead>
-															  <tbody>
-																<tr>
-																	<td>enable_server</td>
-																	<td>boolean</td>
-																	<td>no</td>
-																	<td>0</td>
-																	<td>You can put busybox-ntpd in client mode only: by defining at least one host to server and puting enable_server 0 client & server mode: by putting enable_server to 1, (busybox-ntpd listens to UDP 123 by default), server mode only: by not defining any servers in the config and just put enable_server 1 (ntpd will answer with the time of the router)</td>	
-																</tr>															
-															  </tbody>
-															</table>
-													</div>						
-										<!-- table end--> 
-													</div>
-												</div>
-											</div>	
+									 <!-- description of data model -->
+								     <div class="body-content">
+										<div class="panel-headings" role="tab" id="headingsone">
+											<h4 class="panel-titles">
+											<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesone" aria-expanded="false" aria-controls="collapsesone">
+												Description 
+											</a>
+											</h4>
 										</div>
+										<!-- -->
+										<div id="collapsesone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsone">
+											<div class="panel-bodys" style="word-break:break-all;">	
+											<span id="Description1"></span>
+											</div>
+										</div>
+									 </div>
+									<!-- description of data model end -->
+
+									<!-- resources fields of data model -->
+									<div class="body-content">
+										<div class="panel-headings" role="tab" id="headingstwo">
+											<h4 class="panel-titles">
+											<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsestwo" aria-expanded="false" aria-controls="collapsestwo">
+												Resource Fields	
+											</a>
+											</h4>
+										</div>
+										<div id="collapsestwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtstwo">
+											<div class="panel-bodys">
+											    <!-- table of content-->
+												<div class="table-responsive">
+												<table class="table table-bordered table-hover">
+												  <thead>
+													<tr>
+													    <th>Resource</th>
+													    <th>ID</th>
+														<th>Access Type</th>
+														<th>Multiple Instances</th>
+														<th>Mandatory</th>
+														<th>Type</th>
+														<th>Range/Enumeration</th>
+														<th>Units</th>
+														<th>Description</th>
+													</tr>
+												  </thead>
+												  <tbody>
+													<tr>
+													    <td>Hostname</td>
+														<td>0</td>
+														<td>R,W</td>
+														<td>Single</td>
+														<td>Optional</td>
+														<td>String</td>
+														<td>/</td>
+														<td>/</td>
+														<td>This resource type returns the hostname of the gateway.</td>
+													</tr>
+													<tr>
+													    <td>Timezone</td>
+														<td>1</td>
+														<td>R,W</td>
+														<td>Single</td>
+														<td>Optional</td>
+														<td>String</td>
+														<td>/</td>
+														<td>/</td>
+														<td>This resource type returns the default timezone.</td>
+													</tr>
+													<tr>
+													    <td>DNS Server List</td>
+														<td>2</td>
+														<td>R,W</td>
+														<td>Single</td>
+														<td>Optional</td>
+														<td>String</td>
+														<td>/</td>
+														<td>/</td>
+														<td>This resource type returns a list of DNS Servers used by this system.</td>
+													</tr>
+													<tr>
+													    <td>NTP Server List</td>
+														<td>3</td>
+														<td>R,W</td>
+														<td>Single</td>
+														<td>Optional</td>
+														<td>String</td>
+														<td>/</td>
+														<td>/</td>
+														<td>This resource type returns a list of NTP Servers.</td>
+													</tr>
+												  </tbody>
+												</table>
+											  </div><!--end of .table-responsive-->
+											</div>
+										</div>	
 									</div>
-								</div>		
+									<!-- resources fields of data model end -->
+
+									<!-- example usage of data model -->
+									<div class="body-content">
+										<div class="panel-headings" role="tab" id="headingsthree">
+											<h4 class="panel-titles">
+											<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesthree" aria-expanded="false" aria-controls="collapsesthree">
+												Example usage
+											</a>
+										</h4>
+										</div>
+										<div id="collapsesthree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsthree">
+											<div class="panel-bodys">
+											The gateway system object contains the most basic functionalities for a gateway such as its name, timezone and so on. All properties are represented as readable and writable resources using standard LWM2M operations.
+											</div>
+										</div>	
+									</div>
+									<!-- example usage of data model end -->
+									
+									<!-- xml file of data model -->
+									<div class="body-content">
+										<div class="panel-headings" role="tab" id="headingsfour">
+											<h4 class="panel-titles">
+											<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfour" aria-expanded="false" aria-controls="collapsesfour">
+												XML
+											</a>
+											</h4>
+										</div>
+										<div id="collapsesfour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfour">
+											<div class="panel-bodys">
+												<div class="downloadButt">
+													<a href="Gateway_System.xml" download=""><img src="../../images/download.png" alt="download" title="download" /></a>
+												</div>
+												<pre class="prettyprint lang-xml" id="placeholder"></pre>
+											</div>
+										</div>	
+									</div>
+									<!-- xml file of data model end-->
+										
+									<!-- json file of data model -->
+									<div class="body-content">
+										<div class="panel-headings" role="tab" id="headingsfive">
+											<h4 class="panel-titles">
+											<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfive" aria-expanded="false" aria-controls="collapsesfive">
+												JSON
+											</a>
+											</h4>
+										</div>
+										<div id="collapsesfive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfive">
+											<div class="panel-bodys">
+												<div class="downloadButt">
+													<a href="Gateway_System.json" download=""><img src="../../images/download.png" alt="download" title="download" /></a>
+												</div>
+											 	<pre class="prettyprint lang-json" id="placeholderJ"><xmp></xmp></pre>
+											</div>
+										</div>	
+									</div>
+									<!-- json file of data model end -->
+									
+									<!-- code part -->
+									<div class="body-content">
+										<div class="panel-headings" role="tab" id="headingssix">
+											<h4 class="panel-titles">
+											<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsessix" aria-expanded="false" aria-controls="collapsessix">
+												Code
+											</a>
+											</h4>
+										</div>
+										<div id="collapsessix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtssix">
+											<div class="panel-body">
+												<div class="body-content">
+													<div class="panel-headingsb" role="tab" id="headingssix1">
+														<h4 class="panel-titles">
+														<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetssix" href="#collapsessix1" aria-expanded="false" aria-controls="collapsetssix1">
+														Wakaama
+														</a>
+														</h4>
+													</div>
+													<div id="collapsessix1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtssix1">
+														<div class="panel-bodys">
+															<a href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/blob/master/Model_List/Gateway_System/object_system.c" class="codelink">object_system.c</a>
+														</div>
+													</div>
+												</div>
+												<div class="body-content">
+													<div class="panel-headingsb" role="tab" id="headingssix2">
+														<h4 class="panel-titles">
+														<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsessix" href="#collapsessix2" aria-expanded="false" aria-controls="collapsessix2">
+														Leshan
+														</a>
+														</h4>
+													</div>
+													<div id="collapsessix2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingssix2">
+														<div class="panel-bodys">
+															None
+														</div>
+													</div>
+												</div>	
+											</div>
+										</div>	
+									</div>
+									<!-- code part end -->
+								</div>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 			</div>
-		</div>
-</div>		
-</div>
-</div>
+			<!-- LWM2M MODEL end-->
 
-	
-</div><!-- .container --> 
-<!-- models section --> 	
+		
+			<!-- UCI MODEL -->
+			<div class="panel panel-default">
+				<div class="panel-heading sn" role="tab" id="headingTwo">
+					<h4 class="panel-title">
+					<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					UCI
+					</a>
+					</h4>
+				</div>
+				
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="panel-body">
+						<div class="body-content">
+						
+							<!-- description of data model -->
+							<div class="panel-headings" role="tab" id="headinguone">
+								<h4 class="panel-titles">
+								<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseuone" aria-expanded="false" aria-controls="collapseuone">
+								Description
+								</a> 
+								</h4>
+							</div>
+							<div id="collapseuone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtuone">
+								<div class="panel-bodys" style="word-break:break-all;">	
+								OpenWRT gateway native data model for the whole gateway	
+								</div>
+							</div>
+							<!-- description of data model end -->
+
+							<!-- URL of data model -->
+							<div class="panel-headings" role="tab" id="headingutwo">
+								<h4 class="panel-titles">
+								<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseTwo" href="#collapseutwo" aria-expanded="false" aria-controls="collapseuone">
+								URL
+								</a> 
+								</h4>
+							</div>
+							<div id="collapseutwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtutwo">
+								<div class="panel-bodys" style="word-break:break-all;">	
+								file://localhost/etc/config/system
+								</div>
+							</div>
+							<!-- URL of data model end -->
+
+							<!-- Config part of data model -->
+							<div class="panel-headings" role="tab" id="headinguthree">
+								<h4 class="panel-titles">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseTwo" href="#collapseuthree" aria-expanded="false" aria-controls="collapseuthree">
+									Config
+									</a>
+								</h4>
+							</div>
+							<div id="collapseuthree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinguthree">
+								<div class="panel-body">
+									<!-- Config-system -->
+									<div class="body-content">
+										<div class="panel-headingsb" role="tab" id="headingtso">
+											<h4 class="panel-titlesb">
+											<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseuthree" href="#collapsetso" aria-expanded="false" aria-controls="collapsetso">
+												System
+											</a>
+											</h4>
+										</div>	
+										
+										<!-- the content of the Config-system -->									
+										<div id="collapsetso" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso">
+											<div class="panel-body">
+												<div class="body-content">
+												
+													<!-- description of the system -->
+													<div class="panel-headingsbt" role="tab" id="headingtso0">
+														<h4 class="panel-titlesb">
+															<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetso" href="#collapsetso0" aria-expanded="false" aria-controls="collapsetso0">
+															Description
+															</a>
+														</h4>
+													</div>
+													<div id="collapsetso0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso">
+														<div class="panel-bodysb">
+																The system section contains settings that apply to the most basic operation of the system
+														</div>
+													</div>
+													<!-- description of the system end -->
+
+													<!-- option fields of the system -->
+													<div class="panel-headingsbt" role="tab" id="headingtso1">
+														<h4 class="panel-titlesb">
+															<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetso" href="#collapsetso1" aria-expanded="false" aria-controls="collapsetso1">
+															Option fields
+															</a>
+														</h4>
+													</div>
+													<div id="collapsetso1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso1">
+														<div class="panel-bodys">
+															<!-- table of content-->
+															<div class="table-responsive">
+																<table class="table table-bordered table-hover">
+																  <thead>
+																	<tr>
+																	<th>Name</th>
+																	<th>Type</th>
+																	<th>Required</th>
+																	<th>Default</th>
+																	<th>Description</th>
+																	</tr>
+																  </thead>
+																	  <tbody>
+																		<tr>
+																			<td>hostname</td>
+																			<td>string</td>
+																			<td>no</td>
+																			<td>OpenWrt</td>
+																			<td>The hostname for this system. Avoid points, even if they are within single or double quotes. For example 'my.hostname' will show only the 'my' part.</td>	
+																		</tr>
+																		
+																		<tr>
+																			<td>timezone</td>
+																			<td>string</td>
+																			<td>no</td>
+																			<td>UTC</td>
+																			<td>The time zone that date and time should be rendered in by default.</td>	
+																		</tr>
+																  </tbody>
+																</table>
+															</div>
+															<!--end of .table-responsive-->
+														</div>
+													</div>
+													<!-- option fields of the system end -->
+												</div>
+											</div>
+										</div>	
+									</div>
+									<!-- Config-system end -->
+
+									
+									<!-- Config-timeserver -->
+									<div class="body-content">
+										<div class="panel-headingsb" role="tab" id="headingtst">
+											<h4 class="panel-titlesb">
+											<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseuthree" href="#collapsetst" aria-expanded="false" aria-controls="collapsetst">
+												Timeserver
+											</a>
+											</h4>
+										</div>
+										<div id="collapsetst" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst">
+											<div class="panel-body">
+												<div class="body-content">
+											
+													<!-- description of the timeserver -->
+													<div class="panel-headingsbt" role="tab" id="headingtst0">
+														<h4 class="panel-titlesb">
+														<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetso" href="#collapsetst0" aria-expanded="false" aria-controls="collapsetst0">
+														Description
+														</a>
+														</h4>
+													</div>
+													<div id="collapsetst0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst0">
+														<div class="panel-bodysb">
+														The timeserver section contains a list of NTP servers for the system to use
+														</div>
+													</div>
+													<!-- description of the timeserver end -->
+											
+													<!-- list fields of the timeserver -->
+													<div class="panel-headingsbt" role="tab" id="headingtst1">
+														<h4 class="panel-titles">
+														<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetst" href="#collapsetst1" aria-expanded="false" aria-controls="collapsetst1">
+														List fields
+														</a>
+														</h4>
+													</div>
+													<div id="collapsetst1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst1">
+														<div class="panel-bodys">
+															<!-- table of content -->
+															<div class="table-responsive">
+																	<table class="table table-bordered table-hover">
+																	  <thead>
+																		<tr>
+																			<th>Name</th>
+																			<th>Type</th>
+																			<th>Required</th>
+																			<th>Default</th>
+																			<th>Description</th>
+																		</tr>
+																	  </thead>
+																	  <tbody>
+																		<tr>
+																			<td>server</td>
+																			<td>list of hostnames</td>
+																			<td>no</td>
+																			<td>none</td>
+																			<td>Defines the pool of NTP servers to poll the time from. If the list is empty, the builtin NTP daemon is not started.</td>	
+																		</tr>																
+																	  </tbody>
+																	</table>
+															</div>			
+															<!-- table end --> 
+														</div>
+													</div>
+													<!-- list fields of the timeserver end -->
+												
+													<!-- option fields of the timeserver -->
+													<div class="panel-headingsbt" role="tab" id="headingtst2">
+														<h4 class="panel-titlesb">
+														<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetst" href="#collapsetst2" aria-expanded="false" aria-controls="collapsetst2">
+														Option fields
+														</a>
+														</h4>
+													</div>
+													<div id="collapsetst2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst2">
+														<div class="panel-bodys">
+															<!-- table of content-->
+															<div class="table-responsive">
+																	<table class="table table-bordered table-hover">
+																	  <thead>
+																		<tr>
+																			<th>Name</th>
+																			<th>Type</th>
+																			<th>Required</th>
+																			<th>Default</th>
+																			<th>Description</th>
+																		</tr>
+																	  </thead>
+																	  <tbody>
+																		<tr>
+																			<td>enable_server</td>
+																			<td>boolean</td>
+																			<td>no</td>
+																			<td>0</td>
+																			<td>You can put busybox-ntpd in client mode only: by defining at least one host to server and puting enable_server 0 client & server mode: by putting enable_server to 1, (busybox-ntpd listens to UDP 123 by default), server mode only: by not defining any servers in the config and just put enable_server 1 (ntpd will answer with the time of the router)</td>	
+																		</tr>															
+																	  </tbody>
+																	</table>
+															</div>						
+															<!-- table end--> 
+														</div>
+													</div>
+													<!-- option fields of the timeserver end -->	
+												</div>
+											</div>
+										</div>		
+									</div>
+									<!-- Config-timeserver end -->
+								</div>	
+							</div>
+							<!-- Config part of data model end -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- UCI MODEL end -->
+
+		</div>
+		<!-- panels for data models end -->		
+		</div>
+	</div>
+</div>	
 </section>
+<!-- multiple models section end -->
 
 <!-- JS FILES --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -513,13 +576,10 @@ xhrJson.onreadystatechange = function() {
  xhrJson.open("GET", "Gateway_System.json");
  xhrJson.send();	
 			
-document.getElementById("Name").innerHTML=
-xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
-
 });
 
 </script> 

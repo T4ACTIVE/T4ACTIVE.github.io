@@ -69,9 +69,7 @@ h5 {
 	border-radius: 3px;
 	font-weight: bold;
 	font-size: 10px;
-	margin-left: 20px; 
-	margin-top: 10px;
-	
+	margin-left: 20px;
 }
 
 .btn-xs:hover, .btn-xs:focus {
@@ -123,23 +121,12 @@ h5 {
 	Global Styles
 -------------------------------------------------------------------------------*/
 
-a {
-	color: #e84545;
-}
-
-a:hover, a:focus {
-	text-decoration: none;
-	-moz-transition: background-color, color, 0.3s;
-	-o-transition: background-color, color, 0.3s;
-	-webkit-transition: background-color, color, 0.3s;
-	transition: background-color, color, 0.3s;
-}
 
 body {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 400;
-	color: #6c7279;
-	background-color: ;
+	color: ;
+	background-color: #fcfcfc;
 }
 
 ul, ol {
@@ -172,7 +159,7 @@ ul li {
 .codelink {
 	color: #009FCC;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 
@@ -305,6 +292,7 @@ ul li {
 
 .ser {
 	position: relative; 
+	background-color: #fbfbfb;
 }
 
 .search {
@@ -336,10 +324,11 @@ ul li {
         font-size: 15px;
         height: 100%;
    	width: 100%;
-   	border:1px solid #f0f0f0;
+   	border:1px solid #f7f7f7;
    	border-left: 6px solid #A9A9A9;
    	margin-bottom: 10px;
    	border-radius: 2px;
+	background-color: #ffffff;
 	
     -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
@@ -511,6 +500,10 @@ ul li {
 	text-align: left;	
 }
 
+.model-title {
+	margin-bottom: 40px;
+}
+
 #cta-section {
 	padding: 50px 50px 100px 80px;
 
@@ -559,7 +552,7 @@ a:hover,a:focus{
 
 #accordion .panel{
  	box-shadow: none;
- 	border: 1px solid #f0f0f0;
+ 	border: 1px solid #f7f7f7;
  	margin-bottom: 10px;
  	margin-left: auto;
  	margin-right: auto;
@@ -660,7 +653,7 @@ a:hover,a:focus{
 #accordion .panel-headingsbt{
  	padding: 0;
  	border-radius: 5;
- 	border-left: 3px solid #AFEEEE;
+ 	border-left: 3px solid #9fefe7;
  	background-color: #fff;
  	border-radius: 5;
  	margin-bottom: 10px;
@@ -782,7 +775,8 @@ a:hover,a:focus{
 }
 
 #accordion .panel-bodys{
- 	font-size: 12px;
+ 	font-size: 14px;
+	color: #7c7c7c;
  	background: #fff;
  	padding: 12px 15px;
  	line-height: 25px;
@@ -790,6 +784,18 @@ a:hover,a:focus{
  	margin-bottom:10px;
  	text-align:left;
 }
+
+#accordion .panel-bodysb{
+ 	font-size: 13px;
+ 	color: #7c7c7c;
+ 	background: #fff;
+ 	padding: 12px 15px;
+ 	line-height: 25px;
+ 	position: relative;
+ 	margin-bottom:10px;
+ 	text-align:left;
+}
+
 
 #accordion .body-content{
 	margin-bottom: 15px;
@@ -815,6 +821,6 @@ th {
   	font-weight: bold; 
 }
 
-tr:nth-of-type(odd) { 
+tr:nth-of-type(even) { 
   	background: #eee; 
 }
