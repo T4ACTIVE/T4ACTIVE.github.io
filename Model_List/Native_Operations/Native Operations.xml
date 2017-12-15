@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>Native Operations</Name>
+		<Description1><![CDATA[The Native Operations object is one of several objects specified to provide the LWM2M server with hypermedia-like operations on the gateway.]]></Description1>
+		<ObjectID>32002</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:x:32002:1</ObjectURN>
+		<LWM2MVersion />
+		<ObjectVersion />
+		<MultipleInstances>Multiple</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="0"><Name>Op List</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Objlnk</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Points to the LWM2M object that implements native or proprietary operations]]></Description>
+			</Item>
+			<Item ID="1"><Name>Active Op</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[The currently active operation executable resource in the object pointed to]]></Description>
+			</Item>
+			</Resources>
+		<Description2 />
+	</Object>
+</LWM2M>

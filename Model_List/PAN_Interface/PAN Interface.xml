@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>PAN Interface</Name>
+		<Description1><![CDATA[The PAN (Personal Area Network) Interface Object is a generic Composite Object that can be used for modelling multiple PAN interfaces of either an endpoint or a gateway.]]></Description1>
+		<ObjectID>32001</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:x:32001:1</ObjectURN>
+		<LWM2MVersion />
+		<ObjectVersion />
+		<MultipleInstances>Multiple</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="0"><Name>Type</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[specifies the kind of PAN this interface represents, such as BLE, Zigbee, Classic Bluetooth and so on]]></Description>
+			</Item>
+			<Item ID="1"><Name>PAN Address</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[The PAN address for this type]]></Description>
+			</Item>
+			<Item ID="2"><Name>Peer Address</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[For an endpoint, this resoource would represent the gateway’s PAN address as well as the LWM2M Endpoint ID supplied by the Server, while for a gateway, multiple instances of the Peer Address Resource would represent man- aged end-points.]]></Description>
+			</Item>
+			<Item ID="3"><Name>Peer Endpoint ID</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[LWM2M Endpoint ID(s) associated with the Peer Address(es)]]></Description>
+			</Item>
+			<Item ID="4"><Name>Low Power Interface</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>Objlnk</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[In the case of a BLE-based endpoint, multiple instances of the Low Power Interface Resource would be linked to multiple instances of the BLE GATT Object, with each BLE GATT Object representing a single BLE service.]]></Description>
+			</Item></Resources>
+		<Description2><![CDATA[]]></Description2>
+	</Object>
+</LWM2M>
