@@ -5,7 +5,7 @@
     "Object": {
       "-ObjectType": "MODefinition",
       "Name": "EMM-Integrator",
-      "Description1": "This object integrates all the components that belong to the physical Energy Measurement Module Platform as Object Links.",
+      "Description1": "This object integrates all the components that belong to the physical Energy Management Module Platform as Object Links.",
       "ObjectID": "25010",
       "ObjectURN": "urn:oma:lwm2m:x:25010:1",
       "ObjectVersion": "1.0",
