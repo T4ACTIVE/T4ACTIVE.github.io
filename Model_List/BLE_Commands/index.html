@@ -1,0 +1,227 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BLE Commands</title>
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+<link rel="stylesheet" href="../../css/main.css">
+<link rel="stylesheet" href="../../css/responsive.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="../../google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../../google-code-prettify/prettify.js"></script>
+</head>
+
+<body onload="prettyPrint()">
+<!-- header/navigation section --> 
+<section class="navpart">
+  <header id="header">
+		<div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+			</div>
+			<div class="navbar-collapse collapse move-me">	
+				<ul class="nav navbar-nav navbar-right">
+					<li class="home"><a href="../../index.html">HOME</a></li>
+					<li class="models"><a href="../../models.html"><font color="#20B2AA">MODELS</font></a></li>
+					<li class="contributors"><a href="../../contribute.html">CONTRIBUTE</a></li>
+					<li class="aboutus"><a href="../../aboutUs.html">ABOUT US</a></li>
+				</ul>
+			</div>   
+		</div>
+		</div>
+  </header>
+</section>
+<!-- header/navigation section end --> 
+
+<!-- multiple models section -->
+<section id="contact" class="section">
+<div class="container">
+<div class="row">
+	<div class="col-md-8 col-md-offset-2 conForm">
+		<div class="model-title">
+		<h4><span id="Name"></span>
+      	 	<a class="btn btn-xs" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io/tree/master/Model_List/BLE_Commands">View on GitHub
+	 	    <img src="../../images/github.png" alt=""/></a>
+		</h4>	
+        	</div>
+    	<!-- panels for data models -->
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	    
+		<!-- LWM2M MODEL -->
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+				<h4 class="panel-title">
+				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				LWM2M
+				</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="panel-body">
+					<div class="body-content">
+						<!-- URN of the data model -->
+						<div class="panel-headingl" role="tab" id="headingSOne">
+							<h4 class="panel-titlel">
+							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSOne" aria-expanded="false" aria-controls="collapseSOne">
+							Object version:   <span id="ObjectURN"></span>
+							</a>
+							</h4>
+						</div>
+						
+						<!-- more content of the data model -->
+						<div id="collapseSOne" class="panel-collapse collapse" role="tabpane1" aria-labelledby="headingtSOne">
+							<div class="panel-body">
+								
+							    <!-- description of data model -->
+							    <div class="body-content">
+									<div class="panel-headings" role="tab" id="headingsone">
+										<h4 class="panel-titles">
+										<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesone" aria-expanded="false" aria-controls="collapsesone">
+										Description
+										</a>
+										</h4>
+									</div>
+									<div id="collapsesone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsone">
+										<div class="panel-bodys" style="word-break:break-all;">	
+										<span id="Description1"></span> 
+										</div>
+									</div>
+							    </div>
+							    <!-- description of data model end -->
+								
+							    <!-- resources fields of data model -->
+							    <div class="body-content">
+									<div class="panel-headings" role="tab" id="headingstwo">
+										<h4 class="panel-titles">
+										<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsestwo" aria-expanded="false" aria-controls="collapsestwo">
+										Resource Fields	
+										</a>
+										</h4>
+									</div>
+									<div id="collapsestwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtstwo">
+										<div class="panel-bodys">
+										    <!-- table of content-->
+											<div class="table-responsive">
+											<table class="table table-bordered table-hover">
+											  <thead>
+												<tr>
+												    <th>Resource</th>
+												    <th>ID</th>
+													<th>Access Type</th>
+													<th>Multiple Instances</th>
+													<th>Mandatory</th>
+													<th>Type</th>
+													<th>Description</th>
+												</tr>
+											  </thead>
+											  <tbody>
+												<tr>
+												    <td>HCI_TOOL</td>
+													<td>0</td>
+													<td>E</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>String</td>
+													<td>Allows invocation of the native "hci_tool" with the string supplied.</td>
+												</tr>													
+												<tr>
+												    <td>HCI_CONFIG</td>
+													<td>1</td>
+													<td>E</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>String</td>
+													<td>Allows invocation of the native "hci_config" with the string supplied.</td>
+												</tr>
+												<tr>
+												    <td>GATT_TOOL</td>
+													<td>2</td>
+													<td>E</td>
+													<td>Single</td>
+													<td>Mandatory</td>
+													<td>String</td>
+													<td>Allows invocation of the native "gatt_tool" with the string supplied.</td>
+												</tr>
+											  </tbody>
+											</table>
+										  </div><!--end of .table-responsive-->
+										</div>
+									</div>	
+								</div>
+								<!-- resources fields of data model end -->
+								
+								
+								<!-- xml file of data model -->
+								<div class="body-content">
+									<div class="panel-headings" role="tab" id="headingsfour">
+									<h4 class="panel-titles">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfour" aria-expanded="false" aria-controls="collapsesfour">
+										XML
+									</a>
+									</h4>
+									</div>
+									<div id="collapsesfour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfour">
+										<div class="panel-bodys">
+										<div class="downloadButt">
+										<a href="BLE Commands.xml" download=""><img src="../../images/download.png" alt="download" title="download" /></a>
+										</div>
+										<pre class="prettyprint lang-xml" id="placeholder"></pre>
+										</div>
+									</div>	
+								</div>
+								<!-- xml file of data model end -->
+								
+								
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- LWM2M MODEL end -->
+	</div>
+	<!-- panels for data models end -->			
+	</div>
+</div>	
+</div> 	
+</section>
+<!-- multiple models section end -->
+
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script>
+$.get("Log_Control_25011.xml", function(xmlDoc){
+	
+//read xml code
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+   if (xhr.readyState == 4 && xhr.status == 200) {
+       document.getElementById("placeholder").innerText = xhr.responseText;
+     }
+ }
+ xhr.open("GET", "BLE Commands.xml");
+ xhr.send();
+	
+		
+document.getElementById("Name").innerHTML=
+xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+document.getElementById("Description1").innerHTML=
+xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
+document.getElementById("ObjectURN").innerHTML=
+xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
+});
+</script> 
+</body>
+</html> 
