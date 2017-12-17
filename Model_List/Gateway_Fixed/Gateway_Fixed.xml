@@ -1,192 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <LWM2M>
+	<Object ObjectType="MODefinition">
+	<Name>IPSO Gateway Fixed Interface</Name>
+	<Description1><![CDATA[Basic settings for the fixed interface.]]></Description1>
+	<ObjectID>1024</ObjectID>
+	<ObjectURN>urn:oma:lwm2m:ext:1024</ObjectURN>
+	<MultipleInstances>Multiple</MultipleInstances>
+	<Mandatory>Optional</Mandatory>
+	<Resources>
+		<Item ID="0">
 
+			<Name>Ifname</Name>
 
-<Object ObjectType="MODefinition">
+			<Operations>RW</Operations>
 
-<Name>IPSO Gateway Fixed Interface</Name>
+			<MultipleInstances>Single</MultipleInstances>
 
+			<Mandatory>Mandatory</Mandatory>
 
-<Description1>
+			<Type>String</Type>
 
-<![CDATA[Basic settings for the fixed interface.]]>
+			<RangeEnumeration/>
 
-</Description1>
+			<Units/>
 
-<ObjectID>1024</ObjectID>
+			<Description>
 
-<ObjectURN>urn:oma:lwm2m:ext:1024</ObjectURN>
+			<![CDATA[Name of the fixed interface.]]>
 
-<MultipleInstances>Multiple</MultipleInstances>
+			</Description>
+			
+		</Item>
 
-<Mandatory>Optional</Mandatory>
 
+		<Item ID="1">
 
-<Resources>
+			<Name>MAC Address</Name>
 
+			<Operations>RW</Operations>
 
-<Item ID="0">
+			<MultipleInstances>Single</MultipleInstances>
 
-<Name>Ifname</Name>
+			<Mandatory>Optional</Mandatory>
 
-<Operations>RW</Operations>
+			<Type>String</Type>
 
-<MultipleInstances>Single</MultipleInstances>
+			<RangeEnumeration/>
 
-<Mandatory>Mandatory</Mandatory>
+			<Units/>
 
-<Type>String</Type>
+			<Description>
 
-<RangeEnumeration/>
+			<![CDATA[MAC address of the fixed interface.]]>
 
-<Units/>
+			</Description>
 
+		</Item>
 
-<Description>
 
-	<![CDATA[Name of the fixed interface.]]>
+		<Item ID="2">
 
-</Description>
-	
-</Item>
+			<Name>Status</Name>
 
+			<Operations>RW</Operations>
 
-<Item ID="1">
+			<MultipleInstances>Single</MultipleInstances>
 
-<Name>MAC Address</Name>
+			<Mandatory>Optional</Mandatory>
 
-<Operations>RW</Operations>
+			<Type>String</Type>
 
-<MultipleInstances>Single</MultipleInstances>
+			<RangeEnumeration/>
 
-<Mandatory>Optional</Mandatory>
+			<Units/>
 
-<Type>String</Type>
+			 Description>
 
-<RangeEnumeration/>
+			<![CDATA[Status of the fixed interface (up/down).]]>
 
-<Units/>
+			</Description>
 
+		</Item>
 
-<Description>
 
-<![CDATA[MAC address of the fixed interface.]]>
+		 <Item ID="3">
 
-</Description>
+			<Name>IP Address List</Name>
 
-</Item>
+			<Operations>RW</Operations>
 
+			<MultipleInstances>Single</MultipleInstances>
 
- <Item ID="2">
+			<Mandatory>Mandatory</Mandatory>
 
-<Name>Status</Name>
+			<Type>String</Type>
 
-<Operations>RW</Operations>
+			<RangeEnumeration/>
 
-<MultipleInstances>Single</MultipleInstances>
+			<Units/>
 
-<Mandatory>Optional</Mandatory>
+			 <Description>
 
-<Type>String</Type>
+			<![CDATA[List of IP addresses assigned to the fixed interface.]]>
 
-<RangeEnumeration/>
+			</Description>
 
-<Units/>
+		</Item>
 
 
- <Description>
+		 <Item ID="4">
 
-<![CDATA[Status of the fixed interface (up/down).]]>
+			<Name>Netmask</Name>
 
-</Description>
+			<Operations>RW</Operations>
 
-</Item>
+			<MultipleInstances>Single</MultipleInstances>
 
+			<Mandatory>Mandatory</Mandatory>
 
- <Item ID="3">
+			<Type>String</Type>
 
-<Name>IP Address List</Name>
+			<RangeEnumeration/>
 
-<Operations>RW</Operations>
+			<Units/>
 
-<MultipleInstances>Single</MultipleInstances>
+			 <Description>
 
-<Mandatory>Mandatory</Mandatory>
+			<![CDATA[Netmask.]]>
 
-<Type>String</Type>
+			</Description>
 
-<RangeEnumeration/>
+		</Item>
+		<Item ID="5">
 
-<Units/>
+			<Name>Protocol</Name>
 
+			<Operations>RW</Operations>
 
- <Description>
+			<MultipleInstances>Single</MultipleInstances>
 
-<![CDATA[List of IP addresses assigned to the fixed interface.]]>
+			<Mandatory>Mandatory</Mandatory>
 
-</Description>
+			<Type>String</Type>
 
-</Item>
+			<RangeEnumeration/>
 
+			<Units/>
 
- <Item ID="4">
+			 <Description>
 
-<Name>Netmask</Name>
+			<![CDATA[The interface protocol.]]>
 
-<Operations>RW</Operations>
+			</Description>
 
-<MultipleInstances>Single</MultipleInstances>
-
-<Mandatory>Mandatory</Mandatory>
-
-<Type>String</Type>
-
-<RangeEnumeration/>
-
-<Units/>
-
-
- <Description>
-
-<![CDATA[Netmask.]]>
-
-</Description>
-
-</Item>
-
-
- <Item ID="5">
-
-<Name>Protocol</Name>
-
-<Operations>RW</Operations>
-
-<MultipleInstances>Single</MultipleInstances>
-
-<Mandatory>Mandatory</Mandatory>
-
-<Type>String</Type>
-
-<RangeEnumeration/>
-
-<Units/>
-
-
- <Description>
-
-<![CDATA[The interface protocol.]]>
-
-</Description>
-
-</Item>
-
-
-
-</Resources>
-
-<Description2/>
-
-</Object>
-
+		</Item>
+	</Resources>
+	<Description2></Description2>
+   </Object>
 </LWM2M>
