@@ -3,11 +3,7 @@
     "Object": {
       "-ObjectType": "MODefinition",
       "Name": "IPSO Gateway Fixed Interface",
-      "Description1": "
-
-Basic settings for the fixed interface.
-
-",
+      "Description1": "Basic settings for the fixed interface.",
       "ObjectID": "1024",
       "ObjectURN": "urn:oma:lwm2m:ext:1024",
       "MultipleInstances": "Multiple",
@@ -21,11 +17,7 @@ Basic settings for the fixed interface.
             "MultipleInstances": "Single",
             "Mandatory": "Mandatory",
             "Type": "String",
-            "Description": "
-
-	Name of the fixed interface.
-
-"
+            "Description": "Name of the fixed interface."
           },
           {
             "-ID": "1",
@@ -34,11 +26,7 @@ Basic settings for the fixed interface.
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
             "Type": "String",
-            "Description": "
-
-MAC address of the fixed interface.
-
-"
+            "Description": "MAC address of the fixed interface."
           },
           {
             "-ID": "2",
@@ -47,11 +35,7 @@ MAC address of the fixed interface.
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
             "Type": "String",
-            "Description": "
-
-Status of the fixed interface (up/down).
-
-"
+            "Description": "Status of the fixed interface (up/down)."
           },
           {
             "-ID": "3",
@@ -60,11 +44,7 @@ Status of the fixed interface (up/down).
             "MultipleInstances": "Single",
             "Mandatory": "Mandatory",
             "Type": "String",
-            "Description": "
-
-List of IP addresses assigned to the fixed interface.
-
-"
+            "Description": "List of IP addresses assigned to the fixed interface."
           },
           {
             "-ID": "4",
@@ -73,11 +53,7 @@ List of IP addresses assigned to the fixed interface.
             "MultipleInstances": "Single",
             "Mandatory": "Mandatory",
             "Type": "String",
-            "Description": "
-
-Netmask.
-
-"
+            "Description": "Netmask."
           },
           {
             "-ID": "5",
@@ -86,11 +62,7 @@ Netmask.
             "MultipleInstances": "Single",
             "Mandatory": "Mandatory",
             "Type": "String",
-            "Description": "
-
-The interface protocol.
-
-"
+            "Description": "The interface protocol."
           }
         ]
       }
