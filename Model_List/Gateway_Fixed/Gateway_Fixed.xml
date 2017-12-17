@@ -1,160 +1,79 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LWM2M>
 	<Object ObjectType="MODefinition">
-	<Name>IPSO Gateway Fixed Interface</Name>
-	<Description1><![CDATA[Basic settings for the fixed interface.]]></Description1>
-	<ObjectID>1024</ObjectID>
-	<ObjectURN>urn:oma:lwm2m:ext:1024</ObjectURN>
-	<MultipleInstances>Multiple</MultipleInstances>
-	<Mandatory>Optional</Mandatory>
-	<Resources>
-		<Item ID="0">
-
-			<Name>Ifname</Name>
-
-			<Operations>RW</Operations>
-
-			<MultipleInstances>Single</MultipleInstances>
-
-			<Mandatory>Mandatory</Mandatory>
-
-			<Type>String</Type>
-
-			<RangeEnumeration/>
-
-			<Units/>
-
-			<Description>
-
-			<![CDATA[Name of the fixed interface.]]>
-
-			</Description>
-			
-		</Item>
-
-
-		<Item ID="1">
-
-			<Name>MAC Address</Name>
-
-			<Operations>RW</Operations>
-
-			<MultipleInstances>Single</MultipleInstances>
-
-			<Mandatory>Optional</Mandatory>
-
-			<Type>String</Type>
-
-			<RangeEnumeration/>
-
-			<Units/>
-
-			<Description>
-
-			<![CDATA[MAC address of the fixed interface.]]>
-
-			</Description>
-
-		</Item>
-
-
-		<Item ID="2">
-
-			<Name>Status</Name>
-
-			<Operations>RW</Operations>
-
-			<MultipleInstances>Single</MultipleInstances>
-
-			<Mandatory>Optional</Mandatory>
-
-			<Type>String</Type>
-
-			<RangeEnumeration/>
-
-			<Units/>
-
-			 Description>
-
-			<![CDATA[Status of the fixed interface (up/down).]]>
-
-			</Description>
-
-		</Item>
-
-
-		 <Item ID="3">
-
-			<Name>IP Address List</Name>
-
-			<Operations>RW</Operations>
-
-			<MultipleInstances>Single</MultipleInstances>
-
-			<Mandatory>Mandatory</Mandatory>
-
-			<Type>String</Type>
-
-			<RangeEnumeration/>
-
-			<Units/>
-
-			 <Description>
-
-			<![CDATA[List of IP addresses assigned to the fixed interface.]]>
-
-			</Description>
-
-		</Item>
-
-
-		 <Item ID="4">
-
-			<Name>Netmask</Name>
-
-			<Operations>RW</Operations>
-
-			<MultipleInstances>Single</MultipleInstances>
-
-			<Mandatory>Mandatory</Mandatory>
-
-			<Type>String</Type>
-
-			<RangeEnumeration/>
-
-			<Units/>
-
-			 <Description>
-
-			<![CDATA[Netmask.]]>
-
-			</Description>
-
-		</Item>
-		<Item ID="5">
-
-			<Name>Protocol</Name>
-
-			<Operations>RW</Operations>
-
-			<MultipleInstances>Single</MultipleInstances>
-
-			<Mandatory>Mandatory</Mandatory>
-
-			<Type>String</Type>
-
-			<RangeEnumeration/>
-
-			<Units/>
-
-			 <Description>
-
-			<![CDATA[The interface protocol.]]>
-
-			</Description>
-
-		</Item>
-	</Resources>
-	<Description2></Description2>
-   </Object>
+		<Name>IPSO Gateway Fixed Interface</Name>
+		<Description1><![CDATA[Basic settings for the fixed interface.]]></Description1>
+		<ObjectID>1024</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:ext:1024</ObjectURN>
+		<MultipleInstances>Multiple</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="0">
+				<Name>Ifname</Name>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Operations>RW</Operations>
+				<Type>String</Type>
+				<RangeEnumeration/>
+				<Units/>
+				<Description><![CDATA[Name of the fixed interface.]]></Description>	
+			</Item>
+
+			<Item ID="1">
+				<Name>MAC Address</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration/>
+				<Units/>
+				<Description><![CDATA[MAC address of the fixed interface.]]></Description>
+			</Item>
+			<Item ID="2">
+				<Name>Status</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration/>
+				<Units/>
+				<Description>
+				<![CDATA[Status of the fixed interface (up/down).]]>
+				</Description>
+			</Item>
+			<Item ID="3">
+				<Name>IP Address List</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration/>
+				<Units/>
+				<Description>
+				<![CDATA[List of IP addresses assigned to the fixed interface.]]></Description>
+			</Item>
+			<Item ID="4">
+				<Name>Netmask</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration/>
+				<Units/>
+				<Description><![CDATA[Netmask.]]>
+				</Description>
+			</Item>
+			<Item ID="5">
+				<Name>Protocol</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration/>
+				<Units/>
+			 	<Description><![CDATA[The interface protocol.]]></Description>
+			</Item>
+			</Resources>
+		<Description2 />
+	</Object>
 </LWM2M>
