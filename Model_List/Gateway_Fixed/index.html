@@ -6,7 +6,7 @@
 <meta name="description" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gateway Fixed</title>
+<title>Gateway Fixed Interface</title>
 <link rel="stylesheet" href="../../css/bootstrap.min.css">
 <link rel="stylesheet" href="../../css/main.css">
 <link rel="stylesheet" href="../../css/responsive.css">
@@ -121,8 +121,6 @@
 													<th>Multiple Instances</th>
 													<th>Mandatory</th>
 													<th>Type</th>
-													<th>Range/Enumeration</th>
-													<th>Units</th>
 													<th>Description</th>
 												</tr>
 											  </thead>
@@ -134,8 +132,6 @@
 													<td>Single</td>
 													<td>Mandatory</td>
 													<td>String</td>
-													<td>/</td>
-													<td>/</td>
 													<td>Name of the fixed interface</td>
 												</tr>
 												<tr>
@@ -145,8 +141,6 @@
 													<td>Single</td>
 													<td>Optional</td>
 													<td>String</td>
-													<td>/</td>
-													<td>/</td>
 													<td>MAC address of the fixed interface</td>
 												</tr>
 												<tr>
@@ -156,8 +150,6 @@
 													<td>Single</td>
 													<td>Optional</td>
 													<td>String</td>
-													<td>/</td>
-													<td>/</td>
 													<td>Status of the fixed interface (up/down).</td>
 												</tr>
 												<tr>
@@ -167,8 +159,6 @@
 													<td>Single</td>
 													<td>Mandatory</td>
 													<td>String</td>
-													<td>/</td>
-													<td>/</td>
 													<td>List of IP addresses assigned to the fixed interface.</td>
 												</tr>
 												  <tr>
@@ -178,8 +168,6 @@
 													<td>Single</td>
 													<td>Mandatory</td>
 													<td>String</td>
-													<td>/</td>
-													<td>/</td>
 													<td>This resource type returns the netmask.</td>
 												</tr>
 												<tr>
@@ -189,8 +177,6 @@
 													<td>Single</td>
 													<td>Mandatory</td>
 													<td>String</td>
-													<td>/</td>
-													<td>/</td>
 													<td>The interface protocol.</td>
 												</tr>
 											  </tbody>
@@ -239,6 +225,25 @@
 								</div>
 								<!-- xml file of data model end -->
 								
+								<!-- json file of data model -->
+									<div class="body-content">
+										<div class="panel-headings" role="tab" id="headingsfive">
+											<h4 class="panel-titles">
+											<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfive" aria-expanded="false" aria-controls="collapsesfive">
+												JSON
+											</a>
+											</h4>
+										</div>
+										<div id="collapsesfive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfive">
+											<div class="panel-bodys">
+												<div class="downloadButt">
+													<a href="Gateway_Fixed.json" download=""><img src="../../images/download.png" alt="download" title="download" /></a>
+												</div>
+											 	<pre class="prettyprint lang-json" id="placeholderJ"><xmp></xmp></pre>
+											</div>
+										</div>	
+									</div>
+									<!-- json file of data model end -->
 								
 
 								<!-- code part -->
@@ -302,6 +307,16 @@ xhr.onreadystatechange = function() {
  }
  xhr.open("GET", "Gateway_Fixed.xml");
  xhr.send();
+	
+//read JSON file
+var xhrJson = new XMLHttpRequest();
+xhrJson.onreadystatechange = function() {
+   if (xhrJson.readyState == 4 && xhrJson.status == 200) {
+       document.getElementById("placeholderJ").innerText = xhrJson.responseText;
+     }
+ }
+ xhrJson.open("GET", "Gateway_Fixed.json");
+ xhrJson.send();
 	
 document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
