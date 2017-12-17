@@ -1,0 +1,100 @@
+{
+  "LWM2M": {
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "IPSO Gateway Fixed Interface",
+      "Description1": "
+
+Basic settings for the fixed interface.
+
+",
+      "ObjectID": "1024",
+      "ObjectURN": "urn:oma:lwm2m:ext:1024",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "0",
+            "Name": "Ifname",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "
+
+	Name of the fixed interface.
+
+"
+          },
+          {
+            "-ID": "1",
+            "Name": "MAC Address",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "
+
+MAC address of the fixed interface.
+
+"
+          },
+          {
+            "-ID": "2",
+            "Name": "Status",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "
+
+Status of the fixed interface (up/down).
+
+"
+          },
+          {
+            "-ID": "3",
+            "Name": "IP Address List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "
+
+List of IP addresses assigned to the fixed interface.
+
+"
+          },
+          {
+            "-ID": "4",
+            "Name": "Netmask",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "
+
+Netmask.
+
+"
+          },
+          {
+            "-ID": "5",
+            "Name": "Protocol",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "Description": "
+
+The interface protocol.
+
+"
+          }
+        ]
+      }
+    }
+  }
+}
+
