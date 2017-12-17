@@ -521,6 +521,16 @@ xhr.onreadystatechange = function() {
  }
  xhr.open("GET", "Gateway_Wireless.xml");
  xhr.send();	
+	
+//read json code
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+   if (xhr.readyState == 4 && xhr.status == 200) {
+       document.getElementById("placeholderJ").innerText = xhr.responseText;
+     }
+ }
+ xhr.open("GET", "Gateway_Wireless.json");
+ xhr.send();
 					
 document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
