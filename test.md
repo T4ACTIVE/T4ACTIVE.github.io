@@ -39,7 +39,7 @@ The gateway system object contains the most basic functionalities for a gateway 
 
 #### Wakaama
 
-[object_system.c](Gateway_System/object_system.c)
+[object_system.c](Model_List/Gateway_System/object_system.c)
 
 #### UCI
 
